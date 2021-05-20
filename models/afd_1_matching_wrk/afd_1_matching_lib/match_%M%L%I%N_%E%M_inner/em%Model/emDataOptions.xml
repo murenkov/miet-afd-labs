@@ -1,0 +1,12 @@
+<emDataViewOptions>
+  <version minor="2" major="1"/>
+  <Options extrapolationMode="Linear" portTerminalPinsNetlistMode="Shorted" enforcePassivity="DuringExtrapolation" symbolNetlistMode="All pins"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter delta="0.075 mm" resolution="0.0001 mm" name="W50"/>
+      <cellParameter delta="0.075 mm" resolution="0.0001 mm" name="L_feed"/>
+      <cellParameter delta="0.075 mm" resolution="0.0001 mm" name="L_shunt"/>
+      <cellParameter delta="0.075 mm" resolution="0.0001 mm" name="L_serial"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>
