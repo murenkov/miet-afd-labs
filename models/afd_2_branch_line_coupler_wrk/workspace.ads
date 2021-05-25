@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="4" Version="100">
+<ADSWorkspace Revision="6" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -51,5 +51,9 @@
         <Data_Files Name="branch_line_coupler_EM.ds" />
         <Data_Files Name="branch_line_coupler_EM_data\logFile.txt" />
         <Preferences Name="ads_tlines_lay.prf" />
+        <Data_Display Name="branch_line_coupler_EM.dds" />
+        <Cell Name="afd_2_branch_line_coupler_lib:branch_line_coupler_EM" />
+        <Cell Name="afd_2_branch_line_coupler_lib:branch_line_coupler_EM_inner" />
+        <Log Name="momServer.log" />
     </Workspace>
 </ADSWorkspace>

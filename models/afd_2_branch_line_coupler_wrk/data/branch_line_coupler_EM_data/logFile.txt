@@ -7,5 +7,5 @@ SP SP1[1] <afd_2_branch_line_coupler_lib:branch_line_coupler_EM:schematic>   fre
 
 
 Resource usage:
-  Total stopwatch time     =     6.83 seconds.
+  Total stopwatch time     =     3.22 seconds.
 

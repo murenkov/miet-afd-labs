@@ -492,7 +492,7 @@
         <MomOptionDef version="1.2">
           <optionName>&lt;(inPreparation)></optionName>
           <readOnlyData>False</readOnlyData>
-          <OptionsTabIndex>4</OptionsTabIndex>
+          <OptionsTabIndex>3</OptionsTabIndex>
           <SubstrateTabIndex>0</SubstrateTabIndex>
           <MeshTabIndex>0</MeshTabIndex>
           <PreprocTabIndex>0</PreprocTabIndex>
@@ -991,7 +991,7 @@
       <MomOptionDef version="1.2">
         <optionName>&lt;(inPreparation)></optionName>
         <readOnlyData>False</readOnlyData>
-        <OptionsTabIndex>4</OptionsTabIndex>
+        <OptionsTabIndex>3</OptionsTabIndex>
         <SubstrateTabIndex>0</SubstrateTabIndex>
         <MeshTabIndex>0</MeshTabIndex>
         <PreprocTabIndex>0</PreprocTabIndex>
