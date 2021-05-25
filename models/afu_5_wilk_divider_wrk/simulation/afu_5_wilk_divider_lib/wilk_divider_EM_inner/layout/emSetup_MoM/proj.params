@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="W50" value="1.382 mm"/>
+    <parameter name="W71" value="0.755 mm"/>
+    <parameter name="L71" value="5.155 mm"/>
+    <parameter name="R_out" value="0.005528"/>
+    <parameter name="W_res" value="1.6 mm"/>
+    <parameter name="S_res" value="0.5 mm"/>
+    <parameter name="L_res" value="3.1 mm"/>
+    <parameter name="arc_radius" value="0.00164089"/>
+    <parameter name="L_feed" value="1.5 mm"/>
+    <parameter name="L_add" value="0.002241"/>
+    <parameter name="R" value="100 Ohm"/>
+</parameters>
