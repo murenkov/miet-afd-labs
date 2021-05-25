@@ -1,0 +1,35 @@
+<emDataViewDatabaseIndex>
+  <version major="1" minor="1"/>
+  <emDatabase>
+    <ParameterNames>
+      <parameterName>W50</parameterName>
+      <parameterName>L_feed</parameterName>
+      <parameterName>L_shunt</parameterName>
+      <parameterName>W_shunt</parameterName>
+      <parameterName>L_serial</parameterName>
+      <parameterName>W_serial</parameterName>
+    </ParameterNames>
+    <databaseItems>
+      <databaseItem name="data.002" index="2">
+        <parameterValues>
+          <value>1.382 mm</value>
+          <value>2.5 mm</value>
+          <value>5.55 mm</value>
+          <value>1.3 mm</value>
+          <value>7.05 mm</value>
+          <value>2.2 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.002.sio</name>
+          <name>data.002.sam</name>
+          <name>data.002.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+    </databaseItems>
+  </emDatabase>
+</emDataViewDatabaseIndex>

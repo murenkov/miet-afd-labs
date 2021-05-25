@@ -1,0 +1,7 @@
+create_item("branch_line_coupler_EM_inner","branch_line_coupler_EM_inner","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","branch_line_coupler_EM_inner","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("W50","W50",68608,"StdFormSet",5,prm("StdForm","1.382 mm")),
+create_parm("L_feed","L_feed",68608,"StdFormSet",5,prm("StdForm","2.5 mm")),
+create_parm("L_shunt","L_shunt",68608,"StdFormSet",5,prm("StdForm","5.55 mm")),
+create_parm("W_shunt","W_shunt",68608,"StdFormSet",5,prm("StdForm","1.3 mm")),
+create_parm("L_serial","L_serial",68608,"StdFormSet",5,prm("StdForm","7.05 mm")),
+create_parm("W_serial","W_serial",68608,"StdFormSet",5,prm("StdForm","2.2 mm")));
