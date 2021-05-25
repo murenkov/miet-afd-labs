@@ -1,0 +1,51 @@
+Begin_Block  Header 
+  
+  Mode  ASCII 
+  File_Name  E:/afd_3_rat_race_coupler_wrk/simulation/afd_3_rat_race_coupler_lib/rat_race_coupler_EM_inner/layout/emSetup_viz3D/EMDS4ADS.prf 
+  Version  3.00 
+  
+End_Block  Header 
+
+Begin_Block  Data 
+  
+  Begin_Preferences 
+  
+  Begin_Material_Block 
+  Material cond     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  Material __SubstrateLayer1     1.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  Material __BOTTOM     0.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  End_Material_Block 
+  
+  Begin_Color_Block 
+  Object __SubstrateLayer1_1     1.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  Object __BOTTOM_2     0.0000000000000000e+00      0.0000000000000000e+00      1.0000000000000000e+00  
+  Object cond_3     9.3333333333333335e-01      4.1568627450980394e-01      3.1372549019607843e-01  
+  End_Color_Block 
+  
+  Begin_Visible_Block 
+  Object __SubstrateLayer1_1 1  0  80  
+  Object __BOTTOM_2 1  1  50  
+  Object cond_3 1  1  50  
+  End_Visible_Block 
+  
+  Begin_Plane_Block 
+  Planes 0  
+  End_Plane_Block 
+  
+  Begin_Camera_Block 
+  Position     3.5756736755371094e+01     -5.6526439666748047e+01      4.9507198333740234e+01  
+  Target     1.0057799339294434e+01      6.6015005111694336e-01      2.5400000810623169e-01  
+  Up    -3.3453410863876343e-01      5.2417278289794922e-01      7.8315371274948120e-01  
+      3.1891361236572266e+01      3.1891361236572266e+01  
+  End_Camera_Block 
+  
+  Begin_Background_Block 
+  Top_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Bottom_Color     0.0000000000000000e+00      0.0000000000000000e+00      0.0000000000000000e+00  
+  Shadow 0  
+  End_Background_Block 
+  
+  End_Preferences 
+  
+End_Block  Data 
+

@@ -1,0 +1,16 @@
+<emDataViewOptions>
+  <version minor="2" major="1"/>
+  <Options enforcePassivity="DuringExtrapolation" extrapolationMode="Linear" portTerminalPinsNetlistMode="Shorted" symbolNetlistMode="All pins"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter resolution="0.0001 mm" name="W50" delta="0.075 mm"/>
+      <cellParameter resolution="0.0001 mm" name="W71" delta="0.075 mm"/>
+      <cellParameter resolution="1e-05" name="L_feed" delta="0.00025"/>
+      <cellParameter resolution="0.0001 mm" name="L_curve" delta="0.075 mm"/>
+      <cellParameter resolution="0.0001 mm" name="radius" delta="0.075 mm"/>
+      <cellParameter resolution="0.1" name="ang14" delta="10.0"/>
+      <cellParameter resolution="0.1" name="ang23" delta="10.0"/>
+      <cellParameter resolution="0.1" name="ang12" delta="10.0"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>
