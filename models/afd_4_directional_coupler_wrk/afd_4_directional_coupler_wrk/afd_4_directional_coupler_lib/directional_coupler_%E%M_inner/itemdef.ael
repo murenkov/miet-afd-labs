@@ -1,0 +1,7 @@
+create_item("directional_coupler_EM_inner","directional_coupler_EM_inner","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","directional_coupler_EM_inner","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("W50","W50",68608,"StdFormSet",5,prm("StdForm","1.382 mm")),
+create_parm("L_feed","L_feed",68608,"StdFormSet",5,prm("StdForm","2.5 mm")),
+create_parm("W_coupled","W_coupled",68608,"StdFormSet",5,prm("StdForm","1.293 mm")),
+create_parm("S_coupled","S_coupled",68608,"StdFormSet",5,prm("StdForm","0.324 mm")),
+create_parm("L_coupled","L_coupled",68608,"StdFormSet",5,prm("StdForm","7.450 mm")),
+create_parm("miter","miter",68608,"StdFormSet",-1,prm("StdForm","0.15")));
