@@ -74,7 +74,7 @@
         \caption{}
         \label{fig:branch_line_coupler_ideal_data_1_smatrix}
     \end{subfigure}
-
+    \vfill
     \begin{subfigure}[b]{0.7\textwidth}
         \centering
         \includegraphics[width=\textwidth]{branch_line_coupler_ideal_data_1_impedances.pdf}
@@ -197,7 +197,7 @@
     \end{subfigure}
     \caption{
         Неравномерность рабочего затухания и переходного ослабления:
-        a) Графическое представление;
+        a) графическое представление;
         б) табличное представление
     }
     \label{fig:branch_line_coupler_MLIN_data_2_response_ripple}
@@ -273,7 +273,7 @@
 В итоге схема приобретёт вид как на рис. \ref{fig:branch_line_coupler_EM_schematic_2}.
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{branch_line_coupler_EM_schematic_2.pdf}
+    \includegraphics[width=0.8\textwidth]{branch_line_coupler_EM_schematic_2.pdf}
     \caption{Итоговый вид схемы}
     \label{fig:branch_line_coupler_EM_schematic_2}
 \end{figure}
@@ -301,4 +301,36 @@
         б) ФЧХ
     }
     \label{fig:branch_line_coupler_EM_data_1}
+\end{figure}
+
+Из графиков видно, что частоты сильно уплыли. Поправим это подбором параметров. Итоговые значения можно увидеть на рис. \ref{fig:branch_line_coupler_EM_schematic_3} а результаты моделирования на рис. \ref{fig:branch_line_coupler_EM_data_2}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{branch_line_coupler_EM_schematic_3.pdf}
+    \caption{Схема после подбора параметров}
+    \label{fig:branch_line_coupler_EM_schematic_3}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{branch_line_coupler_EM_data_2_freq_response.pdf}
+        \caption{}
+        \label{fig:branch_line_coupler_EM_data_2_freq_response}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{branch_line_coupler_EM_data_2_phase_response.pdf}
+        \caption{}
+        \label{fig:branch_line_coupler_EM_data_2_phase_response}
+    \end{subfigure}
+    \caption{
+        Частотные характеристики моделируемой схемы в топологическом представлении после подбора параметров:
+        а) АЧХ;
+        б) ФЧХ
+    }
+    \label{fig:branch_line_coupler_EM_data_2}
 \end{figure}
