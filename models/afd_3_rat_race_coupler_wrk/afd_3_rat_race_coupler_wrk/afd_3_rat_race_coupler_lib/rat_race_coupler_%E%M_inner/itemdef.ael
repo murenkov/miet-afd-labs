@@ -1,0 +1,9 @@
+create_item("rat_race_coupler_EM_inner","rat_race_coupler_EM_inner","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","rat_race_coupler_EM_inner","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("W50","W50",68608,"StdFormSet",5,prm("StdForm","1.383 mm")),
+create_parm("W71","W71",68608,"StdFormSet",5,prm("StdForm","0.756 mm")),
+create_parm("L_feed","W71",68608,"StdFormSet",-1,prm("StdForm","2.5 mm")),
+create_parm("L_curve","W71",68608,"StdFormSet",5,prm("StdForm","6.26 mm")),
+create_parm("radius","W71",68608,"StdFormSet",5,prm("StdForm","L_curve / 3.14 * 3")),
+create_parm("ang14","W71",68608,"StdFormSet",7,prm("StdForm","60.2")),
+create_parm("ang23","W71",68608,"StdFormSet",7,prm("StdForm","60")),
+create_parm("ang12","W71",68608,"StdFormSet",7,prm("StdForm","180 - (ang14 + ang23)")));

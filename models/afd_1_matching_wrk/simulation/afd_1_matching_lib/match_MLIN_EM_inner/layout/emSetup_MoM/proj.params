@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="W50" value="1.382 mm"/>
+    <parameter name="L_feed" value="2.5 mm"/>
+    <parameter name="L_shunt" value="5.158 mm"/>
+    <parameter name="L_serial" value="9.355 mm"/>
+</parameters>

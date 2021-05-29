@@ -1,0 +1,14 @@
+<emDataViewOptions>
+  <version major="1" minor="2"/>
+  <Options portTerminalPinsNetlistMode="Shorted" extrapolationMode="Linear" enforcePassivity="DuringExtrapolation" symbolNetlistMode="All pins"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter name="W50" delta="0.075 mm" resolution="0.0001 mm"/>
+      <cellParameter name="L_feed" delta="0.075 mm" resolution="0.0001 mm"/>
+      <cellParameter name="W_coupled" delta="0.075 mm" resolution="0.0001 mm"/>
+      <cellParameter name="S_coupled" delta="0.075 mm" resolution="0.0001 mm"/>
+      <cellParameter name="L_coupled" delta="0.075 mm" resolution="0.0001 mm"/>
+      <cellParameter name="miter" delta="0.015" resolution="1e-05"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>

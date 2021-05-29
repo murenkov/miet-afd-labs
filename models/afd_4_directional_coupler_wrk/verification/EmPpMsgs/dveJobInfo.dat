@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=afd_4_directional_coupler_lib:directional_coupler_EM_inner:layout_hpeesofsim
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

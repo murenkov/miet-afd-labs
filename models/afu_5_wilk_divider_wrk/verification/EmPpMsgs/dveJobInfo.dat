@@ -1,0 +1,5 @@
+jobName=EmPpMsgs
+jobType=emprep
+designName=afu_5_wilk_divider_lib:wilk_divider_EM_inner:layout_hpeesofsim
+ruleFilePath=
+addInfo="EM preprocessor messages displayed as DRC errors"

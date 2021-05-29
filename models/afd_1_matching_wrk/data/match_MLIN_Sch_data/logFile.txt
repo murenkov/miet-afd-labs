@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+
+SP SP1[1] <afd_1_matching_lib:match_MLIN_Sch:schematic>   freq=(4 GHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(1.574803) < MinRecommendValue(0.200000) OR UserValue > MaxRecommendValue(1.500000) for 'D/H' in `V1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(2.720472) < MinRecommendValue(1.000000) OR UserValue > MaxRecommendValue(2.200000) for 'W/H' in `V1'
+
+
+
+Resource usage:
+  Total stopwatch time     =     5.87 seconds.
+

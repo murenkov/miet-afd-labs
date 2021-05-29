@@ -1,0 +1,41 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+
+YIELD Yield1[1] <afd_1_matching_lib:match_MLIN_EM_yield:schematic>  mcTrial=(0->100)
+
+SP Yield1[1].SP1[0] <afd_1_matching_lib:match_MLIN_EM_yield:schematic>  mcTrial=0  freq=(4 GHz->10 GHz)
+
+*******************
+  Current Yield(%):   0.00%
+  Trial# 0     of 100  
+
+SP Yield1[1].SP1[1] <afd_1_matching_lib:match_MLIN_EM_yield:schematic>  mcTrial=1  freq=(4 GHz->10 GHz)
+
+
+SP Yield1[1].SP1[2] <afd_1_matching_lib:match_MLIN_EM_yield:schematic>  mcTrial=2  freq=(4 GHz->10 GHz)
+Error detected by hpeesofsim during SP analysis `SP1'.
+    COMPONENT `X1.em_data':
+       ..ERROR: Analysis "Solve" (M210517114600) of design afd_1_matching_lib:match_MLIN_EM_inner:layout_hpeesofsim was unsuccessful because the communication with the job manager failed.
+
+
+Error detected by hpeesofsim during SP analysis 'SP1'.
+    Fatal error occurred while evaluating model `MomCmpt', instance `X1.em_data'.
+
+
+Error detected by hpeesofsim during Yield Analysis `Yield1'.
+    'Yield1[1]': circuit simulation fails. 
+
+Error detected by hpeesofsim during Yield Analysis `Yield1'.
+    Yield1[1] can't do cost evaluation. 
+
+Error detected by hpeesofsim during Yield Analysis `Yield1'.
+
+-------------------------------------------------------------------------------
+Simulation finished with errors.
+-------------------------------------------------------------------------------
+
+Resource usage:
+  Total stopwatch time     =    59.75 seconds.
+

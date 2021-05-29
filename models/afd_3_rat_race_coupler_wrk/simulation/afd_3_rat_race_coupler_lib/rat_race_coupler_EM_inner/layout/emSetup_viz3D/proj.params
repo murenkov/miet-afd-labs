@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="W50" value="1.383 mm"/>
+    <parameter name="W71" value="0.756 mm"/>
+    <parameter name="L_feed" value="2.5 mm"/>
+    <parameter name="L_curve" value="6.26 mm"/>
+    <parameter name="radius" value="0.00598089"/>
+    <parameter name="ang14" value="60.2"/>
+    <parameter name="ang23" value="60"/>
+    <parameter name="ang12" value="59.8"/>
+</parameters>
