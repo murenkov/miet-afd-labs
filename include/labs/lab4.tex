@@ -37,7 +37,7 @@
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{directional_coupler_ideal_schematic.pdf}
+    \includegraphics[width=0.6\textwidth]{directional_coupler_ideal_schematic.pdf}
     \caption{Моделируемая цепь на идеальных линиях передачи}
     \label{fig:directional_coupler_ideal_schematic}
 \end{figure}
@@ -48,92 +48,31 @@
     \centering
     \begin{subfigure}[b]{0.40\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_in1_freq_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_freq_response.pdf}
         \caption{}
-        \label{fig:directional_coupler_ideal_data_1_in1_freq_response}
+        \label{fig:directional_coupler_ideal_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.40\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_in1_phase_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_phase_response.pdf}
         \caption{}
-        \label{fig:directional_coupler_ideal_data_1_in1_phase_response}
+        \label{fig:directional_coupler_ideal_data_1_phase_response}
     \end{subfigure}
     \caption{
-        a) АЧХ моделируемой цепи по первому входу;
-        б) ФЧХ моделируемой цепи по первому входу
+        a) АЧХ моделируемой цепи;
+        б) ФЧХ моделируемой цепи
     }
-    \label{fig:directional_coupler_ideal_data_1_in1}
-\end{figure}
-
-\begin{figure}[!ht]
-    \begin{subfigure}[b]{0.40\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_in3_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_in3_freq_response}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.40\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_in3_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_in3_phase_response}
-    \end{subfigure}
-    \caption{
-        а) АЧХ моделируемой цепи по третьему входу;
-        б) ФЧХ моделируемой цепи по третьему входу
-    }
-    \label{fig:directional_coupler_ideal_data_1_in3}
-\end{figure}
-
-Оценим симметричность сигналов. Для этого зададим рассчитывающие их выражения и выведем АЧХ и ФЧХ этого соотношения (Рис. \ref{fig:directional_coupler_ideal_data_1_ripple_responses}).
-
-\begin{figure}[!ht]
-    \centering
-    \begin{subfigure}[b]{\textwidth}
-        \centering
-        \includegraphics[width=0.3\textwidth]{directional_coupler_ideal_data_1_ripple_equations.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_ripple_equations}
-    \end{subfigure}
-    \vfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_ripple_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_ripple_freq_response}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_ripple_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_ripple_phase_response}
-    \end{subfigure}
-    \caption{
-        a) Выражения для рассчёта ассиметричности;
-        б) АЧХ ассиметричности;
-        в) ФЧХ ассиметричности
-    }
-    \label{fig:directional_coupler_ideal_data_1_ripple_responses}
+    \label{fig:directional_coupler_ideal_data_1}
 \end{figure}
 
 В этом же окне выведеи идеальную теоретическую матрицу рассеяния (Рис. \ref{fig:directional_coupler_ideal_data_1_smatrix}).
+Коэффициенты отражения $S_{11}$ и $S_{33}$, а также развязка $S_{31}$ имеют значение по амплитуде $-\infty \text{~дБ}$. Рабочие затухания $S_{21}$ и $S_{32}$ и переходные ослабления $S_{41}$ и $S_{41}$ равны $-3 \text{~дБ}$. По фазовым соотношениям видны суммарный и разностный выходы.
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{directional_coupler_ideal_data_1_smatrix}
     \caption{Идеальная теоретическая матрица рассеяния}
     \label{fig:directional_coupler_ideal_data_1_smatrix}
-\end{figure}
-Коэффициенты отражения $S_{11}$ и $S_{33}$, а также развязка $S_{31}$ имеют значение по амплитуде $-\infty \text{~дБ}$. Рабочие затухания $S_{21}$ и $S_{32}$ и переходные ослабления $S_{41}$ и $S_{41}$ равны $-3 \text{~дБ}$. По фазовым соотношениям видны суммарный и разностный выходы.
-
-Дополнительно рассчитаем и выведем волновые сопротивления участков относительно $Z_0 = 50 \text{~Ом}$ (Рис. \ref{fig:directional_coupler_ideal_data_1_impedances_and_admittances}).
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.6\textwidth]{directional_coupler_ideal_data_1_impedances_and_admittances.pdf}
-    \caption{Волновые сопротивления и проводимости}
-    \label{fig:directional_coupler_ideal_data_1_impedances_and_admittances}
 \end{figure}
 
 \subsection{Модель на схемном уровне в микрополосковом исполнении}
@@ -143,116 +82,79 @@
 В подокне Substrate Parameters задаём параметры подложки из технического задания, в подокне Component Parameters задаём частоту из технического задания, а в подокне Electrical "--- импеданс и электрическую длину, для которых ведётся расчёт.
 После этого, нажав кнопку Synthesize, получим в подокне Physical искомые геометрические размеры.
 
-Расчитаем таким образом геометрические размеры дуг.
-Получим $W_{50} = 1.383 \text{~мм}$ и $W_{71} = 0.756 \text{~мм}$, $L_\text{curve} = 7.370 \text{~мм}$ соответственно.
+Расчитаем таким образом необходимые геометрические размеры отрезков.
+Получим $W_{coupled} = 1.293 \text{~мм}$ и $S_{coupled} = 0.324 \text{~мм}$, $L_\text{coupled} = 7.450 \text{~мм}$, а $W_{50} = 1.382 \text{~мм}$.
 
-Построим моделируемую схему в микрополосковом исполнении (Рис. \ref{fig:directional_coupler_MLIN_schematic_1}).
+Построим дополнительную схему для подбора оптимального значения среза $M$ (Рис. \ref{fig:directional_coupler_MLIN_schematic_1}). Запустим моделирование и построим зависимость $dB(S_{11})$ от частоты (Рис. \ref{fig:directional_coupler_MLIN_data_display_1}) и выберем значение $M$, соответствующее линии, которая лежит ниже остальных.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_schematic_1.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении}
-    \label{fig:directional_coupler_MLIN_schematic_1}
-\end{figure}
-
-Запустим расчёт и выведем АЧХ (Рис. \ref{fig:directional_coupler_MLIN_data_1_freq_response}).
-
-\begin{figure}[!ht]
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.50\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_in1_freq_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_MLIN_schematic_1.pdf}
         \caption{}
-        \label{fig:directional_coupler_MLIN_data_1_in1_freq_response}
+        \label{fig:directional_coupler_MLIN_schematic_1}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.40\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_in3_freq_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_display_1.pdf}
         \caption{}
-        \label{fig:directional_coupler_MLIN_data_1_in3_freq_response}
+        \label{fig:directional_coupler_MLIN_data_display_1}
     \end{subfigure}
-    \caption{АЧХ моделируемой схемы в микрополосковом исполнении:
-        а) по первому входу;
-        б) по третьему входу
+    \caption{
+        а) Схема для подбора значения среза $M$;
+        б) моделирование
     }
-    \label{fig:directional_coupler_data_1_freq_response}
+    \label{fig:directional_coupler_MLIN_miter}
 \end{figure}
 
-Результаты показывают, что рабочая частота устройства уплыла вниз. Связано это с добавлением на схему тройников и компенсирующих их участков, в результате чего электрические длины дуг оказались больше, чем требуется.
-Для того, чтобы исправить это, воспользуемся инструментом Tune.
-В качестве изменяемого параметра укажем $L_\text{curve}$, для чего щёлкнем по нему левой кнопкой мыши.
-Подберём оптимальный размер шага, после чего изменяя значения выбранного параметра с помощью слайдера, найдём такое, при котором обеспечивается наилучшее согласование.
-В дополнение к этому поставим следующие условия:
-\begin{itemize}
-    \item коэффициенты отражения $dB(S_{11})$ и $dB(S_{33})$ и развязка $dB(S_{31})$ не должны превышать $-25 \text{~дБ}$ в диапазоне $(6.6 .. 7.4) \text{~ГГц}$;
-    \item положение провалов коэффициентов отражения $dB(S_{11})$ $dB(S_{33})$ и развязки $dB(S_{31})$ как можно ближе к $7 \text{~ГГц}$;
-    \item рабочие затухания $dB(S_{21})$ и $dB(S_{32})$ и переходные ослабления $dB(S_{41})$ и $dB(S_{43})$ не должны опускаться ниже $-3.5 \text{~дБ}$;
-\end{itemize}
-Для переноса получившихся значений на схему нажмём кнопку Update Schematic в окне Tune Parameters.
+Построим моделируемую схему в микрополосковом исполнении (Рис. \ref{fig:directional_coupler_MLIN_schematic_2}), после чего запустим расчёт и выведем АЧХ (Рис. \ref{fig:directional_coupler_MLIN_data_1_responses}).
 
-Итоговую схему можем увидеть на рис. \ref{fig:directional_coupler_MLIN_schematic_2}, а её характеристики приобретут вид как на рис. \ref{fig:directional_coupler_MLIN_data_2}.
-
-\begin{figure}
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{directional_coupler_MLIN_schematic_2.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении после применения инструмента Tune}
+    \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_schematic_2.pdf}
+    \caption{Моделируемая схема в микрополосковом исполнении}
     \label{fig:directional_coupler_MLIN_schematic_2}
 \end{figure}
 
 \begin{figure}[!ht]
-    \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_2_in1_freq_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_freq_response.pdf}
         \caption{}
-        \label{fig:directional_coupler_MLIN_data_2_in1_freq_response}
+        \label{fig:directional_coupler_MLIN_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_2_in3_freq_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_phase_response.pdf}
         \caption{}
-        \label{fig:directional_coupler_MLIN_data_2_in3_freq_response}
+        \label{fig:directional_coupler_MLIN_data_1_phase_response}
     \end{subfigure}
-    \caption{
-        Частотные характеристики моделируемой схемы в микрополосковом исполнении после применения инструмента Tune:
-        a) АЧХ по первому входу;
-        б) АЧХ по третьему входу
+    \caption{Результаты моделирования схемы:
+        а) АЧХ;
+        б) ФЧХ
     }
-    \label{fig:directional_coupler_MLIN_data_2}
+    \label{fig:directional_coupler_MLIN_data_1_responses}
 \end{figure}
 
-Неравномерность частотных характеристик в заданном диапазоне можно увидеть на рис. \ref{fig:directional_coupler_MLIN_data_2_response_ripple}.
+Из выведенных соотношений можно сделать следующие выводы:
+\begin{itemize}
+    \item согласование по входу $dB(S_{11})$ осталось хорошим ($\approx -40 \text{~дБ}$);
+    \item рабочее затухание $dB(S_{21})$ в пределах $-0.2 \text{~дБ}$;
+    \item переходное ослабление $dB(S_{41})$ близко требуемому значениею $k = -15 \text{~дБ}$;
+    \item развязка $dB(S_{31})$ приняла
+\end{itemize}
+
+
+Неравномерность частотных характеристик в заданном диапазоне можно увидеть на рис. \ref{fig:directional_coupler_MLIN_data_2_ripple_freq_response}.
 
 \begin{figure}[!ht]
     \centering
-    \begin{subfigure}[b]{0.4\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_2_ripple_equations.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_2_ripple_equations}
-    \end{subfigure}
-    \vfill
-    \begin{subfigure}[b]{0.40\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_2_ripple_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_2_ripple_freq_response}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.50\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_2_ripple_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_2_ripple_phase_response}
-    \end{subfigure}
-    \caption{
-        Неравномерность рабочего затухания и переходного ослабления:
-        а) выражения для рассчёта;
-        б) АЧХ;
-        в) ФЧХ
-    }
-    \label{fig:directional_coupler_MLIN_data_2_response_ripple}
+    \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_data_2_ripple_freq_response.pdf}
+    \caption{Неравномерность рабочего затухания и переходного ослабления}
+    \label{fig:directional_coupler_MLIN_data_2_ripple_freq_response}
 \end{figure}
 
 \subsection{Модель на топологическом уровне}
