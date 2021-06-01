@@ -18,103 +18,103 @@
 
 В первую очередь зададим параметры подложки.
 
-Для этого в главном окне перейдём по пути Options\textrightarrow Technology\textrightarrow Edit Stackup (tech.subst) и выберем пункт Create the master substrate from scratch.
+Для этого в главном окне перейдём по пути Options \textrightarrow\ Technology \textrightarrow\ Edit Stackup (tech.subst) и выберем пункт Create the master substrate from scratch.
 В качестве шаблона используем 25milAlumina.
 Параметры подложки возьмём из технического задания.
 
-Результат представлен на рис. \ref{fig:directional_coupler_substrate}.
+Результат представлен на рис.~\ref{fig:directional_coupler_substrate}.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{directional_coupler_substrate.pdf}
-    \caption{Подложка}
+    \caption{Подложка}%
     \label{fig:directional_coupler_substrate}
 \end{figure}
 
 \subsection{Модель на идеальных линиях передачи}
 
-Соберём моделируемую схему на идеальных линиях передачи (Рис. \ref{fig:directional_coupler_ideal_schematic}).
+Соберём моделируемую схему на идеальных линиях передачи (Рис.~\ref{fig:directional_coupler_ideal_schematic}).
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{directional_coupler_ideal_schematic.pdf}
-    \caption{Моделируемая цепь на идеальных линиях передачи}
+    \caption{Моделируемая цепь на идеальных линиях передачи}%
     \label{fig:directional_coupler_ideal_schematic}
 \end{figure}
 
-Результаты моделирования можно увидеть на рис. \ref{fig:directional_coupler_ideal_data_1}.
+Результаты моделирования можно увидеть на рис.~\ref{fig:directional_coupler_ideal_data_1}.
 
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.40\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_freq_response}
+        \caption{}%
+    \label{fig:directional_coupler_ideal_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.40\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_ideal_data_1_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_ideal_data_1_phase_response}
+        \caption{}%
+    \label{fig:directional_coupler_ideal_data_1_phase_response}
     \end{subfigure}
-    \caption{
-        a) АЧХ моделируемой цепи;
-        б) ФЧХ моделируемой цепи
-    }
+    \caption{%
+        (a) АЧХ моделируемой цепи;
+        (б) ФЧХ моделируемой цепи
+    }%
     \label{fig:directional_coupler_ideal_data_1}
 \end{figure}
 
-В этом же окне выведеи идеальную теоретическую матрицу рассеяния (Рис. \ref{fig:directional_coupler_ideal_data_1_smatrix}).
+В этом же окне выведеи идеальную теоретическую матрицу рассеяния (Рис.~\ref{fig:directional_coupler_ideal_data_1_smatrix}).
 Коэффициенты отражения $S_{11}$ и $S_{33}$, а также развязка $S_{31}$ имеют значение по амплитуде $-\infty \text{~дБ}$. Рабочие затухания $S_{21}$ и $S_{32}$ и переходные ослабления $S_{41}$ и $S_{41}$ равны $-3 \text{~дБ}$. По фазовым соотношениям видны суммарный и разностный выходы.
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{directional_coupler_ideal_data_1_smatrix}
-    \caption{Идеальная теоретическая матрица рассеяния}
+    \caption{Идеальная теоретическая матрица рассеяния}%
     \label{fig:directional_coupler_ideal_data_1_smatrix}
 \end{figure}
 
 \subsection{Модель на схемном уровне в микрополосковом исполнении}
 
-Для расчёта геометрических размеров нескольких видов линий передач воспользуемся инструментом LineCalc, которую можно найти по пути Tools\textrightarrow LineCalc\textrightarrow Start LineCalc.
+Для расчёта геометрических размеров нескольких видов линий передач воспользуемся инструментом LineCalc, которую можно найти по пути Tools \textrightarrow\ LineCalc \textrightarrow\ Start LineCalc.
 
-В подокне Substrate Parameters задаём параметры подложки из технического задания, в подокне Component Parameters задаём частоту из технического задания, а в подокне Electrical "--- импеданс и электрическую длину, для которых ведётся расчёт.
+В подокне Substrate Parameters задаём параметры подложки из технического задания, в подокне Component Parameters задаём частоту из технического задания, а в подокне Electrical --- импеданс и электрическую длину, для которых ведётся расчёт.
 После этого, нажав кнопку Synthesize, получим в подокне Physical искомые геометрические размеры.
 
 Расчитаем таким образом необходимые геометрические размеры отрезков.
 Получим $W_{coupled} = 1.293 \text{~мм}$ и $S_{coupled} = 0.324 \text{~мм}$, $L_\text{coupled} = 7.450 \text{~мм}$, а $W_{50} = 1.382 \text{~мм}$.
 
-Построим дополнительную схему для подбора оптимального значения среза $M$ (Рис. \ref{fig:directional_coupler_MLIN_schematic_1}). Запустим моделирование и построим зависимость $dB(S_{11})$ от частоты (Рис. \ref{fig:directional_coupler_MLIN_data_display_1}) и выберем значение $M$, соответствующее линии, которая лежит ниже остальных.
+Построим дополнительную схему для подбора оптимального значения среза $M$ (Рис.~\ref{fig:directional_coupler_MLIN_schematic_1}). Запустим моделирование и построим зависимость $dB(S_{11})$ от частоты (Рис.~\ref{fig:directional_coupler_MLIN_data_display_1}) и выберем значение $M$, соответствующее линии, которая лежит ниже остальных.
 
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.50\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_MLIN_schematic_1.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_schematic_1}
+        \caption{}%
+    \label{fig:directional_coupler_MLIN_schematic_1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.40\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_display_1.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_display_1}
+        \caption{}%
+    \label{fig:directional_coupler_MLIN_data_display_1}
     \end{subfigure}
-    \caption{
-        а) Схема для подбора значения среза $M$;
-        б) моделирование
-    }
+    \caption{%
+        (а) Схема для подбора значения среза $M$;
+        (б) моделирование
+    }%
     \label{fig:directional_coupler_MLIN_miter}
 \end{figure}
 
-Построим моделируемую схему в микрополосковом исполнении (Рис. \ref{fig:directional_coupler_MLIN_schematic_2}), после чего запустим расчёт и выведем АЧХ (Рис. \ref{fig:directional_coupler_MLIN_data_1_responses}).
+Построим моделируемую схему в микрополосковом исполнении (Рис.~\ref{fig:directional_coupler_MLIN_schematic_2}), после чего запустим расчёт и выведем АЧХ (Рис.~\ref{fig:directional_coupler_MLIN_data_1_responses}).
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_schematic_2.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении}
+    \caption{Моделируемая схема в микрополосковом исполнении}%
     \label{fig:directional_coupler_MLIN_schematic_2}
 \end{figure}
 
@@ -122,20 +122,21 @@
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_1_freq_response}
+        \caption{}%
+    \label{fig:directional_coupler_MLIN_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_MLIN_data_1_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_MLIN_data_1_phase_response}
+        \caption{}%
+    \label{fig:directional_coupler_MLIN_data_1_phase_response}
     \end{subfigure}
-    \caption{Результаты моделирования схемы:
-        а) АЧХ;
-        б) ФЧХ
-    }
+    \caption{%
+        Результаты моделирования схемы:
+        (а) АЧХ;
+        (б) ФЧХ
+    }%
     \label{fig:directional_coupler_MLIN_data_1_responses}
 \end{figure}
 
@@ -148,115 +149,114 @@
 \end{itemize}
 
 
-Неравномерность частотных характеристик в заданном диапазоне можно увидеть на рис. \ref{fig:directional_coupler_MLIN_data_2_ripple_freq_response}.
+Неравномерность частотных характеристик в заданном диапазоне можно увидеть на рис.~\ref{fig:directional_coupler_MLIN_data_2_ripple_freq_response}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_data_2_ripple_freq_response.pdf}
-    \caption{Неравномерность рабочего затухания и переходного ослабления}
+    \caption{Неравномерность рабочего затухания и переходного ослабления}%
     \label{fig:directional_coupler_MLIN_data_2_ripple_freq_response}
 \end{figure}
 
 \subsection{Модель на топологическом уровне}
 
-Скопируем схему в микрополосковом исполнении в новую ячейку. Сделаем её двухуровневой, перенеся во внутренний уровень все полосковые устройства. Сделать это можно по команде Edit\textrightarrow Component\textrightarrow Create Hierarchy.
+Скопируем схему в микрополосковом исполнении в новую ячейку. Сделаем её двухуровневой, перенеся во внутренний уровень все полосковые устройства. Сделать это можно по команде Edit \textrightarrow\ Component \textrightarrow\ Create Hierarchy.
 
-В результате получим схему верхнего уровня (Рис. \ref{fig:directional_coupler_EM_schematic}) и схему нижнего уровня (Рис. \ref{fig:directional_coupler_EM_inner_schematic}).
+В результате получим схему верхнего уровня (Рис.~\ref{fig:directional_coupler_EM_schematic}) и схему нижнего уровня (Рис.~\ref{fig:directional_coupler_EM_inner_schematic}).
 
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_schematic_1.pdf}
-        \caption{}
-        \label{fig:directional_coupler_EM_schematic}
+        \caption{}%
+    \label{fig:directional_coupler_EM_schematic}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_inner_schematic_1.pdf}
-        \caption{}
-        \label{fig:directional_coupler_EM_inner_schematic}
+        \caption{}%
+    \label{fig:directional_coupler_EM_inner_schematic}
     \end{subfigure}
-    \caption{
+    \caption{%
         Моделируемая схема на топологическом уровне:
-        a) внешнаяя схема;
-        б) внутренняя схема
-    }
+        (a) внешнаяя схема;
+        (б) внутренняя схема
+    }%
     \label{fig:directional_coupler_EM_schematics}
 \end{figure}
 
-Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout\textrightarrow Generate/Update Layout.
-Топологическое представление создано верно (Рис. \ref{fig:directional_coupler_layout_check}).
+Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
+Топологическое представление создано верно (Рис.~\ref{fig:directional_coupler_layout_check}).
 
 \begin{wrapfigure}{l}{0.4\textwidth}
     \centering
     \includegraphics[width=0.4\textwidth]{directional_coupler_layout_check.pdf}
-    \caption{Проверка топологического представления}
+    \caption{Проверка топологического представления}%
     \label{fig:directional_coupler_layout_check}
 \end{wrapfigure}
 
-Перейдём в окно File\textrightarrow Customize Pcell.
+Перейдём в окно File \textrightarrow\ Customize Pcell.
 Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
 Также убедимся в том, что выставлены галочки напротив Support non-90 degree rotation и Support unit and database resolution for ADS 2015 and older.
 
-В окне File\textrightarrow Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
+В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
 
 Для EM-моделирования создадим сущность emSetup.
-Это можно сделать в окне EM\textrightarrow Simulation Setting.
+Это можно сделать в окне EM \textrightarrow\ Simulation Setting.
 Определим параметры в соответствии с требованиями.
 
 Запустим моделирование S-параметров нажатием кнопки Simulate.
-В результате на топологии появится сетка (Рис. \ref{fig:directional_coupler_layout_sparam}).
+В результате на топологии появится сетка (Рис.~\ref{fig:directional_coupler_layout_sparam}).
 
 \begin{wrapfigure}{r}{0.4\textwidth}
     \centering
     \includegraphics[width=0.4\textwidth]{directional_coupler_layout_sparam.pdf}
-    \caption{Сетка на топологическом представлении после проведения EM-моделирования}
+    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
     \label{fig:directional_coupler_layout_sparam}
 \end{wrapfigure}
 
 Из окна emSetup можно обновить отображение элемента на схеме.
-Сделаем так, чтоб оно подгружалось из топологии (Рис. \ref{fig:directional_coupler_symbol}).
+Сделаем так, чтоб оно подгружалось из топологии (Рис.~\ref{fig:directional_coupler_symbol}).
 
 \begin{wrapfigure}{l}{0.4\textwidth}
     \centering
     \includegraphics[width=0.4\textwidth]{directional_coupler_symbol.pdf}
-    \caption{Обновлённый символ}
+    \caption{Обновлённый символ}%
     \label{fig:directional_coupler_symbol}
 \end{wrapfigure}
 
-В итоге схема приобретёт вид как на рис. \ref{fig:directional_coupler_EM_schematic_2}.
+В итоге схема приобретёт вид как на рис.~\ref{fig:directional_coupler_EM_schematic_2}.
 
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{directional_coupler_EM_schematic_2.pdf}
-    \caption{Итоговый вид схемы}
+    \caption{Итоговый вид схемы}%
     \label{fig:directional_coupler_EM_schematic_2}
 \end{figure}
 
-Запустим моделирование и отобразим частотные характеристики (Рис. \ref{fig:directional_coupler_EM_data_1}).
+Запустим моделирование и отобразим частотные характеристики (Рис.~\ref{fig:directional_coupler_EM_data_1}).
 
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_data_1_freq_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_EM_data_1_freq_response}
+        \caption{}%
+    \label{fig:directional_coupler_EM_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_data_1_phase_response.pdf}
-        \caption{}
-        \label{fig:directional_coupler_EM_data_1_phase_response}
+        \caption{}%
+    \label{fig:directional_coupler_EM_data_1_phase_response}
     \end{subfigure}
-    \caption{
+    \caption{%
         Частотные характеристики моделируемой схемы в топологическом представлении:
-        а) АЧХ;
-        б) ФЧХ
-    }
+        (а) АЧХ;
+        (б) ФЧХ
+    }%
     \label{fig:directional_coupler_EM_data_1}
 \end{figure}
-
