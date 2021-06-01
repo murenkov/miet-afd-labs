@@ -153,14 +153,24 @@
 \end{figure}
 
 Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{matching_layout_sparam.pdf}
+    \caption{Топологическое представление после моделирования S-параметров}%
+    \label{fig:matching_layout_sparam}
+\end{wrapfigure}
+
+\begin{comment}
 Топологическое представление создано верно (Рис.~\ref{fig:matching_layout_check}).
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{matching_layout_check.pdf}
+    \includegraphics[width=0.4\textwidth]{matching_layout_check.pdf}
     \caption{Проверка топологического представления}%
     \label{fig:matching_layout_check}
 \end{wrapfigure}
+\end{comment}
 
 Перейдём в окно File \textrightarrow\ Customize Pcell.
 Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
@@ -168,33 +178,29 @@
 
 В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
 
-Для EM-моделирования создадим сущность emSetup.
-Это можно сделать в окне EM\textrightarrow\ Simulation Setting.
-Определим параметры в соответствии с требованиями, после чего запусти моделирования S-параметров.
-В итоге топология примет вид как на рис.~\ref{fig:matching_layout_sparam}.
-\begin{wrapfigure}{l}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\textwidth]{matching_layout_sparam.pdf}
-    \caption{Топологическое представление после моделирования S-параметров}%
-    \label{fig:matching_layout_sparam}
-\end{wrapfigure}
-
-Не покидая окно emSetup, настроим отображение символа цепи согласования на схеме так, чтоб изображение бралось из топологии (Рис.~\ref{fig:matching_symbol}).
-
-\begin{wrapfigure}{l}{0.3\textwidth}
+\begin{wrapfigure}{r}{0.3\textwidth}
     \centering
     \includegraphics[width=0.3\textwidth]{matching_symbol.pdf}
     \caption{Обновлённый символ}%
     \label{fig:matching_symbol}
 \end{wrapfigure}
 
+Для EM-моделирования создадим сущность emSetup.
+Это можно сделать в окне EM\textrightarrow\ Simulation Setting.
+Определим параметры в соответствии с требованиями, после чего запусти моделирования S-параметров.
+В итоге топология примет вид как на рис.~\ref{fig:matching_layout_sparam}.
+
+Не покидая окно emSetup, настроим отображение символа цепи согласования на схеме так, чтоб изображение бралось из топологии (Рис.~\ref{fig:matching_symbol}).
+
 Схема приобретёт вид как на рис.~\ref{fig:matching_EM_schematic_2}. Результаты моделирования можно увидеть на рис.~\ref{fig:matching_EM_data_1}.
+
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{matching_EM_schematic_2.pdf}
     \caption{Итоговый вид моделируемой схемы}%
     \label{fig:matching_EM_schematic_2}
 \end{figure}
+
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}[b]{0.55\textwidth}
@@ -220,7 +226,8 @@
 
 \subsection{Оптимизация}
 
-Проведём оптимизацию схемы. Для этого создадим копию схемы в микрополосковом исполнении и немного дополним её (Рис.~\ref{fig:matching_MLIN_optim_schematic_1}).
+Проведём оптимизацию схемы.
+Для этого создадим копию схемы в микрополосковом исполнении и немного дополним её (Рис.~\ref{fig:matching_MLIN_optim_schematic_1}).
 
 \begin{figure}
     \centering
@@ -228,3 +235,19 @@
     \caption{Подготовка схемы к оптимизации}%
     \label{fig:matching_MLIN_optim_schematic_1}
 \end{figure}
+
+Запустим оптимизацию по команде Simulate \textrightarrow\ Optimize.
+Для переноса результатов оптимизации обратно на схему, нажмём кнопку Update Design.
+В случае моделируемой схемы ничего не изменилось.
+
+\subsection{Статистический анализ выхода годных}
+
+Проведём статистический анализ выхода годных.
+Это позволит понять, как ведёт себя моделируемая схема при случайном изменении параметров.
+
+Оценим, как будет меняться КСВН и коэффициент передачи согласующей цепи при случайном изменении подобранных ранее длин и ширин линий в пределах $\pm0.05 \text{~мм}$.
+
+Создадим копию схемы в топологическом представлении и дополним её (Рис.~\ref{fig:matching_EM_yield_schematic}).
+Параметры изменения переменных зададим во вкладке Statistics окна Simulation Variables Setup.
+
+Запустим расчёт.
