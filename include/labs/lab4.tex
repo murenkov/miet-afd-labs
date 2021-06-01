@@ -148,34 +148,33 @@
     \item развязка $dB(S_{31})$ приняла
 \end{itemize}
 
-
 Неравномерность частотных характеристик в заданном диапазоне можно увидеть на рис.~\ref{fig:directional_coupler_MLIN_data_2_ripple_freq_response}.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_data_2_ripple_freq_response.pdf}
+    \includegraphics[width=0.8\textwidth]{directional_coupler_MLIN_data_1_ripple_freq_response.pdf}
     \caption{Неравномерность рабочего затухания и переходного ослабления}%
-    \label{fig:directional_coupler_MLIN_data_2_ripple_freq_response}
+    \label{fig:directional_coupler_MLIN_data_1_ripple_freq_response}
 \end{figure}
 
 \subsection{Модель на топологическом уровне}
 
 Скопируем схему в микрополосковом исполнении в новую ячейку. Сделаем её двухуровневой, перенеся во внутренний уровень все полосковые устройства. Сделать это можно по команде Edit \textrightarrow\ Component \textrightarrow\ Create Hierarchy.
 
-В результате получим схему верхнего уровня (Рис.~\ref{fig:directional_coupler_EM_schematic}) и схему нижнего уровня (Рис.~\ref{fig:directional_coupler_EM_inner_schematic}).
+В результате получим схему верхнего уровня (Рис.~\ref{fig:directional_coupler_EM_schematic_1}) и схему нижнего уровня (Рис.~\ref{fig:directional_coupler_EM_inner_schematic}).
 
 \begin{figure}[!ht]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.55\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_schematic_1.pdf}
         \caption{}%
-    \label{fig:directional_coupler_EM_schematic}
+    \label{fig:directional_coupler_EM_schematic_1}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_EM_inner_schematic_1.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_EM_inner_schematic.pdf}
         \caption{}%
     \label{fig:directional_coupler_EM_inner_schematic}
     \end{subfigure}
@@ -188,6 +187,8 @@
 \end{figure}
 
 Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
+
+\begin{comment}
 Топологическое представление создано верно (Рис.~\ref{fig:directional_coupler_layout_check}).
 
 \begin{wrapfigure}{l}{0.4\textwidth}
@@ -196,12 +197,26 @@
     \caption{Проверка топологического представления}%
     \label{fig:directional_coupler_layout_check}
 \end{wrapfigure}
+\end{comment}
 
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{directional_coupler_layout_sparam.pdf}
+    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
+    \label{fig:directional_coupler_layout_sparam}
+\end{wrapfigure}
 Перейдём в окно File \textrightarrow\ Customize Pcell.
 Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
 Также убедимся в том, что выставлены галочки напротив Support non-90 degree rotation и Support unit and database resolution for ADS 2015 and older.
 
 В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{directional_coupler_symbol.pdf}
+    \caption{Обновлённый символ}%
+    \label{fig:directional_coupler_symbol}
+\end{wrapfigure}
 
 Для EM-моделирования создадим сущность emSetup.
 Это можно сделать в окне EM \textrightarrow\ Simulation Setting.
@@ -210,53 +225,37 @@
 Запустим моделирование S-параметров нажатием кнопки Simulate.
 В результате на топологии появится сетка (Рис.~\ref{fig:directional_coupler_layout_sparam}).
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{directional_coupler_layout_sparam.pdf}
-    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
-    \label{fig:directional_coupler_layout_sparam}
-\end{wrapfigure}
-
 Из окна emSetup можно обновить отображение элемента на схеме.
 Сделаем так, чтоб оно подгружалось из топологии (Рис.~\ref{fig:directional_coupler_symbol}).
 
-\begin{wrapfigure}{l}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{directional_coupler_symbol.pdf}
-    \caption{Обновлённый символ}%
-    \label{fig:directional_coupler_symbol}
-\end{wrapfigure}
-
 В итоге схема приобретёт вид как на рис.~\ref{fig:directional_coupler_EM_schematic_2}.
 
-\begin{figure}[p]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{directional_coupler_EM_schematic_2.pdf}
+    \includegraphics[width=0.6\textwidth]{directional_coupler_EM_schematic_2.pdf}
     \caption{Итоговый вид схемы}%
     \label{fig:directional_coupler_EM_schematic_2}
 \end{figure}
 
-Запустим моделирование и отобразим частотные характеристики (Рис.~\ref{fig:directional_coupler_EM_data_1}).
+Запустим моделирование и отобразим частотные характеристики (Рис.~\ref{fig:directional_coupler_EM_data_1_freq_response}) и неравномерность характеристик (Рис.~\ref{fig:directional_coupler_EM_data_1_ripple_response}).
 
 \begin{figure}[!ht]
-    \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{directional_coupler_EM_data_1_freq_response.pdf}
         \caption{}%
-    \label{fig:directional_coupler_EM_data_1_freq_response}
+        \label{fig:directional_coupler_EM_data_1_freq_response}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{directional_coupler_EM_data_1_phase_response.pdf}
+        \includegraphics[width=\textwidth]{directional_coupler_EM_data_1_ripple_response.pdf}
         \caption{}%
-    \label{fig:directional_coupler_EM_data_1_phase_response}
+        \label{fig:directional_coupler_EM_data_1_ripple_response}
     \end{subfigure}
     \caption{%
-        Частотные характеристики моделируемой схемы в топологическом представлении:
-        (а) АЧХ;
-        (б) ФЧХ
+        (а) АЧХ моделируемой схемы в топологическом представлении;
+        (б) неравномерность характеристик моделируемой схемы в топологическом представлении
     }%
     \label{fig:directional_coupler_EM_data_1}
 \end{figure}
