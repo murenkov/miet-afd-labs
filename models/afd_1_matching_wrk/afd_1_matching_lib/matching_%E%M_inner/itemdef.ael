@@ -1,0 +1,5 @@
+create_item("matching_EM_inner","matching_EM_inner","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","matching_EM_inner","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("W50","Width of 50 Ohm",68608,"StdFormSet",5,prm("StdForm","1.382 mm")),
+create_parm("L_feed","Feed length",68608,"StdFormSet",5,prm("StdForm","2.5 mm")),
+create_parm("L_shunt","Shunt length",68608,"StdFormSet",5,prm("StdForm","5.158 mm")),
+create_parm("L_serial","Serial length",68608,"StdFormSet",5,prm("StdForm","9.355 mm")));
