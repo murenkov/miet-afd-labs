@@ -211,23 +211,15 @@
 
 В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
 
-\begin{wrapfigure}{l}{0.3\textwidth}
-    \centering
-    \includegraphics[width=0.3\textwidth]{directional_coupler_symbol.pdf}
-    \caption{Обновлённый символ}%
-    \label{fig:directional_coupler_symbol}
-\end{wrapfigure}
-
 Для EM-моделирования создадим сущность emSetup.
 Это можно сделать в окне EM \textrightarrow\ Simulation Setting.
 Определим параметры в соответствии с требованиями.
 
-Запустим моделирование S-параметров нажатием кнопки Simulate.
+Запустим EM-моделирование нажатием кнопки Simulate.
 В результате на топологии появится сетка (Рис.~\ref{fig:directional_coupler_layout_sparam}).
 
 Из окна emSetup можно обновить отображение элемента на схеме.
-Сделаем так, чтоб оно подгружалось из топологии (Рис.~\ref{fig:directional_coupler_symbol}).
-
+Сделаем так, чтоб оно подгружалось из топологии.
 В итоге схема приобретёт вид как на рис.~\ref{fig:directional_coupler_EM_schematic_2}.
 
 \begin{figure}[!ht]
