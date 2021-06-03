@@ -227,7 +227,7 @@
 
 \begin{figure}[!ht]
     \centering
-    \begin{subfigure}[b]{0.4\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rat_race_coupler_MLIN_data_2_ripple_equations.pdf}
         \caption{}%
@@ -286,18 +286,17 @@
 \end{figure}
 
 Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
-Топологическое представление создано верно (Рис.~\ref{fig:rat_race_coupler_layout_check}).
-
-\begin{wrapfigure}{l}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{rat_race_coupler_layout_check.pdf}
-    \caption{Проверка топологического представления}%
-    \label{fig:rat_race_coupler_layout_check}
-\end{wrapfigure}
 
 Перейдём в окно File \textrightarrow\ Customize Pcell.
 Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
 Также убедимся в том, что выставлены галочки напротив Support non-90 degree rotation и Support unit and database resolution for ADS 2015 and older.
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{rat_race_coupler_layout_sparam.pdf}
+    \caption{Топологическое представление после проведения EM-моделирования}%
+    \label{fig:rat_race_coupler_layout_sparam}
+\end{wrapfigure}
 
 В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
 
@@ -305,29 +304,14 @@
 Это можно сделать в окне EM \textrightarrow\ Simulation Setting.
 Определим параметры в соответствии с требованиями.
 
-Запустим моделирование S-параметров нажатием кнопки Simulate.
+Запустим EM-моделирование нажатием кнопки Simulate.
 В результате на топологии появится сетка (Рис.~\ref{fig:rat_race_coupler_layout_sparam}).
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{rat_race_coupler_layout_sparam.pdf}
-    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
-    \label{fig:rat_race_coupler_layout_sparam}
-\end{wrapfigure}
-
 Из окна emSetup можно обновить отображение элемента на схеме.
-Сделаем так, чтоб оно подгружалось из топологии (Рис.~\ref{fig:rat_race_coupler_symbol}).
-
-\begin{wrapfigure}{l}{0.4\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{rat_race_coupler_symbol.pdf}
-    \caption{Обновлённый символ}%
-    \label{fig:rat_race_coupler_symbol}
-\end{wrapfigure}
-
+Сделаем так, чтоб оно подгружалось из топологии.
 В итоге схема приобретёт вид как на рис.~\ref{fig:rat_race_coupler_EM_schematic_2}.
 
-\begin{figure}[p]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{rat_race_coupler_EM_schematic_2.pdf}
     \caption{Итоговый вид схемы}%
