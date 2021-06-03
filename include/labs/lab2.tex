@@ -102,19 +102,27 @@
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{branch_line_coupler_MLIN_schematic_1.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении}%
-    \label{fig:branch_line_coupler_MLIN_schematic_1}
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_schematic_1.pdf}
+        \caption{}%
+        \label{fig:branch_line_coupler_MLIN_schematic_1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_1_freq_response.pdf}
+        \caption{}%
+        \label{fig:branch_line_coupler_MLIN_data_1_freq_response}
+    \end{subfigure}
+    \caption{%
+        (а) Моделируемая схема в микрополосковом исполнении;
+        (б) АЧХ моделируемой схемы в микрополосковом исполнении
+    }%
+    \label{fig:branch_line_coupler_MLIN}
 \end{figure}
 
 Запустим расчёт и выведем АЧХ (Рис.~\ref{fig:branch_line_coupler_MLIN_data_1_freq_response}).
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_1_freq_response.pdf}
-    \caption{АЧХ моделируемой схемы в микрополосковом исполнении}%
-    \label{fig:branch_line_coupler_MLIN_data_1_freq_response}
-\end{figure}
 
 Результаты показывают, что рабочая частота устройства уплыла вниз. Связано это с добавлением на схему тройников, в результате чего электрические длины шлейфов оказались больше, чем требуется.
 Для того, чтобы исправить это, воспользуемся инструментом Tune.
@@ -141,28 +149,21 @@
 
 \begin{figure}[!ht]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_2_freq_response.pdf}
-        \caption{}%
-    \label{fig:branch_line_coupler_MLIN_data_2_freq_response}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_2_phase_response.pdf}
         \caption{}%
     \label{fig:branch_line_coupler_MLIN_data_2_phase_response}
     \end{subfigure}
-    \vfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_2_S11_S21_freq_response.pdf}
         \caption{}%
     \label{fig:branch_line_coupler_MLIN_data_2_S11_S21_freq_response}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{branch_line_coupler_MLIN_data_2_S31_S41_freq_response.pdf}
         \caption{}%
@@ -170,10 +171,9 @@
     \end{subfigure}
     \caption{%
         Частотные характеристики моделируемой схемы в микрополосковом исполнении после применения инструмента Tune:
-        (a) АЧХ;
-        (б) ФЧХ;
-        (в) АЧХ коэффициента отражения и развязки;
-        (г) АЧХ рабочего затухания и переходного ослабления.
+        (а) ФЧХ;
+        (б) АЧХ коэффициента отражения и развязки;
+        (в) АЧХ рабочего затухания и переходного ослабления.
     }%
     \label{fig:branch_line_coupler_MLIN_data_2}
 \end{figure}
@@ -233,14 +233,13 @@
 \end{figure}
 
 Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
-Топологическое представление создано верно (Рис.~\ref{fig:branch_line_coupler_layout_check}).
 
-\begin{figure}[!ht]
+\begin{wrapfigure}{l}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.6\textwidth]{branch_line_coupler_layout_check.pdf}
-    \caption{Проверка топологического представления}%
-    \label{fig:branch_line_coupler_layout_check}
-\end{figure}
+    \includegraphics[width=0.4\textwidth]{branch_line_coupler_layout_sparam.pdf}
+    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
+    \label{fig:branch_line_coupler_layout_sparam}
+\end{wrapfigure}
 
 Перейдём в окно File \textrightarrow\ Customize Pcell.
 Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
@@ -252,24 +251,18 @@
 Это можно сделать в окне EM \textrightarrow\ Simulation Setting.
 Определим параметры в соответствии с требованиями.
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{branch_line_coupler_EM_symbol.pdf}
+    \caption{Обновлённый символ}%
+    \label{fig:branch_line_coupler_EM_symbol}
+\end{wrapfigure}
+
 Запустим моделирование S-параметров нажатием кнопки Simulate.
 В результате на топологии появится сетка (Рис.~\ref{fig:branch_line_coupler_layout_sparam}).
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{branch_line_coupler_layout_sparam.pdf}
-    \caption{Сетка на топологическом представлении после проведения EM-моделирования}%
-    \label{fig:branch_line_coupler_layout_sparam}
-\end{figure}
-
 Из окна emSetup можно обновить отображение элемента на схеме.
 Сделаем так, чтоб оно подгружалось из топологии (Рис.~\ref{fig:branch_line_coupler_EM_symbol}).
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{branch_line_coupler_EM_symbol.pdf}
-    \caption{Обновлённый символ}%
-    \label{fig:branch_line_coupler_EM_symbol}
-\end{figure}
 В итоге схема приобретёт вид как на рис.~\ref{fig:branch_line_coupler_EM_schematic_2}.
 \begin{figure}
     \centering
