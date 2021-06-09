@@ -1,0 +1,21 @@
+<emDataViewDatabaseIndex>
+<version major="1" minor="1"/>
+<emDatabase>
+<ParameterNames>
+<parameterName>centralFreq</parameterName>
+<parameterName>feedLength</parameterName>
+<parameterName>feedWidth</parameterName>
+<parameterName>gapInset</parameterName>
+<parameterName>gapWidth</parameterName>
+<parameterName>maxFreq</parameterName>
+<parameterName>minFreq</parameterName>
+<parameterName>patchLength</parameterName>
+<parameterName>patchWidth</parameterName>
+<parameterName>substrateEr</parameterName>
+<parameterName>substrateHeight</parameterName>
+<parameterName>substrateLength</parameterName>
+<parameterName>substrateWidth</parameterName>
+</ParameterNames>
+<databaseItems/>
+</emDatabase>
+</emDataViewDatabaseIndex>
