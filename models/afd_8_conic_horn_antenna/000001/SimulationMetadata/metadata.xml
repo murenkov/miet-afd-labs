@@ -1,0 +1,69 @@
+<!DOCTYPE SimulationData>
+<SimulationData>
+  <SimulationData ExcitationType="DiscreteSources" TotalScatteredFieldInterfaces="NoInterfaces" sname="FEM, From 2.9 GHz to 2.9 GHz, Iterative Solver, User Specified Field Data" UseTotalScatteredFieldFormulation="false" ComputeDissipatedPower="false">
+    <BoundaryConditions ptrID="0" subjectID="1">
+      <BoundaryConditions YLowerBoundaryType="Absorbing" YUpperBoundaryType="Absorbing" ZLowerBoundaryType="Absorbing" XUpperBoundaryType="Absorbing" XLowerBoundaryType="Absorbing" ZUpperBoundaryType="Absorbing" AbsorptionType="PML">
+        <NumPMLLayers ptrID="2" subjectID="3">
+          <Expression>
+            <Formula type="Int" typeid="2" value="7"/>
+          </Expression>
+        </NumPMLLayers>
+        <UseHybridFemMom value="false"/>
+        <HybridFemMomType>Volakis_Symm</HybridFemMomType>
+        <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+        <SelectedType value="2883585"/>
+      </BoundaryConditions>
+    </BoundaryConditions>
+    <ParameterValues>
+      <ParameterList/>
+      <ParameterList/>
+    </ParameterValues>
+    <ActivePorts>
+      <PortList>
+        <Port Name="WG (port 1)" Number="1"/>
+      </PortList>
+      <PortList>
+        <Port Name="WG (port 2)" Number="2"/>
+      </PortList>
+    </ActivePorts>
+    <SteadyStateFrequencySets/>
+    <FieldStorageFrequencySets/>
+    <Sinusoidal Compressed="false" DataFormat="ASCII" Count="2">0 0</Sinusoidal>
+    <StaticVoltagePointSets>
+      <StaticVoltagePointSet/>
+      <StaticVoltagePointSet/>
+    </StaticVoltagePointSets>
+    <FrequencyRangesOfInterest>
+      <FrequencyRange Min="-1" Max="-1"/>
+      <FrequencyRange Min="-1" Max="-1"/>
+    </FrequencyRangesOfInterest>
+    <RunDirectories>
+      <Item>Run0001</Item>
+      <Item>Run0002</Item>
+    </RunDirectories>
+    <Timesteps Compressed="false" DataFormat="ASCII" Count="2">-1 -1</Timesteps>
+    <MaximumFrequencies Compressed="false" DataFormat="ASCII" Count="2">2900000000 2900000000</MaximumFrequencies>
+    <Details>Simulation Summary%0A======================================================%0AEM engine:                 FEM%0AS-Parameters:              On%0A%0AParameter sweep: No%0A%0ABoundary conditions:%0A    Lower/Upper X:        Absorbing / Absorbing%0A    Lower/Upper Y:        Absorbing / Absorbing%0A    Lower/Upper Z:        Absorbing / Absorbing%0A%0AFrequency Plans:%0A    Single frequency point at 2.9 GHz%0A%0AMesh/Discretisation:%0A    Delta error: 0.01%0A    Minimum number of adaptive passes: 1%0A    Maximum number of adaptive passes: 15%0A    Refining at highest frequency of interest%0A    Consecutive passes of delta error required: 1%0A    Mesh refinement percentage: 25%0A    Target Mesh Size: 25.6233 mm%0A    Order of basis functions: 2%0A    [Advanced] Merging objects of same material%0A%0AMulti-threaded iterative matrix solver selected%0A    tolerance       : 1e-05%0A    max %23iterations : 500%0A%0AFields are saved for: user defined frequencies. %0A%0A%0AList of parameters and their values:%0A    Name           Formula                               Value    %0A    -------------------------------------------------------------------%0A    centralFreq    2.9 GHz                               2.9e+09  %0A    hornZ          100 mm                                0.1      %0A    minFreq        1.9 GHz                               1.9e+09  %0A    hornR          waveguideR +hornZ %2A tan(alpha / 2)    0.0705299%0A    waveguideR     (78 / 2) mm                           0.039    %0A    lambda         wavelength_0(centralFreq)             0.103377 %0A    maxFreq        3.9 GHz                               3.9e+09  %0A    waveguideZ     90 mm                                 0.09     %0A    thickness      1 mm                                  0.001    %0A    alpha          35 deg                                0.610865 %0A%0A</Details>
+    <BoundingBox>
+      <Upper z="0.22843493051282052" y="0.10949145134117577" x="0.11001333852585969"/>
+      <Lower z="0" y="-0.10949145134117576" x="-0.11001333852585969"/>
+    </BoundingBox>
+    <FemSaveFieldsFor value="2"/>
+    <CreationDateTime value="1623238029"/>
+    <SimulationGroup>000001</SimulationGroup>
+    <AgNewSimulationData>
+      <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+      <Engine value="1"/>
+      <HasAdaptiveFrequencyPlans value="false"/>
+      <FemEigenMode value="false"/>
+      <PortOnlyMode value="false"/>
+      <Reuse value="false"/>
+      <UseDistributed value="false"/>
+      <RunLocal value="true"/>
+      <NumberOfThreads value="0"/>
+      <NumberOfParallelFreq value="4"/>
+      <NumberOfNodes value="1"/>
+      <HasTdafsSParameterData value="false"/>
+    </AgNewSimulationData>
+  </SimulationData>
+</SimulationData>
