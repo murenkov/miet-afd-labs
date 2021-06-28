@@ -1,0 +1,16 @@
+<emDataViewDatabaseIndex>
+<version major="1" minor="1"/>
+<emDatabase>
+<ParameterNames>
+<parameterName>arc_resolution</parameterName>
+<parameterName>central_freq</parameterName>
+<parameterName>feed_gap</parameterName>
+<parameterName>helix_alpha</parameterName>
+<parameterName>helix_turns</parameterName>
+<parameterName>maxFreq</parameterName>
+<parameterName>minFreq</parameterName>
+<parameterName>wire_height</parameterName>
+</ParameterNames>
+<databaseItems/>
+</emDatabase>
+</emDataViewDatabaseIndex>

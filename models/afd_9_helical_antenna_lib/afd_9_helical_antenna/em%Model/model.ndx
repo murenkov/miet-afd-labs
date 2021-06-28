@@ -1,0 +1,14 @@
+COMPONENT: em_data;
+NROFMODELS: 1;
+MODEL: RF, Layout, 0, 10, 20, 45, 0, 1;
+SUBSTRATE: definedInState;
+NROFPARAM: 8;
+PARAM: arc_resolution, 0.0, 0.0, 0.0, 10, 0.1, None, 7;
+PARAM: central_freq, 0.0, 0.0, 0.0, 10, 1, None, 0;
+PARAM: feed_gap, 0.0, 0.0, 0.0, 1e-05, 1e-06, None, 5;
+PARAM: helix_alpha, 0.0, 0.0, 0.0, 10, 0.1, None, 7;
+PARAM: helix_turns, 0.0, 0.0, 0.0, 0.8, 0.08, None, -1;
+PARAM: maxFreq, 0.0, 0.0, 0.0, 100, 10, None, 0;
+PARAM: minFreq, 0.0, 0.0, 0.0, 10, 1, None, 0;
+PARAM: wire_height, 0.0, 0.0, 0.0, 1e-05, 1e-06, None, 5;
+NROFSAMPLES: 0;

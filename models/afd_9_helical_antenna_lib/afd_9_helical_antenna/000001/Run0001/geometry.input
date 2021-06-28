@@ -1,0 +1,77 @@
+Geometry file version 3.20
+
+mesh_defined
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0
+begin_<materials> 
+begin_<electricfreespace> ElectricFreeSpace
+material_number 0
+conductivity 0
+permittivity 1
+density 0
+end_<electricfreespace>
+begin_<electricperfectconductor> ElectricPerfectConductor
+material_number 1
+end_<electricperfectconductor>
+begin_<magneticfreespace> MagneticFreeSpace
+material_number 0
+conductivity 0
+permeability 1
+density 0
+end_<magneticfreespace>
+begin_<magneticperfectconductor> MagneticPerfectConductor
+material_number 1
+end_<magneticperfectconductor>
+end_<materials>
+begin_<materialMaps> 
+begin_<materialMap> FreeSpace
+materialNumber 0
+xElectricMaterial 0
+yElectricMaterial 0
+zElectricMaterial 0
+xMagneticMaterial 0
+yMagneticMaterial 0
+zMagneticMaterial 0
+end_<materialMap>
+begin_<materialMap> PEC
+materialNumber 1
+xElectricMaterial 1
+yElectricMaterial 1
+zElectricMaterial 1
+xMagneticMaterial 0
+yMagneticMaterial 0
+zMagneticMaterial 0
+end_<materialMap>
+begin_<materialMap> PEC
+materialNumber 2
+xElectricMaterial 1
+yElectricMaterial 1
+zElectricMaterial 1
+xMagneticMaterial 0
+yMagneticMaterial 0
+zMagneticMaterial 0
+end_<materialMap>
+end_<materialMaps>
+begin_<GridDefinition> 
+GridOriginInMeters -0.127144 -0.126704 -0.0468426
+NumberOfCellsInX 10
+NumberOfCellsInY 10
+NumberOfCellsInZ 10
+end_<GridDefinition>
+begin_<Deltas> 
+begin_<DelX> 
+0 0.0282543
+end_<DelX>
+begin_<DelY> 
+0 0.0281565
+end_<DelY>
+begin_<DelZ> 
+0 0.0342692
+end_<DelZ>
+end_<Deltas>
+begin_<AveragedMaterialBins> 
+end_<AveragedMaterialBins>
