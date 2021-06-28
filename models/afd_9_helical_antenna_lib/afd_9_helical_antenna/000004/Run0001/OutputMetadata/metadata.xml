@@ -1,0 +1,54 @@
+<!DOCTYPE RunOutput>
+<RunOutput>
+  <OutputObjectMetadata subjectID="1" ptrID="0">
+    <CircuitComponentOutputObjectMetadata Polarity="Positive" IsActive="true" Capacitance="0" Name="Coaxial source 1" Inductance="0" IsPort="true" Arrangement="Parallel" ComponentType="VoltageFeed" Resistance="50" Direction="Automatic" Amplitude="1" PortNumber="1" PhaseShift="0">
+      <OutputObjectMetadata ResultDrivers="femresultsprocess"/>
+      <PortLocation y="0" x="0" z="0"/>
+      <FeedLocation1 y="0" x="0.019486446599987568" z="-0.0050000000000000001"/>
+      <FeedLocation2 y="0" x="0.017686446599987568" z="-0.0050000000000000001"/>
+    </CircuitComponentOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata subjectID="3" ptrID="2">
+    <NearFieldPostProcessorOutputObjectMetadata Name="Raw Steady-State Near Field Data">
+      <OutputObjectMetadata/>
+    </NearFieldPostProcessorOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata subjectID="5" ptrID="4">
+    <FarZoneSensorOutputObjectMetadata Angle2Count="181" Angle1DeltaRadians="0.017453292519943295" SteadyStateFileNameBase="FarZone_steady_Far_Zone_Sensor_0_fz" Angle1Count="361" Name="Far Zone Sensor" Angle2StartRadians="0" Angle2DeltaRadians="0.017453292519943295" CoordinateSystemType="ThetaPhi" Angle1StartRadians="-3.1415926535897931" IsFemResult="false">
+      <OutputObjectMetadata/>
+    </FarZoneSensorOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata subjectID="7" ptrID="6">
+    <SystemOutputObjectMetadata Name="System">
+      <OutputObjectMetadata ResultDrivers="femresultsprocess"/>
+      <MaterialList>
+        <Item>Freespace</Item>
+        <Item>PEC</Item>
+        <Item>PTFE</Item>
+        <Item>Averaged Materials</Item>
+      </MaterialList>
+      <ElectricAssociations>
+        <Association Key="1">
+          <Indices Count="3" Compressed="false" DataFormat="ASCII">1 1 1</Indices>
+        </Association>
+        <Association Key="0"/>
+        <Association Key="3">
+          <Indices Count="3" Compressed="false" DataFormat="ASCII">3 3 3</Indices>
+        </Association>
+        <Association Key="2">
+          <Indices Count="3" Compressed="false" DataFormat="ASCII">2 2 2</Indices>
+        </Association>
+      </ElectricAssociations>
+      <MagneticAssociations>
+        <Association Key="1">
+          <Indices Count="3" Compressed="false" DataFormat="ASCII">0 0 0</Indices>
+        </Association>
+        <Association Key="0"/>
+        <Association Key="2">
+          <Indices Count="3" Compressed="false" DataFormat="ASCII">0 0 0</Indices>
+        </Association>
+      </MagneticAssociations>
+      <TissueMaterialIndices Count="1" Compressed="false" DataFormat="ASCII">2</TissueMaterialIndices>
+    </SystemOutputObjectMetadata>
+  </OutputObjectMetadata>
+</RunOutput>

@@ -4,7 +4,11 @@
 <ParameterNames>
 <parameterName>arc_resolution</parameterName>
 <parameterName>central_freq</parameterName>
+<parameterName>feed_conductor_radius</parameterName>
 <parameterName>feed_gap</parameterName>
+<parameterName>feed_isolator_radius</parameterName>
+<parameterName>feed_length</parameterName>
+<parameterName>feed_outer_radius</parameterName>
 <parameterName>helix_alpha</parameterName>
 <parameterName>helix_turns</parameterName>
 <parameterName>maxFreq</parameterName>
