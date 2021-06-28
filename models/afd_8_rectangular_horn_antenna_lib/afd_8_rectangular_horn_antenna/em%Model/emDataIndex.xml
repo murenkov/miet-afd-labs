@@ -1,0 +1,16 @@
+<emDataViewDatabaseIndex>
+<version major="1" minor="1"/>
+<emDatabase>
+<ParameterNames>
+<parameterName>alphaE</parameterName>
+<parameterName>alphaH</parameterName>
+<parameterName>centralFreq</parameterName>
+<parameterName>maxFreq</parameterName>
+<parameterName>minFreq</parameterName>
+<parameterName>thickness</parameterName>
+<parameterName>waveguideA</parameterName>
+<parameterName>waveguideB</parameterName>
+</ParameterNames>
+<databaseItems/>
+</emDatabase>
+</emDataViewDatabaseIndex>

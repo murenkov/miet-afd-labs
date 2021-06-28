@@ -1,0 +1,369 @@
+2200 0 4 0           
+21 Keysight Technologies 12 ACIS 28.0 NT 24 Fri Jun  4 12:05:46 2021 
+1 9.9999999999999995e-07 1e-10 
+body $4 -1 -1 $-1 $5 $-1 $6 T -30 -25 0 29.999999999999989 25.000000000000007 1.5 #
+body $7 -1 -1 $-1 $8 $-1 $9 T -30 -25 0 29.999999999999989 25.000000000000007 0 #
+body $10 -1 -1 $-1 $11 $-1 $12 T -11 -25.499999999999993 0 10.999999999999996 11.000000000000005 0 #
+body $13 -1 -1 $-1 $14 $-1 $15 F #
+render-rbase-attrib $-1 -1 $16 $-1 $0 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 1 $17 $-1 0 0 #
+lump $18 -1 -1 $-1 $-1 $19 $0 T -30 -25 0 29.999999999999989 25.000000000000007 1.5 #
+transform $-1 -1 1 0 0 0 1 0 0 0 1 0 0 0 1 no_rotate no_reflect no_shear #
+render-rbase-attrib $-1 -1 $20 $-1 $1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 1 $21 $-1 0 1 1 0 0 0 1 0 0 0 1 0 0 0 1 no_rotate no_reflect no_shear #
+lump $22 -1 -1 $-1 $-1 $23 $1 T -30 -25 0 29.999999999999989 25.000000000000007 0 #
+transform $-1 -1 1 0 0 0 1 0 0 0 1 0 0 0 1 no_rotate no_reflect no_shear #
+render-rbase-attrib $-1 -1 $24 $-1 $2 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 1 $25 $-1 0 0 #
+lump $26 -1 -1 $-1 $-1 $27 $2 T -11 -25.499999999999993 0 10.999999999999996 11.000000000000005 0 #
+transform $-1 -1 1 0 0 0 1 0 0 0 1 0 0 1.5 1 no_rotate no_reflect no_shear #
+render-rbase-attrib $-1 -1 $28 $-1 $3 1 1 1 1 1 1 1 1 1 1 1 1 0 1 0 1 1 1 $29 $-1 0 1 1 0 0 0 1 0 0 0 1 -7.1054273576010019e-15 -0.24999999999999289 16.364190520833333 1 no_rotate no_reflect no_shear #
+lump $-1 -1 -1 $-1 $-1 $30 $3 F #
+transform $-1 -1 1 0 0 0 1 0 0 0 1 -7.1054273576010019e-15 -0.24999999999999289 16.364190520833333 1 no_rotate no_reflect no_shear #
+string_attrib-name_attrib-gen-attrib $-1 -1 $31 $4 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialHash @30 M1EPNOR0.0000000004.1000000000 #
+rh_material-rh_entity $-1 -1 4 4 @5 plain @5 color -4 0.80392158031463623 0.36078432202339172 0.36078432202339172 @5 phong @14 ambient factor -2 1 @14 diffuse factor -2 0.75 @15 specular factor -2 0.5 @8 exponent -2 10 @14 specular color -4 1 1 1 @4 none @5 plain @5 color -4 0 0 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $5 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $5 @9 [#lump_1] #
+shell $-1 -1 -1 $-1 $-1 $-1 $32 $-1 $5 T -30 -25 0 29.999999999999989 25.000000000000007 1.5 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $33 $7 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialHash @7 M0EPPEC #
+rh_material-rh_entity $-1 -1 4 4 @5 plain @5 color -4 0.91764706373214722 0.91764706373214722 0.91764706373214722 @5 phong @14 ambient factor -2 1 @14 diffuse factor -2 0.75 @15 specular factor -2 0.5 @8 exponent -2 10 @14 specular color -4 1 1 1 @4 none @5 plain @5 color -4 0 0 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $8 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $8 @9 [#lump_1] #
+shell $-1 -1 -1 $-1 $-1 $-1 $34 $-1 $8 T -30 -25 0 29.999999999999989 25.000000000000007 0 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $35 $10 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialHash @7 M0EPPEC #
+rh_material-rh_entity $-1 -1 4 4 @5 plain @5 color -4 0.91764706373214722 0.91764706373214722 0.91764706373214722 @5 phong @14 ambient factor -2 1 @14 diffuse factor -2 0.75 @15 specular factor -2 0.5 @8 exponent -2 10 @14 specular color -4 1 1 1 @4 none @5 plain @5 color -4 0 0 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $11 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $11 @9 [#lump_1] #
+shell $-1 -1 -1 $-1 $-1 $-1 $36 $-1 $11 T -11 -25.499999999999993 0 10.999999999999996 11.000000000000005 0 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $37 $13 $3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_priority 24 #
+rh_material-rh_entity $-1 -1 4 4 @5 plain @5 color -4 0 0 0 @5 phong @14 ambient factor -2 1 @14 diffuse factor -2 0.75 @15 specular factor -2 0.5 @8 exponent -2 10 @14 specular color -4 1 1 1 @4 none @5 plain @5 color -4 1 1 1 #
+shell $-1 -1 -1 $-1 $-1 $-1 $38 $-1 $14 F #
+real_attrib-name_attrib-gen-attrib $-1 -1 $39 $16 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 FEM_mesh_interior 1 #
+face $40 -1 -1 $-1 $41 $42 $19 $-1 $43 forward single F F #
+real_attrib-name_attrib-gen-attrib $-1 -1 $44 $20 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 FEM_mesh_interior 0 #
+face $45 -1 -1 $-1 $-1 $46 $23 $-1 $47 reversed double out F F #
+real_attrib-name_attrib-gen-attrib $-1 -1 $48 $24 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 FEM_mesh_interior 0 #
+face $49 -1 -1 $-1 $-1 $50 $27 $-1 $51 forward double out F F #
+real_attrib-name_attrib-gen-attrib $-1 -1 $52 $28 $3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 FEM_mesh_interior 1 #
+face $-1 -1 -1 $-1 $53 $54 $30 $-1 $55 forward single F F #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $56 $31 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @11 FEM_cbMatId 3 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $32 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $32 @48 [face:Extrude(lateral,edge2,extrude_path)#face4] #
+face $57 -1 -1 $-1 $58 $59 $19 $-1 $60 forward single F F #
+loop $-1 -1 -1 $-1 $-1 $61 $32 T -30 25.000000000000007 0 29.999999999999986 25.000000000000007 1.5 unknown #
+plane-surface $-1 -1 -1 $-1 -7.1054273576010019e-15 25.000000000000007 0 0 1 -0 -1 0 0 forward_v I I I I #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $62 $33 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @11 FEM_cbMatId 2 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $34 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $34 @27 [face:Extrude(start)#face1] #
+loop $-1 -1 -1 $-1 $-1 $63 $34 T -30 -25 0 29.999999999999989 25.000000000000007 0 periphery $47 T #
+plane-surface $-1 -1 -1 $-1 -5.3143898831643853e-15 4.4408920985006262e-15 0 0 0 1 1 0 0 forward_v I I I I #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $64 $35 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @11 FEM_cbMatId 2 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $36 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $36 @31 [face:Sheet Body(cover0)#face0] #
+loop $-1 -1 -1 $-1 $-1 $65 $36 T -11 -25.499999999999993 0 10.999999999999996 11.000000000000005 0 periphery $51 F #
+plane-surface $-1 -1 -1 $-1 -1.7763568394002505e-15 -5.2992805755395676 0 0 0 1 1 0 0 forward_v I I I I #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $66 $37 $3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @11 FEM_cbMatId 0 #
+face $-1 -1 -1 $-1 $67 $68 $30 $-1 $69 reversed single F F #
+loop $-1 -1 -1 $-1 $-1 $70 $38 F unknown #
+plane-surface $-1 -1 -1 $-1 0 0 16.364190520833333 0 0 1 1 0 0 forward_v I I I I #
+real_attrib-name_attrib-gen-attrib $-1 -1 $71 $39 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_epsilonR 4.0999999999999996 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $41 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $41 @48 [face:Extrude(lateral,edge1,extrude_path)#face3] #
+face $72 -1 -1 $-1 $73 $74 $19 $-1 $75 forward single F F #
+loop $-1 -1 -1 $-1 $-1 $76 $41 T 29.999999999999986 -24.999999999999986 0 29.999999999999989 25.000000000000007 1.5 unknown #
+plane-surface $-1 -1 -1 $-1 29.999999999999986 1.0658141036401503e-14 0 1 7.1054273576010032e-17 -0 -7.1054273576010032e-17 1 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $77 $78 $79 $80 forward $42 $-1 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $81 $44 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_epsilonR 1 #
+coedge $-1 -1 -1 $-1 $82 $83 $-1 $84 reversed $46 $-1 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $85 $48 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_epsilonR 1 #
+coedge $-1 -1 -1 $-1 $86 $87 $-1 $88 reversed $50 $-1 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $52 $3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @8 FEM_bbId 1 #
+face $-1 -1 -1 $-1 $89 $90 $30 $-1 $91 reversed single F F #
+loop $-1 -1 -1 $-1 $-1 $92 $53 F unknown #
+plane-surface $-1 -1 -1 $-1 0 0 -16.364190520833333 0 0 1 1 0 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $93 $94 $95 $96 forward $54 $-1 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $97 $56 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_conductivity 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $58 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $58 @48 [face:Extrude(lateral,edge0,extrude_path)#face0] #
+face $98 -1 -1 $-1 $99 $100 $19 $-1 $101 forward single F F #
+loop $-1 -1 -1 $-1 $-1 $102 $58 T -30 -25 0 29.999999999999989 -24.999999999999986 1.5 unknown #
+plane-surface $-1 -1 -1 $-1 -7.1054273576010019e-15 -24.999999999999993 0 2.3684757858670011e-16 -1 0 1 2.3684757858670011e-16 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $103 $104 $105 $106 forward $59 $-1 #
+coedge $-1 -1 -1 $-1 $107 $61 $104 $108 reversed $42 $-1 #
+coedge $-1 -1 -1 $-1 $61 $107 $109 $110 forward $42 $-1 #
+coedge $-1 -1 -1 $-1 $111 $105 $61 $80 reversed $112 $-1 #
+edge $113 -1 -1 $-1 $114 -59.999999999999986 $115 0 $61 $116 forward @7 unknown T -30 25.000000000000007 1.5 29.999999999999986 25.000000000000007 1.5 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $117 $62 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_conductivity 10000000000000000 #
+coedge $-1 -1 -1 $-1 $118 $63 $-1 $119 reversed $46 $-1 #
+coedge $-1 -1 -1 $-1 $63 $118 $-1 $120 reversed $46 $-1 #
+edge $121 -1 -1 $-1 $122 0 $123 50.000000000000007 $63 $124 forward @7 unknown T -30 -25 0 -29.999999999999996 25.000000000000007 0 #
+real_attrib-name_attrib-gen-attrib $-1 -1 $125 $64 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_conductivity 10000000000000000 #
+coedge $-1 -1 -1 $-1 $126 $65 $-1 $127 reversed $50 $-1 #
+coedge $-1 -1 -1 $-1 $65 $128 $-1 $129 reversed $50 $-1 #
+edge $130 -1 -1 $-1 $131 0 $132 7.3499999999999979 $65 $133 forward @7 unknown T -11 -11 0 -3.6500000000000021 -11 0 #
+face $-1 -1 -1 $-1 $134 $135 $30 $-1 $136 reversed single F F #
+loop $-1 -1 -1 $-1 $-1 $137 $67 F unknown #
+plane-surface $-1 -1 -1 $-1 0 -56.478381041666673 0 0 1 -0 -0 0 1 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $138 $139 $140 $141 forward $68 $-1 #
+coedge $-1 -1 -1 $-1 $142 $70 $143 $144 forward $54 $-1 #
+coedge $-1 -1 -1 $-1 $70 $142 $145 $146 forward $54 $-1 #
+coedge $-1 -1 -1 $-1 $147 $148 $70 $96 reversed $149 $-1 #
+edge $-1 -1 -1 $-1 $150 -56.478381041666673 $151 56.478381041666673 $95 $152 forward @7 unknown F #
+real_attrib-name_attrib-gen-attrib $-1 -1 $153 $71 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_priority 25 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $73 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $73 @48 [face:Extrude(lateral,edge3,extrude_path)#face5] #
+face $154 -1 -1 $-1 $155 $112 $19 $-1 $156 forward single F F #
+loop $-1 -1 -1 $-1 $-1 $157 $73 T -30 -25 0 -29.999999999999996 25.000000000000007 1.5 unknown #
+plane-surface $-1 -1 -1 $-1 -30 3.5527136788005009e-15 0 -1 7.1054273576010008e-17 0 -7.1054273576010008e-17 -1 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $158 $159 $160 $161 forward $74 $-1 #
+coedge $-1 -1 -1 $-1 $162 $76 $159 $163 reversed $59 $-1 #
+coedge $-1 -1 -1 $-1 $76 $162 $77 $108 forward $59 $-1 #
+coedge $-1 -1 -1 $-1 $79 $160 $76 $106 reversed $112 $-1 #
+edge $164 -1 -1 $-1 $115 -49.999999999999993 $165 0 $76 $166 forward @7 unknown T 29.999999999999986 -24.999999999999986 1.5 29.999999999999989 25.000000000000007 1.5 #
+coedge $-1 -1 -1 $-1 $78 $77 $167 $168 forward $42 $-1 #
+edge $169 -1 -1 $-1 $170 0 $115 1.5 $104 $171 forward @7 unknown T 29.999999999999986 25.000000000000007 0 29.999999999999986 25.000000000000007 1.5 #
+coedge $-1 -1 -1 $-1 $172 $157 $78 $110 reversed $100 $-1 #
+edge $173 -1 -1 $-1 $174 0 $114 1.5 $78 $175 forward @7 unknown T -29.999999999999996 25.000000000000007 0 -29.999999999999996 25.000000000000007 1.5 #
+coedge $-1 -1 -1 $-1 $160 $79 $157 $176 reversed $112 $-1 #
+loop $-1 -1 -1 $-1 $-1 $79 $99 T -30 -25 1.5 29.999999999999989 25.000000000000007 1.5 unknown #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $80 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $80 @44 [edge:Extrude(top,edge2,extrude_path)#edge9] #
+vertex $177 -1 -1 $-1 $110 $178 #
+vertex $179 -1 -1 $-1 $108 $180 #
+straight-curve $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 1.5 1 0 0 I I #
+real_attrib-name_attrib-gen-attrib $-1 -1 $181 $81 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_priority 150 #
+coedge $-1 -1 -1 $-1 $83 $82 $-1 $182 reversed $46 $-1 #
+edge $183 -1 -1 $-1 $184 0 $122 59.999999999999986 $82 $185 forward @7 unknown T -30 25.000000000000007 0 29.999999999999986 25.000000000000007 0 #
+edge $186 -1 -1 $-1 $123 0 $187 59.999999999999986 $83 $188 forward @7 unknown T -30 -25 0 29.999999999999989 -24.999999999999986 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $84 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $84 @13 [edge3#edge3] #
+vertex $189 -1 -1 $-1 $84 $190 #
+vertex $191 -1 -1 $-1 $84 $192 #
+straight-curve $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 0 -7.1054273576010008e-17 -1 0 I I #
+real_attrib-name_attrib-gen-attrib $-1 -1 $193 $85 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @12 FEM_priority 150 #
+coedge $-1 -1 -1 $-1 $194 $86 $-1 $195 reversed $50 $-1 #
+edge $196 -1 -1 $-1 $197 0 $131 5.5000000000000053 $86 $198 forward @7 unknown T -3.6500000000000039 -11 0 -3.6500000000000021 -5.4999999999999947 0 #
+coedge $-1 -1 -1 $-1 $87 $199 $-1 $200 reversed $50 $-1 #
+edge $201 -1 -1 $-1 $132 0 $202 22 $87 $203 forward @7 unknown T -11 -11 0 -11 11 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $88 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $88 @15 [edge11#edge11] #
+vertex $204 -1 -1 $-1 $88 $205 #
+vertex $206 -1 -1 $-1 $88 $207 #
+straight-curve $-1 -1 -1 $-1 -3.6500000000000021 -11 0 -1 0 0 I I #
+face $-1 -1 -1 $-1 $208 $209 $30 $-1 $210 reversed single F F #
+loop $-1 -1 -1 $-1 $-1 $211 $89 F unknown #
+plane-surface $-1 -1 -1 $-1 -61.228381041666658 0 0 1 0 0 0 0 -1 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $212 $145 $213 $214 forward $90 $-1 #
+coedge $-1 -1 -1 $-1 $215 $92 $212 $216 forward $68 $-1 #
+coedge $-1 -1 -1 $-1 $92 $215 $217 $218 forward $68 $-1 #
+coedge $-1 -1 -1 $-1 $148 $147 $92 $141 reversed $149 $-1 #
+edge $-1 -1 -1 $-1 $219 -56.478381041666673 $220 56.478381041666673 $140 $221 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $94 $93 $222 $223 forward $54 $-1 #
+coedge $-1 -1 -1 $-1 $224 $225 $93 $144 reversed $209 $-1 #
+edge $-1 -1 -1 $-1 $151 -61.228381041666658 $226 61.228381041666658 $143 $227 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $137 $228 $94 $146 reversed $90 $-1 #
+edge $-1 -1 -1 $-1 $229 -61.228381041666658 $150 61.228381041666658 $145 $230 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $140 $95 $228 $231 forward $149 $-1 #
+coedge $-1 -1 -1 $-1 $95 $140 $224 $232 reversed $149 $-1 #
+loop $-1 -1 -1 $-1 $-1 $147 $208 F unknown #
+vertex $-1 -1 -1 $-1 $96 $233 #
+vertex $-1 -1 -1 $-1 $96 $234 #
+straight-curve $-1 -1 -1 $-1 61.228381041666658 0 16.364190520833333 0 1 0 I I #
+string_attrib-name_attrib-gen-attrib $-1 -1 $235 $97 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialName @10 Dielectric #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $99 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $99 @25 [face:Extrude(end)#face2] #
+face $236 -1 -1 $-1 $-1 $237 $19 $-1 $238 reversed single F F #
+plane-surface $-1 -1 -1 $-1 -5.3143898831643853e-15 4.4408920985006262e-15 1.5 0 0 1 1 0 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $109 $239 $111 $176 forward $100 $-1 #
+coedge $-1 -1 -1 $-1 $240 $102 $239 $241 reversed $74 $-1 #
+coedge $-1 -1 -1 $-1 $102 $240 $103 $163 forward $74 $-1 #
+coedge $-1 -1 -1 $-1 $105 $111 $102 $161 reversed $112 $-1 #
+edge $242 -1 -1 $-1 $165 -59.999999999999986 $243 -0 $102 $244 forward @7 unknown T -30 -25 1.5 29.999999999999989 -24.999999999999986 1.5 #
+coedge $-1 -1 -1 $-1 $104 $103 $245 $246 forward $59 $-1 #
+edge $247 -1 -1 $-1 $248 0 $165 1.5 $159 $249 forward @7 unknown T 29.999999999999989 -24.999999999999986 0 29.999999999999989 -24.999999999999986 1.5 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $106 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $106 @45 [edge:Extrude(top,edge1,extrude_path)#edge11] #
+vertex $250 -1 -1 $-1 $163 $251 #
+straight-curve $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 1.5 7.1054273576010032e-17 -1 0 I I #
+coedge $-1 -1 -1 $-1 $245 $252 $107 $168 reversed $237 $-1 #
+edge $253 -1 -1 $-1 $170 0 $174 59.999999999999986 $107 $254 forward @7 unknown T -30 25.000000000000007 0 29.999999999999986 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $108 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $108 @54 [edge:Extrude(mid_lateral,vertex2,extrude_path)#edge6] #
+vertex $255 -1 -1 $-1 $168 $256 #
+straight-curve $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 0 0 0 1 I I #
+coedge $-1 -1 -1 $-1 $239 $109 $252 $257 forward $100 $-1 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $110 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $110 @54 [edge:Extrude(mid_lateral,vertex3,extrude_path)#edge7] #
+vertex $258 -1 -1 $-1 $257 $259 #
+straight-curve $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 0 0 0 1 I I #
+edge $260 -1 -1 $-1 $243 -50.000000000000007 $114 0 $157 $261 forward @7 unknown T -30 -25 1.5 -29.999999999999996 25.000000000000007 1.5 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $114 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $114 @54 [vertex:Extrude(mid_top,vertex3,extrude_path)#vertex5] #
+point $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 1.5 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $115 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $115 @54 [vertex:Extrude(mid_top,vertex2,extrude_path)#vertex7] #
+point $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 1.5 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $262 $117 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialName @3 PEC #
+edge $263 -1 -1 $-1 $187 0 $184 49.999999999999993 $118 $264 forward @7 unknown T 29.999999999999986 -24.999999999999986 0 29.999999999999989 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $119 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $119 @13 [edge2#edge2] #
+vertex $265 -1 -1 $-1 $119 $266 #
+straight-curve $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $120 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $120 @13 [edge0#edge0] #
+vertex $267 -1 -1 $-1 $182 $268 #
+straight-curve $-1 -1 -1 $-1 -30 -25 0 1 2.3684757858670011e-16 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $122 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $122 @17 [vertex3#vertex3] #
+point $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $123 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $123 @17 [vertex0#vertex0] #
+point $-1 -1 -1 $-1 -30 -25 0 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $269 $125 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @16 FEM_materialName @3 PEC #
+coedge $-1 -1 -1 $-1 $270 $126 $-1 $271 reversed $50 $-1 #
+edge $272 -1 -1 $-1 $273 0 $197 2.0000000000000009 $126 $274 forward @7 unknown T -3.6500000000000039 -5.4999999999999947 0 -1.650000000000003 -5.4999999999999947 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $127 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $127 @15 [edge10#edge10] #
+vertex $275 -1 -1 $-1 $127 $276 #
+straight-curve $-1 -1 -1 $-1 -3.6500000000000039 -5.4999999999999947 0 3.229739708000452e-16 -1 0 I I #
+coedge $-1 -1 -1 $-1 $128 $277 $-1 $278 reversed $50 $-1 #
+edge $279 -1 -1 $-1 $202 0 $280 21.999999999999993 $128 $281 forward @7 unknown T -11 11 0 10.999999999999995 11.000000000000005 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $129 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $129 @13 [edge0#edge0] #
+vertex $282 -1 -1 $-1 $200 $283 #
+straight-curve $-1 -1 -1 $-1 -11 -11 0 0 1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $131 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $131 @19 [vertex11#vertex11] #
+point $-1 -1 -1 $-1 -3.6500000000000021 -11 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $132 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $132 @17 [vertex0#vertex0] #
+point $-1 -1 -1 $-1 -11 -11 0 #
+face $-1 -1 -1 $-1 $-1 $149 $30 $-1 $284 reversed single F F #
+loop $-1 -1 -1 $-1 $-1 $224 $134 F unknown #
+plane-surface $-1 -1 -1 $-1 0 56.478381041666673 0 0 -1 0 0 0 -1 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $285 $222 $225 $286 forward $135 $-1 #
+coedge $-1 -1 -1 $-1 $228 $137 $138 $216 reversed $90 $-1 #
+coedge $-1 -1 -1 $-1 $222 $285 $137 $214 reversed $135 $-1 #
+edge $-1 -1 -1 $-1 $229 -16.364190520833333 $287 16.364190520833333 $213 $288 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $139 $138 $285 $289 forward $68 $-1 #
+edge $-1 -1 -1 $-1 $220 -61.228381041666658 $287 61.228381041666658 $212 $290 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $225 $224 $139 $218 reversed $209 $-1 #
+edge $-1 -1 -1 $-1 $291 -61.228381041666658 $219 61.228381041666658 $217 $292 forward @7 unknown F #
+vertex $-1 -1 -1 $-1 $141 $293 #
+vertex $-1 -1 -1 $-1 $231 $294 #
+straight-curve $-1 -1 -1 $-1 61.228381041666658 0 -16.364190520833333 0 -1 0 I I #
+coedge $-1 -1 -1 $-1 $211 $213 $142 $223 reversed $135 $-1 #
+edge $-1 -1 -1 $-1 $226 -56.478381041666673 $229 56.478381041666673 $222 $295 forward @7 unknown F #
+coedge $-1 -1 -1 $-1 $217 $143 $148 $232 forward $209 $-1 #
+coedge $-1 -1 -1 $-1 $143 $217 $211 $286 reversed $209 $-1 #
+vertex $-1 -1 -1 $-1 $144 $296 #
+straight-curve $-1 -1 -1 $-1 0 56.478381041666673 16.364190520833333 -1 0 0 I I #
+coedge $-1 -1 -1 $-1 $145 $212 $147 $231 reversed $90 $-1 #
+vertex $-1 -1 -1 $-1 $223 $297 #
+straight-curve $-1 -1 -1 $-1 0 -56.478381041666673 16.364190520833333 1 0 0 I I #
+edge $-1 -1 -1 $-1 $150 -16.364190520833333 $220 16.364190520833333 $147 $298 forward @7 unknown F #
+edge $-1 -1 -1 $-1 $151 -16.364190520833333 $219 16.364190520833333 $148 $299 forward @7 unknown F #
+point $-1 -1 -1 $-1 61.228381041666658 -56.478381041666673 16.364190520833333 #
+point $-1 -1 -1 $-1 61.228381041666658 56.478381041666673 16.364190520833333 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $-1 $153 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @8 FEM_name @9 substrate #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $155 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $155 @27 [face:Extrude(start)#face1] #
+loop $-1 -1 -1 $-1 $-1 $252 $155 T -30 -25 0 29.999999999999989 25.000000000000007 0 unknown #
+plane-surface $-1 -1 -1 $-1 -5.3143898831643853e-15 4.4408920985006262e-15 0 0 0 1 1 0 0 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $157 $172 $158 $241 forward $100 $-1 #
+coedge $-1 -1 -1 $-1 $159 $158 $300 $301 forward $74 $-1 #
+edge $302 -1 -1 $-1 $303 0 $243 1.5 $239 $304 forward @7 unknown T -30 -25 0 -30 -25 1.5 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $161 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $161 @45 [edge:Extrude(top,edge0,extrude_path)#edge10] #
+vertex $305 -1 -1 $-1 $241 $306 #
+straight-curve $-1 -1 -1 $-1 -30 -25 1.5 -1 -2.3684757858670011e-16 -0 I I #
+coedge $-1 -1 -1 $-1 $300 $167 $162 $246 reversed $237 $-1 #
+edge $307 -1 -1 $-1 $248 0 $170 49.999999999999993 $162 $308 forward @7 unknown T 29.999999999999986 -24.999999999999986 0 29.999999999999989 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $163 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $163 @54 [edge:Extrude(mid_lateral,vertex1,extrude_path)#edge5] #
+vertex $309 -1 -1 $-1 $246 $310 #
+straight-curve $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 0 0 0 1 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $165 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $165 @54 [vertex:Extrude(mid_top,vertex1,extrude_path)#vertex6] #
+point $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 1.5 #
+coedge $-1 -1 -1 $-1 $167 $300 $172 $257 reversed $237 $-1 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $168 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $168 @13 [edge2#edge2] #
+straight-curve $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $170 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $170 @17 [vertex2#vertex2] #
+point $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 0 #
+edge $311 -1 -1 $-1 $174 0 $303 50.000000000000007 $172 $312 forward @7 unknown T -30 -25 0 -29.999999999999996 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $174 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $174 @17 [vertex3#vertex3] #
+point $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $176 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $176 @44 [edge:Extrude(top,edge3,extrude_path)#edge8] #
+straight-curve $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 1.5 7.1054273576010008e-17 1 0 I I #
+string_attrib-name_attrib-gen-attrib $-1 -1 $-1 $181 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @8 FEM_name @3 GND #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $182 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $182 @13 [edge1#edge1] #
+straight-curve $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 0 -7.1054273576010032e-17 1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $184 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $184 @17 [vertex2#vertex2] #
+point $-1 -1 -1 $-1 29.999999999999986 25.000000000000007 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $187 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $187 @17 [vertex1#vertex1] #
+point $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 0 #
+string_attrib-name_attrib-gen-attrib $-1 -1 $-1 $193 $2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @8 FEM_name @10 Microstrip #
+coedge $-1 -1 -1 $-1 $313 $194 $-1 $314 reversed $50 $-1 #
+edge $315 -1 -1 $-1 $316 0 $273 20 $194 $317 forward @7 unknown T -1.650000000000003 -25.499999999999993 0 -1.650000000000003 -5.4999999999999929 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $195 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $195 @13 [edge9#edge9] #
+vertex $318 -1 -1 $-1 $195 $319 #
+straight-curve $-1 -1 -1 $-1 -1.650000000000003 -5.4999999999999947 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $197 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $197 @19 [vertex10#vertex10] #
+point $-1 -1 -1 $-1 -3.6500000000000039 -5.4999999999999947 0 #
+coedge $-1 -1 -1 $-1 $199 $320 $-1 $321 reversed $50 $-1 #
+edge $322 -1 -1 $-1 $280 0 $323 22.000000000000007 $199 $324 forward @7 unknown T 10.999999999999995 -11.000000000000002 0 10.999999999999996 11.000000000000005 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $200 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $200 @13 [edge1#edge1] #
+vertex $325 -1 -1 $-1 $278 $326 #
+straight-curve $-1 -1 -1 $-1 -11 11 0 1 2.4223047810003423e-16 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $202 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $202 @17 [vertex1#vertex1] #
+point $-1 -1 -1 $-1 -11 11 0 #
+plane-surface $-1 -1 -1 $-1 61.228381041666658 0 0 -1 0 0 0 -0 1 forward_v I I I I #
+coedge $-1 -1 -1 $-1 $213 $211 $215 $289 reversed $135 $-1 #
+edge $-1 -1 -1 $-1 $226 -16.364190520833333 $291 16.364190520833333 $225 $327 forward @7 unknown F #
+vertex $-1 -1 -1 $-1 $289 $328 #
+straight-curve $-1 -1 -1 $-1 -61.228381041666658 -56.478381041666673 0 0 0 -1 I I #
+edge $-1 -1 -1 $-1 $287 -56.478381041666673 $291 56.478381041666673 $285 $329 forward @7 unknown F #
+straight-curve $-1 -1 -1 $-1 0 -56.478381041666673 -16.364190520833333 -1 0 0 I I #
+vertex $-1 -1 -1 $-1 $218 $330 #
+straight-curve $-1 -1 -1 $-1 0 56.478381041666673 -16.364190520833333 1 0 0 I I #
+point $-1 -1 -1 $-1 61.228381041666658 56.478381041666673 -16.364190520833333 #
+point $-1 -1 -1 $-1 61.228381041666658 -56.478381041666673 -16.364190520833333 #
+straight-curve $-1 -1 -1 $-1 -61.228381041666658 0 16.364190520833333 0 -1 0 I I #
+point $-1 -1 -1 $-1 -61.228381041666658 56.478381041666673 16.364190520833333 #
+point $-1 -1 -1 $-1 -61.228381041666658 -56.478381041666673 16.364190520833333 #
+straight-curve $-1 -1 -1 $-1 61.228381041666658 -56.478381041666673 0 0 0 -1 I I #
+straight-curve $-1 -1 -1 $-1 61.228381041666658 56.478381041666673 0 0 0 -1 I I #
+coedge $-1 -1 -1 $-1 $252 $245 $240 $301 reversed $237 $-1 #
+edge $331 -1 -1 $-1 $303 0 $248 59.999999999999986 $240 $332 forward @7 unknown T -30 -25 0 29.999999999999989 -24.999999999999986 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $241 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $241 @54 [edge:Extrude(mid_lateral,vertex0,extrude_path)#edge4] #
+vertex $333 -1 -1 $-1 $257 $334 #
+straight-curve $-1 -1 -1 $-1 -30 -25 0 0 0 1 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $243 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $243 @54 [vertex:Extrude(mid_top,vertex0,extrude_path)#vertex4] #
+point $-1 -1 -1 $-1 -30 -25 1.5 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $246 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $246 @13 [edge1#edge1] #
+straight-curve $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 0 -7.1054273576010032e-17 1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $248 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $248 @17 [vertex1#vertex1] #
+point $-1 -1 -1 $-1 29.999999999999989 -24.999999999999986 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $257 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $257 @13 [edge3#edge3] #
+straight-curve $-1 -1 -1 $-1 -29.999999999999996 25.000000000000007 0 -7.1054273576010008e-17 -1 0 I I #
+coedge $-1 -1 -1 $-1 $335 $270 $-1 $336 reversed $50 $-1 #
+edge $337 -1 -1 $-1 $338 0 $316 3.2999999999999972 $270 $339 forward @7 unknown T -1.650000000000003 -25.499999999999993 0 1.6499999999999941 -25.499999999999993 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $271 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $271 @13 [edge8#edge8] #
+vertex $340 -1 -1 $-1 $271 $341 #
+straight-curve $-1 -1 -1 $-1 -1.650000000000003 -25.499999999999993 0 0 1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $273 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $273 @17 [vertex9#vertex9] #
+point $-1 -1 -1 $-1 -1.650000000000003 -5.4999999999999947 0 #
+coedge $-1 -1 -1 $-1 $277 $335 $-1 $342 reversed $50 $-1 #
+edge $343 -1 -1 $-1 $323 0 $344 7.3499999999999979 $277 $345 forward @7 unknown T 3.6499999999999986 -11 0 10.999999999999996 -11 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $278 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $278 @13 [edge2#edge2] #
+vertex $346 -1 -1 $-1 $321 $347 #
+straight-curve $-1 -1 -1 $-1 10.999999999999995 11.000000000000005 0 8.0743492700011362e-17 -1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $280 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $280 @17 [vertex2#vertex2] #
+point $-1 -1 -1 $-1 10.999999999999995 11.000000000000005 0 #
+straight-curve $-1 -1 -1 $-1 -61.228381041666658 56.478381041666673 0 0 0 -1 I I #
+point $-1 -1 -1 $-1 -61.228381041666658 -56.478381041666673 -16.364190520833333 #
+straight-curve $-1 -1 -1 $-1 -61.228381041666658 0 -16.364190520833333 0 1 0 I I #
+point $-1 -1 -1 $-1 -61.228381041666658 56.478381041666673 -16.364190520833333 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $301 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $301 @13 [edge0#edge0] #
+straight-curve $-1 -1 -1 $-1 -30 -25 0 1 2.3684757858670011e-16 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $303 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $303 @17 [vertex0#vertex0] #
+point $-1 -1 -1 $-1 -30 -25 0 #
+coedge $-1 -1 -1 $-1 $320 $313 $-1 $348 reversed $50 $-1 #
+edge $349 -1 -1 $-1 $350 0 $338 20 $313 $351 forward @7 unknown T 1.6499999999999941 -25.499999999999993 0 1.6499999999999941 -5.4999999999999947 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $314 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $314 @13 [edge7#edge7] #
+vertex $352 -1 -1 $-1 $314 $353 #
+straight-curve $-1 -1 -1 $-1 1.6499999999999941 -25.499999999999993 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $316 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $316 @17 [vertex8#vertex8] #
+point $-1 -1 -1 $-1 -1.650000000000003 -25.499999999999993 0 #
+edge $354 -1 -1 $-1 $344 0 $355 5.5000000000000053 $320 $356 forward @7 unknown T 3.6499999999999968 -11 0 3.6499999999999986 -5.4999999999999947 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $321 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $321 @13 [edge3#edge3] #
+vertex $357 -1 -1 $-1 $342 $358 #
+straight-curve $-1 -1 -1 $-1 10.999999999999996 -11 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $323 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $323 @17 [vertex3#vertex3] #
+point $-1 -1 -1 $-1 10.999999999999996 -11 0 #
+edge $359 -1 -1 $-1 $355 0 $350 2.0000000000000027 $335 $360 forward @7 unknown T 1.6499999999999941 -5.4999999999999947 0 3.6499999999999968 -5.4999999999999947 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $336 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $336 @13 [edge6#edge6] #
+vertex $361 -1 -1 $-1 $336 $362 #
+straight-curve $-1 -1 -1 $-1 1.6499999999999941 -5.4999999999999947 0 0 -1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $338 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $338 @17 [vertex7#vertex7] #
+point $-1 -1 -1 $-1 1.6499999999999941 -25.499999999999993 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $342 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $342 @13 [edge4#edge4] #
+vertex $363 -1 -1 $-1 $348 $364 #
+straight-curve $-1 -1 -1 $-1 3.6499999999999986 -11 0 -3.229739708000452e-16 1 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $344 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $344 @17 [vertex4#vertex4] #
+point $-1 -1 -1 $-1 3.6499999999999986 -11 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $348 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $348 @13 [edge5#edge5] #
+straight-curve $-1 -1 -1 $-1 3.6499999999999968 -5.4999999999999947 0 -1 0 0 I I #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $350 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $350 @17 [vertex6#vertex6] #
+point $-1 -1 -1 $-1 1.6499999999999941 -5.4999999999999947 0 #
+fbm_tag-tag-sys-attrib $-1 -1 $-1 $-1 $355 2 1 2 1 1 1 3 1 1 1 1 1 1 1 0 1 1 1 origin_live $355 @17 [vertex5#vertex5] #
+point $-1 -1 -1 $-1 3.6499999999999968 -5.4999999999999947 0 #
+End-of-ACIS-data 
