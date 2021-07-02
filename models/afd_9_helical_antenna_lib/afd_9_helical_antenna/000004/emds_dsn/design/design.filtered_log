@@ -1,0 +1,78 @@
+
+FEM engine                : 370.010 2019-09-05
+FEM solver                : 1.2.0
+AFS                       : 3.1.1
+Machine                   : DESKTOP-VJINN7E
+Maximum number of threads : Automatic
+Maximum number of solvers : 4
+Date                      : Mon Jun 28 15:01:26 2021
+Design                    : C:\murenkov\afd_9_helical_antenna_lib\afd_9_helical_antenna\000004\emds_dsn\design
+FEM Mesher: 2.0.3
+ 
+INITIAL MESH
+------------
+ 
+nbPoints     : 12306
+nbTetrahedra : 70688
+  
+REFINING
+--------
+                     |              MESHING                |                           SOLVING
+ level    frequency  |  nbTetr  Elapsed time    CPU time   |  nbUnknowns   mem(GB)   Elapsed time    CPU time  Delta(S)             solver  nbIter     normRes            
+---------------------|-------------------------------------|--------------------------------------------------------------------------------------------------
+     1    3.200 GHz  |   70688    00:00:23.6  00:00:20.3   |      430353     0.698     00:00:15.0  00:01:07.6         /               Im64      65   9.290e-06            
+     2    3.200 GHz  |   81697    00:00:07.6  00:00:06.9   |      499949     0.804     00:00:12.7  00:00:53.8    0.0933 [->0.0100]    Im64      35   9.080e-06            
+     3    3.200 GHz  |   94545    00:00:07.7  00:00:06.9   |      581813     0.946     00:00:15.2  00:01:07.8    0.0081 [->0.0100]    Im64      40   5.950e-06            
+ 
+COMPUTING SOLUTION
+------------------
+ 
+sample    frequency  |  nbUnknowns    mem(GB)  Elapsed time     CPU time  solver  nbIter     normRes
+---------------------|------------------------------------------------------------------------------
+     1    3.200 GHz  |      499949      0.804    00:00:12.7   00:00:53.8   reuse                    
+     2    2.600 GHz  |      499949      0.806    00:00:17.4   00:00:51.1    Im64      30   9.280e-06
+     3    2.400 GHz  |      499949      0.807    00:00:18.3   00:00:52.8    Im64      30   7.080e-06
+     4    2.800 GHz  |      499949      0.805    00:00:18.5   00:00:60.0    Im64      35   5.740e-06
+     5    2.467 GHz  |      499949      0.809    00:00:14.0   00:00:42.9    Im64      30   9.070e-06
+     6    2.733 GHz  |      499949      0.859    00:00:13.7   00:00:43.7    Im64      30   9.620e-06
+     7    2.667 GHz  |      499949      0.805    00:00:41.5   00:00:58.2    Im64      35   9.740e-06
+     8    2.533 GHz  |      499949      0.862    00:00:15.8   00:01:02.0    Im64      45   1.090e-06
+ 
+FARFIELDS
+---------
+ 
+Computing far-field pattern at 2.4 GHz
+Computed radiated power exceeds the available power by 4.72 percent at 2.4000 GHz for excitation 1.
+Either decrease the Initial Target Mesh Size on the Mesh/Convergence Properties Advanced tab,
+Or move the radiation boundary farther away from the radiating elements.
+Computing far-field pattern at 2.8 GHz
+Computed radiated power exceeds the available power by 6.25 percent at 2.8000 GHz for excitation 1.
+Either decrease the Initial Target Mesh Size on the Mesh/Convergence Properties Advanced tab,
+Or move the radiation boundary farther away from the radiating elements.
+Computing far-field pattern at 3.2 GHz
+Computed radiated power exceeds the available power by 7.95 percent at 3.2000 GHz for excitation 1.
+Either decrease the Initial Target Mesh Size on the Mesh/Convergence Properties Advanced tab,
+Or move the radiation boundary farther away from the radiating elements.
+!! WARNING : Farfields calculations require the field solutions to be available.
+             No fields are stored for the following simulated frequencies:
+               - 2.46667 GHz
+               - 2.53333 GHz
+               - 2.6 GHz
+               - 2.66667 GHz
+               - 2.73333 GHz
+             To obtain farfields for these frequencies, change the <Save Fields> option accordingly,
+             enable the reuse option and resimulate.
+             
+    CPU time: 00:00:60.0    Elapsed time: 00:00:15.6    Memory: 221.656 Mbyte 
+------------------------------------------------
+DISTRIBUTION SUMMARY:
+master 0    on DESKTOP-VJINN7E 
+solver 1    on DESKTOP-VJINN7E:  #freq:1     
+solver 2    on DESKTOP-VJINN7E:  #freq:2     
+solver 3    on DESKTOP-VJINN7E:  #freq:2     
+solver 4    on DESKTOP-VJINN7E:  #freq:2     
+------------------------------------------------
+------------------------------------------------
+  Total Elapsed Time = 0:02:39
+------------------------------------------------
+Simulation results can be reused

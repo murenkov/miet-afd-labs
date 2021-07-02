@@ -1,0 +1,1511 @@
+<!DOCTYPE NewSimulationData>
+<NewSimulationData>
+  <SharedObject ptrID="0" subjectID="1">
+    <NewSimulationData ParameterSweepEnabled="false" ExcitationType="DiscreteSources" StaticSolverEnabled="false" EnableSParameters="true" FieldInterfaces="AllInterfaces" NameWasUserSet="false" UseTotalScatteredFieldFormulation="true">
+      <Assembly ptrID="2" subjectID="3">
+        <Assembly sname="Parts" Unit="mm">
+          <Appearance ptrID="4"/>
+          <CoordinateSystem ptrID="5" subjectID="6">
+            <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+              <AnchorPoint ptrID="7" subjectID="8">
+                <CoordinateSystemPosition>
+                  <ReferenceCoordinateSystem ptrID="9" masterID="16"/>
+                  <Position z="0" y="0" x="0"/>
+                </CoordinateSystemPosition>
+              </AnchorPoint>
+              <PrimaryDirection ptrID="10" subjectID="11">
+                <CoordinateSystemDirection>
+                  <ReferenceCoordinateSystem ptrID="12" masterID="16"/>
+                  <Rotations z="1" y="0" x="0"/>
+                </CoordinateSystemDirection>
+              </PrimaryDirection>
+              <SecondaryDirection ptrID="13" subjectID="14">
+                <CoordinateSystemDirection>
+                  <ReferenceCoordinateSystem ptrID="15" masterID="16"/>
+                  <Rotations z="0" y="0" x="1"/>
+                </CoordinateSystemDirection>
+              </SecondaryDirection>
+              <Translation z="0" y="0" x="0"/>
+              <OffsetOrientation Scalar="1">
+                <Vector z="0" y="0" x="0"/>
+              </OffsetOrientation>
+              <ReferenceCoordinateSystem ptrID="16"/>
+            </CoordinateSystem>
+          </CoordinateSystem>
+          <Locators/>
+          <Part ptrID="17" subjectID="18">
+            <Model sname="waveguide" Unit="mm">
+              <NamedAttributes>
+                <ReadWriteAttributes>
+                  <Attribute Name="MeshParameters">
+                    <Properties Settings="Dependency" Type="remcom::MeshParameters">
+                      <AttributeData ptrID="19" subjectID="20">
+                        <ModelMeshParameters AutoPriority="true" SecondaryPriority="1" IncludeInMesh="true">
+                          <VertexMeshLength>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </VertexMeshLength>
+                          <EdgeMeshLength>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </EdgeMeshLength>
+                          <SurfaceMeshLength>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </SurfaceMeshLength>
+                          <VolumeMeshLength>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </VolumeMeshLength>
+                        </ModelMeshParameters>
+                      </AttributeData>
+                    </Properties>
+                  </Attribute>
+                </ReadWriteAttributes>
+                <ConstAttributes>
+                  <Attribute Name="Material">
+                    <Properties Settings="Dependency" Type="remcom::Material">
+                      <AttributeData ptrID="21" AutoPriority="true" Priority="80" subjectID="22">
+                        <Material sname="PEC">
+                          <DataSets>
+                            <DataSet ptrID="23" subjectID="24">
+                              <DataSetProxy DataSetId="E - ConductivityVsFrequency">
+                                <Subject ptrID="25" masterID="63" subjectID="26">
+                                  <DataSetProxy DataSetId="E - ConductivityVsFrequency">
+                                    <Subject ptrID="27" masterID="68" subjectID="28">
+                                      <DataSetProxy DataSetId="ConductivityVsFrequency">
+                                        <Subject ptrID="29" masterID="73" subjectID="30">
+                                          <ConstantDataSet sname="Conductivity" DataSetId="ConductivityVsFrequency" UnitClass="SCALAR">
+                                            <Dimensions>
+                                              <Dimension ptrID="31" masterID="74" subjectID="32">
+                                                <ContinuousDimension sname="Frequency" DataSetId="Frequency" UnitClass="FREQUENCY"/>
+                                              </Dimension>
+                                            </Dimensions>
+                                            <Constant ptrID="33" subjectID="34">
+                                              <Expression>
+                                                <Formula type="Double" typeid="6" value="1.7976931348623157e+308"/>
+                                              </Expression>
+                                            </Constant>
+                                          </ConstantDataSet>
+                                        </Subject>
+                                      </DataSetProxy>
+                                    </Subject>
+                                  </DataSetProxy>
+                                </Subject>
+                              </DataSetProxy>
+                            </DataSet>
+                            <DataSet ptrID="35" subjectID="36">
+                              <DataSetProxy DataSetId="E - Frequency">
+                                <Subject ptrID="37" masterID="64" subjectID="38">
+                                  <DataSetProxy DataSetId="E - Frequency">
+                                    <Subject ptrID="39" masterID="69" subjectID="40">
+                                      <DataSetProxy DataSetId="Frequency">
+                                        <Subject ptrID="41" masterID="74" subjectID="32"/>
+                                      </DataSetProxy>
+                                    </Subject>
+                                  </DataSetProxy>
+                                </Subject>
+                              </DataSetProxy>
+                            </DataSet>
+                            <DataSet ptrID="42" subjectID="43">
+                              <DataSetProxy DataSetId="E - RelativePermittivityVsFrequency">
+                                <Subject ptrID="44" masterID="65" subjectID="45">
+                                  <DataSetProxy DataSetId="E - RelativePermittivityVsFrequency">
+                                    <Subject ptrID="46" masterID="70" subjectID="47">
+                                      <DataSetProxy DataSetId="RelativePermittivityVsFrequency">
+                                        <Subject ptrID="48" masterID="75" subjectID="49">
+                                          <ConstantDataSet sname="Relative Permittivity" DataSetId="RelativePermittivityVsFrequency" UnitClass="SCALAR">
+                                            <Dimensions>
+                                              <Dimension ptrID="50" masterID="74" subjectID="32"/>
+                                            </Dimensions>
+                                            <Constant ptrID="51" subjectID="52">
+                                              <Expression>
+                                                <Formula type="Double" typeid="6" value="0"/>
+                                              </Expression>
+                                            </Constant>
+                                          </ConstantDataSet>
+                                        </Subject>
+                                      </DataSetProxy>
+                                    </Subject>
+                                  </DataSetProxy>
+                                </Subject>
+                              </DataSetProxy>
+                            </DataSet>
+                          </DataSets>
+                          <MaterialAppearance ptrID="53" subjectID="54">
+                            <BodyAppearance OldFaceAppearance="true" OldVertexAppearance="false" OldEdgeAppearance="true">
+                              <FaceAppearance ptrID="55" subjectID="56">
+                                <FaceAppearance FaceStyle="Solid" Gloss="0.5">
+                                  <Color green="234" blue="234" alpha="255" red="234"/>
+                                  <SpecularColor green="234" blue="234" alpha="255" red="234"/>
+                                </FaceAppearance>
+                              </FaceAppearance>
+                              <EdgeAppearance ptrID="57" subjectID="58">
+                                <LineAppearance CustomLineStyle="None" CustomGlyphSize="8" LineStyle="Solid" LineWeight="1">
+                                  <Color green="117" blue="117" alpha="255" red="117"/>
+                                </LineAppearance>
+                              </EdgeAppearance>
+                              <VertexAppearance ptrID="59" subjectID="60">
+                                <MarkerAppearance MarkerSize="1" Visibility="false" MarkerUnits="DefaultUnit" MarkerSymbol="FilledCircle">
+                                  <Color green="75" blue="75" alpha="255" red="75"/>
+                                </MarkerAppearance>
+                              </VertexAppearance>
+                            </BodyAppearance>
+                          </MaterialAppearance>
+                          <Details ptrID="61" subjectID="62">
+                            <PhysicalMaterial sname="Material Details">
+                              <DataSets>
+                                <DataSet ptrID="63" subjectID="26"/>
+                                <DataSet ptrID="64" subjectID="38"/>
+                                <DataSet ptrID="65" subjectID="45"/>
+                              </DataSets>
+                              <ElectricProperties ptrID="66" subjectID="67">
+                                <ElectricIsotropic sname="Electric material properties">
+                                  <DataSets>
+                                    <DataSet ptrID="68" subjectID="28"/>
+                                    <DataSet ptrID="69" subjectID="40"/>
+                                    <DataSet ptrID="70" subjectID="47"/>
+                                  </DataSets>
+                                  <Parameters ptrID="71" subjectID="72">
+                                    <PECParameters sname="Electric Parameters" GCCalcMode="Automatic" IsThinWire="false">
+                                      <DataSets>
+                                        <DataSet ptrID="73" subjectID="30"/>
+                                        <DataSet ptrID="74" subjectID="32"/>
+                                        <DataSet ptrID="75" subjectID="49"/>
+                                      </DataSets>
+                                      <ElectricParameters>
+                                        <NominalTemperature ptrID="76" subjectID="77">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="298.14999999999998"/>
+                                          </Expression>
+                                        </NominalTemperature>
+                                        <LinearTemperatureCoefficient ptrID="78" subjectID="79">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0.0038600000000000001"/>
+                                          </Expression>
+                                        </LinearTemperatureCoefficient>
+                                        <QuadraticTemperatureCoefficient ptrID="80" subjectID="81">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </QuadraticTemperatureCoefficient>
+                                      </ElectricParameters>
+                                      <ThinWireRadius ptrID="82" subjectID="83">
+                                        <Expression>
+                                          <Formula type="String" typeid="10" value="1 um"/>
+                                        </Expression>
+                                      </ThinWireRadius>
+                                    </PECParameters>
+                                  </Parameters>
+                                </ElectricIsotropic>
+                              </ElectricProperties>
+                              <MagneticProperties ptrID="84" subjectID="85">
+                                <MagneticFreespace sname="Magnetic material properties">
+                                  <FreespaceData ptrID="86" subjectID="87">
+                                    <MagneticFreespaceParameters sname="Magnetic Parameters"/>
+                                  </FreespaceData>
+                                </MagneticFreespace>
+                              </MagneticProperties>
+                              <SurfaceRoughnessProperties ptrID="88" subjectID="89">
+                                <RoughnessSmoothSurfaceParameters sname="SurfaceRoughness Parameters"/>
+                              </SurfaceRoughnessProperties>
+                            </PhysicalMaterial>
+                          </Details>
+                          <PhysicalDetails ptrID="90" subjectID="91">
+                            <PhysicalParameters UseThermalConductivityThroughPlane="false">
+                              <Density ptrID="92" subjectID="93">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0"/>
+                                </Expression>
+                              </Density>
+                              <HeatCapacity ptrID="94" subjectID="95">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0"/>
+                                </Expression>
+                              </HeatCapacity>
+                              <ThermalConductivity ptrID="96" subjectID="97">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0.025999999999999999"/>
+                                </Expression>
+                              </ThermalConductivity>
+                              <ThermalConductivityThroughPlane ptrID="98" subjectID="99">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0.025999999999999999"/>
+                                </Expression>
+                              </ThermalConductivityThroughPlane>
+                              <PerfusionByBlood ptrID="100" subjectID="101">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0"/>
+                                </Expression>
+                              </PerfusionByBlood>
+                              <MetabolicHeat ptrID="102" subjectID="103">
+                                <Expression>
+                                  <Formula type="Double" typeid="6" value="0"/>
+                                </Expression>
+                              </MetabolicHeat>
+                            </PhysicalParameters>
+                          </PhysicalDetails>
+                        </Material>
+                      </AttributeData>
+                    </Properties>
+                  </Attribute>
+                </ConstAttributes>
+              </NamedAttributes>
+              <Appearance ptrID="104"/>
+              <CoordinateSystem ptrID="105" subjectID="106">
+                <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                  <AnchorPoint ptrID="107" subjectID="108">
+                    <CoordinateSystemPosition>
+                      <ReferenceCoordinateSystem ptrID="109" masterID="116" subjectID="6"/>
+                      <Position z="0" y="0" x="0"/>
+                    </CoordinateSystemPosition>
+                  </AnchorPoint>
+                  <PrimaryDirection ptrID="110" subjectID="111">
+                    <CoordinateSystemDirection>
+                      <ReferenceCoordinateSystem ptrID="112" masterID="116" subjectID="6"/>
+                      <Rotations z="1" y="0" x="0"/>
+                    </CoordinateSystemDirection>
+                  </PrimaryDirection>
+                  <SecondaryDirection ptrID="113" subjectID="114">
+                    <CoordinateSystemDirection>
+                      <ReferenceCoordinateSystem ptrID="115" masterID="116" subjectID="6"/>
+                      <Rotations z="0" y="0" x="1"/>
+                    </CoordinateSystemDirection>
+                  </SecondaryDirection>
+                  <Translation z="0" y="0" x="0"/>
+                  <OffsetOrientation Scalar="1">
+                    <Vector z="0" y="0" x="0"/>
+                  </OffsetOrientation>
+                  <ReferenceCoordinateSystem ptrID="116" masterID="5" subjectID="6"/>
+                </CoordinateSystem>
+              </CoordinateSystem>
+              <Locators/>
+              <ModelRecipe ptrID="117" subjectID="118">
+                <Recipe indexOfFailedFeature="-1" cachingEnabled="true">
+                  <ReferenceCoordinateSystem ptrID="119" masterID="105" subjectID="106"/>
+                  <Feature ptrID="120" subjectID="121">
+                    <BooleanOperation version="1" OperationType="UnionBooleanOperation" SuppressionCount="0" TagVersion="1" SuppressExpression="false">
+                      <ReferenceCoordinateSystem ptrID="122" masterID="119" subjectID="106"/>
+                      <Participant owned="true">
+                        <Part ptrID="123" subjectID="124">
+                          <Model sname="waveguide" Unit="mm">
+                            <NamedAttributes>
+                              <ReadWriteAttributes>
+                                <Attribute Name="MeshParameters">
+                                  <Properties Settings="Dependency" Type="remcom::MeshParameters">
+                                    <AttributeData ptrID="125" subjectID="126">
+                                      <ModelMeshParameters AutoPriority="true" SecondaryPriority="1" IncludeInMesh="true">
+                                        <VertexMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </VertexMeshLength>
+                                        <EdgeMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </EdgeMeshLength>
+                                        <SurfaceMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </SurfaceMeshLength>
+                                        <VolumeMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </VolumeMeshLength>
+                                      </ModelMeshParameters>
+                                    </AttributeData>
+                                  </Properties>
+                                </Attribute>
+                              </ReadWriteAttributes>
+                              <ConstAttributes>
+                                <Attribute Name="Material">
+                                  <Properties Settings="Dependency" Type="remcom::Material">
+                                    <AttributeData ptrID="127"/>
+                                  </Properties>
+                                </Attribute>
+                              </ConstAttributes>
+                            </NamedAttributes>
+                            <Appearance ptrID="128"/>
+                            <CoordinateSystem ptrID="129" subjectID="130">
+                              <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                                <AnchorPoint ptrID="131" subjectID="132">
+                                  <CoordinateSystemPosition>
+                                    <ReferenceCoordinateSystem ptrID="133" masterID="140"/>
+                                    <Position z="0" y="0" x="0"/>
+                                  </CoordinateSystemPosition>
+                                </AnchorPoint>
+                                <PrimaryDirection ptrID="134" subjectID="135">
+                                  <CoordinateSystemDirection>
+                                    <ReferenceCoordinateSystem ptrID="136" masterID="140"/>
+                                    <Rotations z="1" y="0" x="0"/>
+                                  </CoordinateSystemDirection>
+                                </PrimaryDirection>
+                                <SecondaryDirection ptrID="137" subjectID="138">
+                                  <CoordinateSystemDirection>
+                                    <ReferenceCoordinateSystem ptrID="139" masterID="140"/>
+                                    <Rotations z="0" y="0" x="1"/>
+                                  </CoordinateSystemDirection>
+                                </SecondaryDirection>
+                                <Translation z="0" y="0" x="0"/>
+                                <OffsetOrientation Scalar="1">
+                                  <Vector z="0" y="0" x="0"/>
+                                </OffsetOrientation>
+                                <ReferenceCoordinateSystem ptrID="140"/>
+                              </CoordinateSystem>
+                            </CoordinateSystem>
+                            <Locators/>
+                            <ModelRecipe ptrID="141" subjectID="142">
+                              <Recipe indexOfFailedFeature="-1" cachingEnabled="true">
+                                <ReferenceCoordinateSystem ptrID="143" masterID="129" subjectID="130"/>
+                                <Feature ptrID="144" subjectID="145">
+                                  <Extrude SuppressionCount="0" TagVersion="1" SuppressExpression="false">
+                                    <ReferenceCoordinateSystem ptrID="146" masterID="143" subjectID="130"/>
+                                    <Profile ptrID="147" subjectID="148">
+                                      <Sketch NextVertexNumber="4" Unit="mm" NextEdgeNumber="4">
+                                        <Appearance ptrID="149" subjectID="150">
+                                          <BodyAppearance OldFaceAppearance="true" OldVertexAppearance="false" OldEdgeAppearance="true">
+                                            <FaceAppearance ptrID="151" subjectID="152">
+                                              <FaceAppearance FaceStyle="Solid" Gloss="5">
+                                                <SpecularColor green="255" blue="255" alpha="255" red="255"/>
+                                              </FaceAppearance>
+                                            </FaceAppearance>
+                                            <EdgeAppearance ptrID="153" subjectID="154">
+                                              <LineAppearance CustomLineStyle="None" CustomGlyphSize="8" LineStyle="Solid" LineWeight="1"/>
+                                            </EdgeAppearance>
+                                            <VertexAppearance ptrID="155" subjectID="156">
+                                              <MarkerAppearance MarkerSize="0.40000000000000002" Visibility="false" MarkerUnits="DefaultUnit" MarkerSymbol="FilledBox"/>
+                                            </VertexAppearance>
+                                          </BodyAppearance>
+                                        </Appearance>
+                                        <CoordinateSystem ptrID="157" subjectID="158">
+                                          <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                                            <AnchorPoint ptrID="159" subjectID="160">
+                                              <CoordinateSystemPosition>
+                                                <ReferenceCoordinateSystem ptrID="161" masterID="168" subjectID="130"/>
+                                                <Position z="0" y="0" x="0"/>
+                                              </CoordinateSystemPosition>
+                                            </AnchorPoint>
+                                            <PrimaryDirection ptrID="162" subjectID="163">
+                                              <CoordinateSystemDirection>
+                                                <ReferenceCoordinateSystem ptrID="164" masterID="168" subjectID="130"/>
+                                                <Rotations z="1" y="0" x="0"/>
+                                              </CoordinateSystemDirection>
+                                            </PrimaryDirection>
+                                            <SecondaryDirection ptrID="165" subjectID="166">
+                                              <CoordinateSystemDirection>
+                                                <ReferenceCoordinateSystem ptrID="167" masterID="168" subjectID="130"/>
+                                                <Rotations z="0" y="0" x="1"/>
+                                              </CoordinateSystemDirection>
+                                            </SecondaryDirection>
+                                            <Translation z="0" y="0" x="0"/>
+                                            <OffsetOrientation Scalar="1">
+                                              <Vector z="0" y="0" x="0"/>
+                                            </OffsetOrientation>
+                                            <ReferenceCoordinateSystem ptrID="168" masterID="146" subjectID="130"/>
+                                          </CoordinateSystem>
+                                        </CoordinateSystem>
+                                        <Locators/>
+                                        <ConstraintManager SolveMode="XY">
+                                          <Constraint ptrID="169" subjectID="170">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge0" SecondParticipant="edge1"/>
+                                          </Constraint>
+                                          <Constraint ptrID="171" subjectID="172">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge1" SecondParticipant="edge2"/>
+                                          </Constraint>
+                                          <Constraint ptrID="173" subjectID="174">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge2" SecondParticipant="edge3"/>
+                                          </Constraint>
+                                          <Constraint ptrID="175" subjectID="176">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge3" SecondParticipant="edge0"/>
+                                          </Constraint>
+                                          <Constraint ptrID="177" subjectID="178">
+                                            <HorizontalConstraint Locked="true" FirstParticipant="edge0"/>
+                                          </Constraint>
+                                          <Constraint ptrID="179" subjectID="180">
+                                            <FixedPositionConstraint Locked="true" FirstParticipant="vertex0">
+                                              <Position ptrID="181" subjectID="182">
+                                                <Cartesian3DExpression>
+                                                  <x ptrID="183" subjectID="184">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="-waveguideA/2"/>
+                                                    </Expression>
+                                                  </x>
+                                                  <y ptrID="185" subjectID="186">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="-waveguideB/2"/>
+                                                    </Expression>
+                                                  </y>
+                                                  <z ptrID="187" subjectID="188">
+                                                    <Expression>
+                                                      <Formula type="Double" typeid="6" value="0"/>
+                                                    </Expression>
+                                                  </z>
+                                                </Cartesian3DExpression>
+                                              </Position>
+                                            </FixedPositionConstraint>
+                                          </Constraint>
+                                          <Constraint ptrID="189" subjectID="190">
+                                            <FixedPositionConstraint Locked="true" FirstParticipant="vertex2">
+                                              <Position ptrID="191" subjectID="192">
+                                                <Cartesian3DExpression>
+                                                  <x ptrID="193" subjectID="194">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="waveguideA/2"/>
+                                                    </Expression>
+                                                  </x>
+                                                  <y ptrID="195" subjectID="196">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="waveguideB/2"/>
+                                                    </Expression>
+                                                  </y>
+                                                  <z ptrID="197" subjectID="198">
+                                                    <Expression>
+                                                      <Formula type="Double" typeid="6" value="0"/>
+                                                    </Expression>
+                                                  </z>
+                                                </Cartesian3DExpression>
+                                              </Position>
+                                            </FixedPositionConstraint>
+                                          </Constraint>
+                                        </ConstraintManager>
+                                        <EdgeList Compressed="true" DataType="Binary">AAAKn3icxZY9b9NAGMedJvEl8Z2p0xTKu9vMQX5Z2krQFAQSILFQiaFCldtcU4tiI9spROpX6N6Rj8DChBCd+hUQYugnQOrGBuTOTs6vgK1K8XBn554n/98vPstZf/D4uXzftAxn+Mjcx8c1jh4Vf+LA/FM8dM3+nidv4J09y963+yZ2AVwnfdryHUV+tgEWXuCe/GRgyfKKrOqr+sqqosmaoqm8/y3na/zRj4/vf55+uMd/+vz129nh97uognt9DElQ5ffooAOkQ3X0WdDJcZBnV2rXLwCjcwGAgfXKst9ajTl/dfGkROfmybh3vNCNL0hBei0lvR5Jb5Arv30pSBfS0xMh8YVuPB2mpKNIuph0v/R390nIP9NnU9KlSHoz6T6X85dPYEki2N1+veUZfbFMB3foIt7wPMfchjEaOpCmyumvM06gpwBtEnqlTceXEuIPsOPhd7CVokMt5qnzuOxyVtkVCldzPccg2x1VdwbOAWZIrD5TuuVP52tc7BCE3Nolpl1i2irVVkPaCyk+pAFejWhfyyq7nls7sc9bUVmmX0B7hmnPMG2Namsh7RspPqQB3oxo38oqu11Ye7KTx3f7ywXc7TLTLjNtnWrrIW05xYc0wMWI9lJWWbvwJo9rT+72RL+AdpVpk1MgbfoCSjuYR+rVN7Zpebmew9wcPOPgwxxqwKH+F0fyLZOXo8446tPkaDCORphDCzi0XBzdwhyIcaBpcoiMQwxz6AGHnmufFueQGIc0TY4m42he5HOLZh9avY692yH/Ljs9wzP+AFo3kIw=</EdgeList>
+                                      </Sketch>
+                                    </Profile>
+                                    <ProfileIdentifier ptrID="199"/>
+                                    <Options Steps="0">
+                                      <DraftAngle>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </DraftAngle>
+                                      <DraftHoleAngle>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </DraftHoleAngle>
+                                      <EndDraftDistance>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </EndDraftDistance>
+                                      <MiterAmount>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </MiterAmount>
+                                      <SweepOptionsPortionStart>
+                                        <x ptrID="200" subjectID="201">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </x>
+                                        <y ptrID="202" subjectID="203">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </y>
+                                        <z ptrID="204" subjectID="205">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </z>
+                                      </SweepOptionsPortionStart>
+                                      <SweepOptionsPortionEnd>
+                                        <x ptrID="206" subjectID="207">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </x>
+                                        <y ptrID="208" subjectID="209">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </y>
+                                        <z ptrID="210" subjectID="211">
+                                          <Expression>
+                                            <Formula type="Double" typeid="6" value="0"/>
+                                          </Expression>
+                                        </z>
+                                      </SweepOptionsPortionEnd>
+                                      <StartDraftDistance>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </StartDraftDistance>
+                                      <TwistAngle>
+                                        <Formula type="Double" typeid="6" value="0"/>
+                                      </TwistAngle>
+                                    </Options>
+                                    <Distance>
+                                      <Formula type="String" typeid="10" value="waveguideZ"/>
+                                    </Distance>
+                                    <Direction ptrID="212" subjectID="213">
+                                      <CoordinateSystemDirectionExpression>
+                                        <ReferenceCoordinateSystem ptrID="214" masterID="146" subjectID="130"/>
+                                        <Direction>
+                                          <x ptrID="215" subjectID="216">
+                                            <Expression>
+                                              <Formula type="Double" typeid="6" value="0"/>
+                                            </Expression>
+                                          </x>
+                                          <y ptrID="217" subjectID="218">
+                                            <Expression>
+                                              <Formula type="Double" typeid="6" value="0"/>
+                                            </Expression>
+                                          </y>
+                                          <z ptrID="219" subjectID="220">
+                                            <Expression>
+                                              <Formula type="Double" typeid="6" value="1"/>
+                                            </Expression>
+                                          </z>
+                                        </Direction>
+                                      </CoordinateSystemDirectionExpression>
+                                    </Direction>
+                                  </Extrude>
+                                </Feature>
+                              </Recipe>
+                            </ModelRecipe>
+                          </Model>
+                        </Part>
+                      </Participant>
+                      <Participant owned="true">
+                        <Part ptrID="221" subjectID="222">
+                          <Model sname="aperture" Unit="mm">
+                            <NamedAttributes>
+                              <ReadWriteAttributes>
+                                <Attribute Name="MeshParameters">
+                                  <Properties Settings="Dependency" Type="remcom::MeshParameters">
+                                    <AttributeData ptrID="223" subjectID="224">
+                                      <ModelMeshParameters AutoPriority="true" SecondaryPriority="2" IncludeInMesh="true">
+                                        <VertexMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </VertexMeshLength>
+                                        <EdgeMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </EdgeMeshLength>
+                                        <SurfaceMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </SurfaceMeshLength>
+                                        <VolumeMeshLength>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </VolumeMeshLength>
+                                      </ModelMeshParameters>
+                                    </AttributeData>
+                                  </Properties>
+                                </Attribute>
+                              </ReadWriteAttributes>
+                              <ConstAttributes>
+                                <Attribute Name="Material">
+                                  <Properties Settings="Dependency" Type="remcom::Material">
+                                    <AttributeData ptrID="225"/>
+                                  </Properties>
+                                </Attribute>
+                              </ConstAttributes>
+                            </NamedAttributes>
+                            <Appearance ptrID="226"/>
+                            <CoordinateSystem ptrID="227" subjectID="228">
+                              <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                                <AnchorPoint ptrID="229" subjectID="230">
+                                  <CoordinateSystemPositionExpression>
+                                    <ReferenceCoordinateSystem ptrID="231" masterID="244"/>
+                                    <Position>
+                                      <x ptrID="232" subjectID="233">
+                                        <Expression>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </Expression>
+                                      </x>
+                                      <y ptrID="234" subjectID="235">
+                                        <Expression>
+                                          <Formula type="Double" typeid="6" value="0"/>
+                                        </Expression>
+                                      </y>
+                                      <z ptrID="236" subjectID="237">
+                                        <Expression>
+                                          <Formula type="Double" typeid="6" value="0.094549929061538474"/>
+                                        </Expression>
+                                      </z>
+                                    </Position>
+                                  </CoordinateSystemPositionExpression>
+                                </AnchorPoint>
+                                <PrimaryDirection ptrID="238" subjectID="239">
+                                  <CoordinateSystemDirection>
+                                    <ReferenceCoordinateSystem ptrID="240" masterID="244"/>
+                                    <Rotations z="1" y="0" x="0"/>
+                                  </CoordinateSystemDirection>
+                                </PrimaryDirection>
+                                <SecondaryDirection ptrID="241" subjectID="242">
+                                  <CoordinateSystemDirection>
+                                    <ReferenceCoordinateSystem ptrID="243" masterID="244"/>
+                                    <Rotations z="0" y="0" x="1"/>
+                                  </CoordinateSystemDirection>
+                                </SecondaryDirection>
+                                <Translation z="0" y="0" x="0"/>
+                                <OffsetOrientation Scalar="1">
+                                  <Vector z="0" y="0" x="0"/>
+                                </OffsetOrientation>
+                                <ReferenceCoordinateSystem ptrID="244"/>
+                              </CoordinateSystem>
+                            </CoordinateSystem>
+                            <Locators/>
+                            <ModelRecipe ptrID="245" subjectID="246">
+                              <Recipe indexOfFailedFeature="-1" cachingEnabled="true">
+                                <ReferenceCoordinateSystem ptrID="247" masterID="227" subjectID="228"/>
+                                <Feature ptrID="248" subjectID="249">
+                                  <Cover version="1" HealVertexGaps="false" SuppressionCount="0" HealShortEdges="false" TagVersion="1" SuppressExpression="false">
+                                    <ReferenceCoordinateSystem ptrID="250" masterID="247" subjectID="228"/>
+                                    <Profile ptrID="251" subjectID="252">
+                                      <Sketch NextVertexNumber="4" Unit="mm" NextEdgeNumber="4">
+                                        <Appearance ptrID="253"/>
+                                        <CoordinateSystem ptrID="254" subjectID="255">
+                                          <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                                            <AnchorPoint ptrID="256" subjectID="257">
+                                              <CoordinateSystemPosition>
+                                                <ReferenceCoordinateSystem ptrID="258" masterID="265" subjectID="228"/>
+                                                <Position z="0" y="0" x="0"/>
+                                              </CoordinateSystemPosition>
+                                            </AnchorPoint>
+                                            <PrimaryDirection ptrID="259" subjectID="260">
+                                              <CoordinateSystemDirection>
+                                                <ReferenceCoordinateSystem ptrID="261" masterID="265" subjectID="228"/>
+                                                <Rotations z="1" y="0" x="0"/>
+                                              </CoordinateSystemDirection>
+                                            </PrimaryDirection>
+                                            <SecondaryDirection ptrID="262" subjectID="263">
+                                              <CoordinateSystemDirection>
+                                                <ReferenceCoordinateSystem ptrID="264" masterID="265" subjectID="228"/>
+                                                <Rotations z="0" y="0" x="1"/>
+                                              </CoordinateSystemDirection>
+                                            </SecondaryDirection>
+                                            <Translation z="0" y="0" x="0"/>
+                                            <OffsetOrientation Scalar="1">
+                                              <Vector z="0" y="0" x="0"/>
+                                            </OffsetOrientation>
+                                            <ReferenceCoordinateSystem ptrID="265" masterID="250" subjectID="228"/>
+                                          </CoordinateSystem>
+                                        </CoordinateSystem>
+                                        <Locators/>
+                                        <ConstraintManager SolveMode="XY">
+                                          <Constraint ptrID="266" subjectID="267">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge0" SecondParticipant="edge1"/>
+                                          </Constraint>
+                                          <Constraint ptrID="268" subjectID="269">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge1" SecondParticipant="edge2"/>
+                                          </Constraint>
+                                          <Constraint ptrID="270" subjectID="271">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge2" SecondParticipant="edge3"/>
+                                          </Constraint>
+                                          <Constraint ptrID="272" subjectID="273">
+                                            <PerpendicularConstraint Locked="true" FirstParticipant="edge3" SecondParticipant="edge0"/>
+                                          </Constraint>
+                                          <Constraint ptrID="274" subjectID="275">
+                                            <HorizontalConstraint Locked="true" FirstParticipant="edge0"/>
+                                          </Constraint>
+                                          <Constraint ptrID="276" subjectID="277">
+                                            <FixedPositionConstraint Locked="true" FirstParticipant="vertex0">
+                                              <Position ptrID="278" subjectID="279">
+                                                <Cartesian3DExpression>
+                                                  <x ptrID="280" subjectID="281">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="-hornA / 2"/>
+                                                    </Expression>
+                                                  </x>
+                                                  <y ptrID="282" subjectID="283">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="-hornB / 2"/>
+                                                    </Expression>
+                                                  </y>
+                                                  <z ptrID="284" subjectID="285">
+                                                    <Expression>
+                                                      <Formula type="Double" typeid="6" value="0"/>
+                                                    </Expression>
+                                                  </z>
+                                                </Cartesian3DExpression>
+                                              </Position>
+                                            </FixedPositionConstraint>
+                                          </Constraint>
+                                          <Constraint ptrID="286" subjectID="287">
+                                            <FixedPositionConstraint Locked="true" FirstParticipant="vertex2">
+                                              <Position ptrID="288" subjectID="289">
+                                                <Cartesian3DExpression>
+                                                  <x ptrID="290" subjectID="291">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="hornA / 2"/>
+                                                    </Expression>
+                                                  </x>
+                                                  <y ptrID="292" subjectID="293">
+                                                    <Expression>
+                                                      <Formula type="String" typeid="10" value="hornB / 2"/>
+                                                    </Expression>
+                                                  </y>
+                                                  <z ptrID="294" subjectID="295">
+                                                    <Expression>
+                                                      <Formula type="Double" typeid="6" value="0"/>
+                                                    </Expression>
+                                                  </z>
+                                                </Cartesian3DExpression>
+                                              </Position>
+                                            </FixedPositionConstraint>
+                                          </Constraint>
+                                        </ConstraintManager>
+                                        <EdgeList Compressed="true" DataType="Binary">AAAKn3icxZY9b9NAGMfdJvEl8dnUaQrl3TRzKr8M0CLABQGCChYqMVQIuc01tSg2sp1CJGY2dtj4CCxMCNGpXwEhhn4CpG5sQO5s5/xa1Val3HC2fM/l//vlHitZufPgiXTbtAxneM/cQR/qDBlV/8KAuVU0dM3+tietoc1ty96x+yZyAVzB+9Rri7L0eA3MP0U96eHAkqQlSdGWtaVlWZVUWVVY/1MOb7Hvf3/59Gf/803267cfPw/e/rrBV1GvjyAOqv4bDTJBMtVGz4KdDAPxHcsdvnv0sbGq+wVg9IgDYGC9sOzXVnPWX72+51+v7oV7wwU9uSAG6fWM9EYsvUnT7wfpXHZ6KiS5oCfTYUY6H0sX0u6njnbXj50+k5EuxtJbaffZgt98CksUwNbGy+ee0RcqZHKHLs8anueYGzBBQybSjft/DxiO3AJ+HdPLHTI/E3l2FzkeegPbGTrEYo44h2Wn88rOELi66zkGbne+tjlwdhFFovW50u2w25nE4LjC2lNUe4pqK0RbiWjPZ/jgDfBsTPtcXtn5wtqpPm/HZal+Ce1pqj1NtVWirUa0L2T44A3wYkz7Ul7Z5dLa404OT/v7CZx2hWpXqLZGtLWItpThgzfAKzHthbyyTukmT2qPT3usX0K7RrXxLRDXfQG5E1xH6rVXtml5hd7Dwhws5WCjHErAoRyLI/0rU5SjQTkak+RoUo5mlEMNONRCHHppDp5y8JPkECiHEOXQAg6tUJ+W5xAphzhJjhblaJ3ke8vP3LV6XXuri/9ddnuGZ/wHj9sBLw==</EdgeList>
+                                      </Sketch>
+                                    </Profile>
+                                    <HealCoincidenceTolerance ptrID="296" subjectID="297">
+                                      <Expression>
+                                        <Formula type="String" typeid="10" value="0.1 mm"/>
+                                      </Expression>
+                                    </HealCoincidenceTolerance>
+                                    <HealLengthLimit ptrID="298" subjectID="299">
+                                      <Expression>
+                                        <Formula type="String" typeid="10" value="0.1 mm"/>
+                                      </Expression>
+                                    </HealLengthLimit>
+                                  </Cover>
+                                </Feature>
+                                <Feature ptrID="300" subjectID="301">
+                                  <Loft Face2="face0" SuppressionCount="0" TagVersion="1" SuppressExpression="false" Face1="face:LP1(face2)">
+                                    <ReferenceCoordinateSystem ptrID="302" masterID="247" subjectID="228"/>
+                                    <Part1 ptrID="303" subjectID="124"/>
+                                    <TakeOffFactor1>
+                                      <Formula type="Double" typeid="6" value="0"/>
+                                    </TakeOffFactor1>
+                                    <TakeOffFactor2>
+                                      <Formula type="Double" typeid="6" value="0"/>
+                                    </TakeOffFactor2>
+                                  </Loft>
+                                </Feature>
+                              </Recipe>
+                            </ModelRecipe>
+                          </Model>
+                        </Part>
+                      </Participant>
+                    </BooleanOperation>
+                  </Feature>
+                  <Feature ptrID="304" subjectID="305">
+                    <Shell SuppressionCount="0" TagVersion="1" SuppressExpression="false">
+                      <ReferenceCoordinateSystem ptrID="306" masterID="119" subjectID="106"/>
+                      <Thickness ptrID="307" subjectID="308">
+                        <Expression>
+                          <Formula type="String" typeid="10" value="thickness"/>
+                        </Expression>
+                      </Thickness>
+                      <OpenFaces>
+                        <Item>face8</Item>
+                        <Item>face1</Item>
+                      </OpenFaces>
+                    </Shell>
+                  </Feature>
+                </Recipe>
+              </ModelRecipe>
+            </Model>
+          </Part>
+        </Assembly>
+      </Assembly>
+      <CircuitComponentList ptrID="309" subjectID="310">
+        <CircuitComponentList sname="Circuit Components/Ports"/>
+      </CircuitComponentList>
+      <ActivePorts/>
+      <ExternalExcitationList ptrID="311" subjectID="312">
+        <ExternalExcitationList sname="External Excitations"/>
+      </ExternalExcitationList>
+      <ActiveExternalExcitation ptrID="313"/>
+      <BoundaryConditions ptrID="314" subjectID="315">
+        <BoundaryConditions YLowerBoundaryType="Absorbing" YUpperBoundaryType="Absorbing" ZLowerBoundaryType="Absorbing" XUpperBoundaryType="Absorbing" XLowerBoundaryType="Absorbing" ZUpperBoundaryType="Absorbing" AbsorptionType="PML">
+          <NumPMLLayers ptrID="316" subjectID="317">
+            <Expression>
+              <Formula type="Int" typeid="2" value="7"/>
+            </Expression>
+          </NumPMLLayers>
+          <UseHybridFemMom value="false"/>
+          <HybridFemMomType>Volakis_Symm</HybridFemMomType>
+          <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+          <SelectedType value="-842150451"/>
+        </BoundaryConditions>
+      </BoundaryConditions>
+      <ParameterList ptrID="318" subjectID="319">
+        <ParameterList>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>alphaE</Name>
+            <Formula type="String" typeid="10" value="30 deg"/>
+            <Value type="Double" typeid="6" value="0.52359877559829882"/>
+            <FrontendUnit>%C2%B0</FrontendUnit>
+            <BackendUnit>rad</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>centralFreq</Name>
+            <Formula type="String" typeid="10" value="13 GHz"/>
+            <Value type="Double" typeid="6" value="13000000000"/>
+            <FrontendUnit>GHz</FrontendUnit>
+            <BackendUnit>Hz</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>waveguideA</Name>
+            <Formula type="String" typeid="10" value="17 mm"/>
+            <Value type="Double" typeid="6" value="0.017000000000000001"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>hornZ</Name>
+            <Formula type="String" typeid="10" value="3 %2A lambda"/>
+            <Value type="Double" typeid="6" value="0.069182874923076926"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="true"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="false" UserEditable="true">
+            <Name>minFreq</Name>
+            <Formula type="String" typeid="10" value="9 GHz"/>
+            <Notes>Minimum frequency of interest for the project.</Notes>
+            <Value type="Double" typeid="6" value="9000000000"/>
+            <FrontendUnit>GHz</FrontendUnit>
+            <BackendUnit>Hz</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>hornA</Name>
+            <Formula type="String" typeid="10" value="waveguideA + 2 %2A hornZ %2A tan(alphaH / 2)"/>
+            <Value type="Double" typeid="6" value="0.054074990931403666"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="true"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>lambda</Name>
+            <Formula type="String" typeid="10" value="wavelength_0(centralFreq)"/>
+            <Value type="Double" typeid="6" value="0.023060958307692309"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="true"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="false" UserEditable="true">
+            <Name>maxFreq</Name>
+            <Formula type="String" typeid="10" value="17 GHz"/>
+            <Notes>Maximum frequency of interest for the project.</Notes>
+            <Value type="Double" typeid="6" value="17000000000"/>
+            <FrontendUnit>GHz</FrontendUnit>
+            <BackendUnit>Hz</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="false" UserEditable="false">
+            <Name>timestep</Name>
+            <Formula type="Double" typeid="6" value="3.377304964896735e-12"/>
+            <Notes>Simulation timestep in seconds</Notes>
+            <Value type="Double" typeid="6" value="3.377304964896735e-12"/>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>waveguideZ</Name>
+            <Formula type="String" typeid="10" value="1.1 %2A lambda"/>
+            <Value type="Double" typeid="6" value="0.025367054138461541"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="true"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>thickness</Name>
+            <Formula type="String" typeid="10" value="1 mm"/>
+            <Value type="Double" typeid="6" value="0.001"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>waveguideB</Name>
+            <Formula type="String" typeid="10" value="9 mm"/>
+            <Value type="Double" typeid="6" value="0.0090000000000000011"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>alphaH</Name>
+            <Formula type="String" typeid="10" value="30 deg"/>
+            <Value type="Double" typeid="6" value="0.52359877559829882"/>
+            <FrontendUnit>%C2%B0</FrontendUnit>
+            <BackendUnit>rad</BackendUnit>
+            <ParamDependence value="false"/>
+          </Expression>
+          <Expression UserVisible="true" UserRemovable="true" UserEditable="true">
+            <Name>hornB</Name>
+            <Formula type="String" typeid="10" value="waveguideB + 2 %2A hornZ %2A tan(alphaE / 2)"/>
+            <Value type="Double" typeid="6" value="0.046074990931403666"/>
+            <FrontendUnit>mm</FrontendUnit>
+            <BackendUnit>m</BackendUnit>
+            <ParamDependence value="true"/>
+          </Expression>
+        </ParameterList>
+      </ParameterList>
+      <StaticVoltagePoints ptrID="320" subjectID="321">
+        <StaticVoltagePointList sname="Static Voltage Points"/>
+      </StaticVoltagePoints>
+      <AmbientConditions ptrID="322" subjectID="323">
+        <AmbientConditions>
+          <BackgroundTemperature ptrID="324" subjectID="325">
+            <Expression>
+              <Formula type="Double" typeid="6" value="298.14999999999998"/>
+            </Expression>
+          </BackgroundTemperature>
+          <ZUpperSpecification ptrID="326" subjectID="327">
+            <AmbientConditionSpecification SpecificationType="NaturalConvection">
+              <Temperature ptrID="328" subjectID="329">
+                <Expression>
+                  <Formula type="Double" typeid="6" value="298.14999999999998"/>
+                </Expression>
+              </Temperature>
+              <EffectiveHeatTransfer ptrID="330" subjectID="331">
+                <Expression>
+                  <Formula type="String" typeid="10" value="10 W/m%2A%2A2/K"/>
+                </Expression>
+              </EffectiveHeatTransfer>
+              <AirFlowSpeed ptrID="332" subjectID="333">
+                <Expression>
+                  <Formula type="Double" typeid="6" value="0"/>
+                </Expression>
+              </AirFlowSpeed>
+            </AmbientConditionSpecification>
+          </ZUpperSpecification>
+          <ZLowerSpecification ptrID="334" subjectID="335">
+            <AmbientConditionSpecification SpecificationType="NaturalConvection">
+              <Temperature ptrID="336" subjectID="337">
+                <Expression>
+                  <Formula type="Double" typeid="6" value="298.14999999999998"/>
+                </Expression>
+              </Temperature>
+              <EffectiveHeatTransfer ptrID="338" subjectID="339">
+                <Expression>
+                  <Formula type="String" typeid="10" value="2.5 W/m%2A%2A2/K"/>
+                </Expression>
+              </EffectiveHeatTransfer>
+              <AirFlowSpeed ptrID="340" subjectID="341">
+                <Expression>
+                  <Formula type="Double" typeid="6" value="0"/>
+                </Expression>
+              </AirFlowSpeed>
+            </AmbientConditionSpecification>
+          </ZLowerSpecification>
+        </AmbientConditions>
+      </AmbientConditions>
+      <TerminationCriteria ptrID="342" subjectID="343">
+        <TerminationCriteria SamplingInterval="100" ConvergenceThreshold="-30" WindowSize="2" EnableFlatlineDetection="true" SpacingDensity="Medium_Density" EnableConvergence="true">
+          <MinimumSimulationTime>
+            <Formula type="Int" typeid="2" value="0"/>
+          </MinimumSimulationTime>
+          <MaximumSimulationTime>
+            <Formula type="String" typeid="10" value="50000%2Atimestep"/>
+          </MaximumSimulationTime>
+          <MaximumWallClockTime>
+            <Formula type="Int" typeid="2" value="0"/>
+          </MaximumWallClockTime>
+          <TdAfsTerminationCriteria>
+            <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+            <ConvergenceType value="0"/>
+            <StartFrequency>
+              <Formula type="Double" typeid="6" value="1000000000"/>
+            </StartFrequency>
+            <StopFrequency>
+              <Formula type="Double" typeid="6" value="10000000000"/>
+            </StopFrequency>
+            <NumberOfFrequencyPoints value="1000"/>
+            <ConvergenceType value="0"/>
+            <NumberOfConsecutivePasses value="1"/>
+            <UseProjectFroi value="true"/>
+            <TemporalSamplingIntervalBackup value="100"/>
+          </TdAfsTerminationCriteria>
+        </TerminationCriteria>
+      </TerminationCriteria>
+      <ParameterSequences ptrID="344" subjectID="345">
+        <ParameterSequenceList>
+          <ParameterList ptrID="346" subjectID="319"/>
+        </ParameterSequenceList>
+      </ParameterSequences>
+      <FOIParameters ptrID="347" subjectID="348">
+        <FOIParameters SamplingInterval="5" DataStorageType="OnDisk" UseAutomaticSampling="false" SaveFarZoneBox="true" NormalizeFields="true" ComputeDissipatedPower="false" CollectSteadyStateData="false" FOISource="Waveform"/>
+      </FOIParameters>
+      <StaticSolverMaximumIterations ptrID="349" subjectID="350">
+        <Expression>
+          <Formula type="Int" typeid="2" value="5000"/>
+        </Expression>
+      </StaticSolverMaximumIterations>
+      <ResidualThreshold ptrID="351" subjectID="352">
+        <Expression>
+          <Formula type="Double" typeid="6" value="0.01"/>
+        </Expression>
+      </ResidualThreshold>
+      <Mesh ptrID="353" subjectID="354">
+        <Mesh AutoUpdate="true">
+          <Grid ptrID="355" subjectID="356">
+            <Grid MainGridDeltaZ="0.0017634850470588236" MaxStepFactor="2" MinDeltaYH="0.0017453668408025924" GridGeneratorValidity="IsValid" MinDeltaYE="0.0017453668408025998" IsDirty="false" MainGridDeltaX="0.0017634850470588236" MaxDeltaZH="0.0017562694781265153" MinDeltaZH="0.0017562694781264876" MaxDeltaXE="0.0017595131274246777" YZSize="6555" MaxDeltaH="0.0017595131274246861" MinDeltaXH="0.0017595131274246723" MaxDeltaXH="0.0017595131274246861" ZSize="95" TransitionRegionIterationLimit="1000" MinDeltaZE="0.0017562694781265047" MinDeltaXE="0.0017595131274246777" MaxDeltaYE="0.0017453668408025998" MinDeltaH="0.0017453668408025924" MainGridDeltaY="0.0017634850470588236" MaxDeltaYH="0.0017453668408026063" MaxDeltaZE="0.0017562694781265047" MinDeltaE="0.0017453668408025998" MaxDeltaE="0.0017595131274246777">
+              <BoundingBox>
+                <Upper z="0.12981963000271496" y="0.059342472587288392" x="0.063342472587288395"/>
+                <Lower z="-0.035269700941176471" y="-0.059342472587288392" x="-0.063342472587288395"/>
+              </BoundingBox>
+              <MaxEdgeDeltas z="0.0017634850470588236" y="0.0017634850470588236" x="0.0017634850470588236"/>
+              <MinEdgeDeltas z="0.0008817425235294118" y="0.0008817425235294118" x="0.0008817425235294118"/>
+              <CoordinateSystem ptrID="357" subjectID="358">
+                <CoordinateSystem PrimaryAxis="Z" SecondaryAxis="X">
+                  <AnchorPoint ptrID="359" subjectID="360">
+                    <CoordinateSystemPosition>
+                      <ReferenceCoordinateSystem ptrID="361" masterID="368"/>
+                      <Position z="0" y="0" x="0"/>
+                    </CoordinateSystemPosition>
+                  </AnchorPoint>
+                  <PrimaryDirection ptrID="362" subjectID="363">
+                    <CoordinateSystemDirection>
+                      <ReferenceCoordinateSystem ptrID="364" masterID="368"/>
+                      <Rotations z="1" y="0" x="0"/>
+                    </CoordinateSystemDirection>
+                  </PrimaryDirection>
+                  <SecondaryDirection ptrID="365" subjectID="366">
+                    <CoordinateSystemDirection>
+                      <ReferenceCoordinateSystem ptrID="367" masterID="368"/>
+                      <Rotations z="0" y="0" x="1"/>
+                    </CoordinateSystemDirection>
+                  </SecondaryDirection>
+                  <Translation z="0" y="0" x="0"/>
+                  <OffsetOrientation Scalar="1">
+                    <Vector z="0" y="0" x="0"/>
+                  </OffsetOrientation>
+                  <ReferenceCoordinateSystem ptrID="368"/>
+                </CoordinateSystem>
+              </CoordinateSystem>
+              <LowerBound z="-0.035269700941176471" y="-0.059342472587288392" x="-0.063342472587288395"/>
+              <UpperBound z="0.12981963000271496" y="0.059342472587288392" x="0.063342472587288395"/>
+              <DeltaXE Compressed="true" DataFormat="Binary" Count="73">AAAGRXicM9AzMDA0N7U0NTQ2NDI3MTIxMzc3VzAYFR0VHRUdFR0VHRUlLAoA0hI+LA==</DeltaXE>
+              <XLocationE Compressed="true" DataFormat="Binary" Count="73">AAAGDnicbVTJkSAhDEulE5gt30f+ia3AzGfg2WosZFn4h/5RqJpYildKlbZ/PwtlL2lv867Q5NgoPkTNUCKmTZqDFkgaGDmxaQyDh5KZEGV6ddRhMDdrisbRcKKDSpaDokTSSOXwMkFVrcPKHlYbtZYIjfTIauocBkunKHAbWYT0MJinpRorQwsHH1S7sqS4PDjQ4qAiUrgH7XCLeA8KOkjgVkrcWcOgldRwq2iZ1zTKFFydS5g3o5WDOjdJiFtZq/voRR0YrU0Yun9pOZJFIV/DjHsIpJs5BT9DuJ0PWuyC4qWlDXMbFIOQ6ECFJhweXlkT49LEMfhfh0Eq4SOFhwsVHQZmNvZ0tNXBMij6d4vl7pJ4HGP06fAWM8MNmUOL4Ch8LYZxItSHwOAfr4C0Ns4PuJpaXjV3gmVAck/KylhSYc5GCV3CWV9ZFNUaVkq0j/Q4pPaayTn8J08nZX9HwXPh3z5aPvoeuOj3ICn73jfe8hi9PFt5dM3fw5/8Xk5envPcfo/nNch75Lqr73TcQeopvzL3jOedZNnld+hfz+P5kJ5v7n6evEd0v+Tno3/uh+cqubaO0k7IvaCeu+xee7p13hvyXqa9p37v3eeKvrf5JPla/P8BZQYy1g==</XLocationE>
+              <DeltaYE Compressed="true" DataFormat="Binary" Count="69">AAAF7XicM9AzMDA0NzE1NjOzMDGwMDAytbS0UDAYFR0VHRUdFR0VHU6iAP3ILp8=</DeltaYE>
+              <YLocationE Compressed="true" DataFormat="Binary" Count="69">AAAFunicdVTZbcUwDFslC7TQfey/WPns+OfJTRAoIGyJ1PVDv+StJpbilVKlLc/PB03vZBgLK8+DejmnVpNHKbdu1JhCUwhHC/5so6LBBCNGmX1QCvbQwivp2r5Q3EuSZF9MsmOjyWINQxz4qjfqmo2vgio+LDeqocZgLAQa3bxRLjwwEBCiXRslNjVN1TLcf7WBURclWWd4Hm0a4ZIwEOw4/aKghetRHOR8tKlycEd3OngfbcrGETBqZpEvKh1QpyGtYcavYkhHHaLNpYyPNglGWj9GwLIPaqbO6rn8HG0iURBQrUgJEvWi1AgOUx3KILxQbvyRgmyV1GbAifxGlFGR+FHGnlQKEymielDtD39ULEzoKGMRThyscvDmg6KMIh9jxe6vXkLPoZFwGzWR7th0KboYuYIsYdLOHe+7pWoX+bsatfNzkULPP/jVyYiIIjx3dt9SFP6Wgyl7ZEhInmsyR97h+LmW6FLLS9FXmNkfo5Vsy5xdNxoUXf1ce3m0fW2Rc0K+hwnju0TOuRsjujzOWb6O/XVDXJfJde9cV9TcZrUCzcU3dmRskXOdXjbvij6W9B938yIb</YLocationE>
+              <DeltaZE Compressed="true" DataFormat="Binary" Count="95">AAAIKXic7chBEQAwCANBK1XQCQwQ6t9Yjdw+V1cK9+S88kZOq3zEsizLsixb/j0ontI=</DeltaZE>
+              <ZLocationE Compressed="true" DataFormat="Binary" Count="95">AAAHx3icNZVbdu0wCEOn0gn0Lps385/Y3eC0PydVMAZJkN/z76hLdJ7Tdm+G5f35HVT9qum10GPd+cCbnjdul7WoxRd6+KsWP5Ed7bGolJiFKA+Rx/zFSliVurofN21/oKXKKTspdtNMHiqdXte8TZrqHnjltpONKsJMX+htypT00DqarQ/MPLQV17vvNXl38Z+f1Ii6OV080MhgkXI0vOx+oWJatzPFXW+/Bu7hZE9zabRwXui2z9GMlqw+fzBktfKOAlz0jxrOXb2weGHHCf9gLo9yqLfqPfbgO/nqlAelVJ2nBTj936tZQffJxT8bHWQmvNuKFih7U2uUwFBmnEDSWNRp0dDePVWv9oIxV0S4annHdLgNcgUFnik7LgX+LBnaqrTT4BIbiUDWntZcqA3dC2rTgvEX0+TefvkV6u+pQSBqwbRbWmo45WKcxRo0fFtH+dxAOa2nRdSrYLkWk+C5SRANubWtk93Gqnqn23cLubG0HqwiWOlxJIk+0CoJpwipC3Zemfmgp2OY9GfHwNCJwiWhMve0qgiEF2TCMn0taJRxsqalUvIuGKmpBsUCgSIvJV7UuHkNrjDilgkJJKiACcHfujkpYjwdp3E7TciCmiFY3IcgnjanuUMhdTPgJnSwYM5TmFM4ZvWXs+mJgUbmQjvfnIxJJW40ehIRtwX5hR3pcEyQj04geDOZeeTwikaBjCPcyrTEiQWhAsOjeSOn5PLBQGI5h7oMt3zOQi9qYx59zzxMD0erS3FTYvgFDWLDWyeYRbEpYwCGNPFlnHqqBXsHL0Fl8eaRmTPPDD7+YiTrqZawRm2JoAy4PtVYGTOHrDKJmAwLuk6/6DNW0heYYzWbbdDc9t1TuLRwIEPECLzI4mpj7aHmZbB1CWaxMK3cizVZAk+0WUnYRVm+iFxPNKbzSvWsZ2e5PNGQJBoHTFVc+kQrNigaya4R1ycaK4kVyBIpZviWr2psKjZJ4i0hVp9qLFcS2KHYW6zvbX0shEV6pm2W0M4+5MIQVPBWPyW7ez4h9A8npJjZvzjizq377TkbyC6xdFZojcysgcVobGrT6UFfWDASLBvMiXxfGMl5Hayg229yL2fPGCGN0dQXxyg7r10wJR+1FzcTJ6iCJ/n8yWI8NQse36L3F4fSkyyoUdp8sfkQcPziSOc7NZjQCPZgxciIuXEsCk44O4u9xdAuBkAAwuJn/+JmnaAM1dh8ZRfDJmxvmDBWnb07WCvD6i4rpvk/SdGKKg==</ZLocationE>
+              <DeltaXH Compressed="true" DataFormat="Binary" Count="73">AAAGRXicM9AzMDA0N7U0NTQ2NDI3MTIxMzc3VzDAELUwM8Qiam5kTLQoKSbQ1zZzSyPiRelrmym2uCBJLSkmUO4yym0bvL6glRtISGejtg1R9w5n24yMAcl4PO8=</DeltaXH>
+              <XLocationH Compressed="true" DataFormat="Binary" Count="73">AAAGJHicbVTJtQMhDGtlGsh/3pf+G/sCzyWB5BQFZFkW/tAfhVhIcpCoZ5D381koJamQVAc7a+pGvdo0qjMqJZJ40OQyzghjJdwZBncDcyhuV6aaDKoRzk5aYQ6KAbnJQ1O8SbLLBiW2YAEpxKnyEFjhajAToSRIBgy0QJ2Vka7to9as8LMsrVVaatSaMhWhYUFVQ9uDslo5DrdZdsswgKpwCKIT/YgPg2YJaohoh0L4aNBlGXEziyyjhldXOYerkFEs/PKKO6FKeaqH68tA2YzqKd3K5bVRaVLuCCh1yM5xVxJfCLN0KvwxvKBlaUPVDIfKsVcUphjOYzbw0V5eRhXUI8igsnh5ccSMqKGq9C3Gy8OqXICjwZHLkeyalmgQd3Ro2Ro2IjSFxjvfOPFqAQ6bexQUD8grTAonS4KMhhalEReBWMJ/KRUDw5ssakKUMH3MaeBVCdNog8WI0DtOTLmhFzMvD46ewZGEtkTjNyJN/OYEhWA65oD7DIc6ngsamN2d41LP/LmI03zOThzv5dI2sna16GLmgN++x5b1MyK8wes0L3Pf138ikgN+p8k350/wdIs/M3rGufb1n+THgMcjub6n69M7X2luSeeDvr7965q4bpRz+ezwHFvqus/O1deb8ViSl3W6Q3Nu3uuSPvd5PdfNv0CT9WmcwhNI5X8QlzaF</XLocationH>
+              <DeltaYH Compressed="true" DataFormat="Binary" Count="69">AAAF7XicM9AzMDA0NzE1NjOzMDGwMDAytbS0UDBAFzUzMDPGFDW1NDKhjVpLLGrpK0o7HxthCd/B4WNsLhu87h0MoTMYXEbvHDDwLhvOorQMdQBkySzz</DeltaYH>
+              <YLocationH Compressed="true" DataFormat="Binary" Count="69">AAAF0XicfVRtDuNKCLtKLrBPfBq4/8Wek0l+bGe0UquRrNZgY/gj/0l2YKpHge6SwfXnRlEWYeYG6YiehcbUSGZ0WmtPLdTNnX9GRNTY6EI1ut20xVHA9IOSIGzIA+sKGVtozVR2q5mUxvhCYWlmylJG+g+NFHSyFn8Am1ioFViwcgZwTC5URaHkJDdUXtTHipAPe6P6V7FXWjodqLLMV7BntYiJOYIyX8Ee/CDdJ8FmXsFu1mON255oeQU7TWOloSyJ/IpR/HTSxHIL/u1Fi15qg1RU91VjV1Kt5FB4fUaaJyySjzS/H6qtJWRWuUlmqTChq0VijNn0iyqnA09ta7r3VVPk3XtMF/nx2ktrWY/kgeaMPtRl2B4fiE689qo6A8PQIE3xaaP5M6k3aSgjgEVBZRmafByqDOLyUjitJjY0hzWmVnMSDg9KuSWBPb4khnuU92Pinz4hA3PjYRKixmD09Q9449jqJS27tuYYMbs2JSWS10H24v21aIE/bi7wx/ingd8Z1XUc52HyuA4heRr9O08UfG3RK9FrS6lfW5yfxn9zv8BtRQ7btMBt8Q4r+qjZt/m4+McbcTwnx8tzPFLHe3Y4fY9tv1fykbkf1P32LkX7mSYIzjI1wSnfizb5PyZsJ0A=</YLocationH>
+              <DeltaZH Compressed="true" DataFormat="Binary" Count="95">AAAIKXic3ZLtCcAwCERX6QRFjV/Zf7EOkBQqNqH170PuTnhwAqCJknY2R1IBtgNG6jyjKNlb7mtoZFmjncvm9AsbatC8ZxF3Iq7XyP3bF+kNKG2k7KZPb/MJe9te8CGfu2pZjbZIQsCHe0supRmeew==</DeltaZH>
+              <ZLocationH Compressed="true" DataFormat="Binary" Count="95">AAAHyHicLZXbcQUxCENbSQPJmDf031iO8ebrjoJtEJL29/wdcxuJTD0qYqo/vxfUtNDJUpvOkg89XXO01KPzli+qI6oVVVllVufValmmd2tPntLz1UYKB7tFvE9OPtQ6bHyMv3CZr1bPcOd0BPdnf7U0LC7HquSI9KuVjg7x09NTzqGHJs93ietpb6mvNugnj4wziWT2Q80kzdTTY4KfD4WZc1IhwekgXu2Z5v2xOG2uEq/29PEKdWgCY/aH5uUnnCHoTtxeE8fDnNFO2SRkz+sY2oqGgxbaUih5MKSpe4pUnaG3i3HUWs3yOIMW9C2sPjSoDafOOrh4n2MwS2XGzGnYWJTZeFtqvLgV8hatip4jsDPK+rwWhZSQOhVyeGpY3fKj0Ot0N1IxJxa0OwbLo0PakcW82qaGRbleHhbM4Kh3Ira4i1+w0V2w2DuVjG6lnhMKMylQ365biY4OT96XBqZsH1KLDOQblSehe9tUEAmEyCNI+LWk9FfslP8ZM7gu2KxU2CxT+p35Z3XPaA7QHVnoY0E1z7zrg1F7dHAUO7hxW+vx3CsNaY7KJXM8Z9k0JglqnHfKYH/BsYLF26HMvGU4DDeTWhRDcWJBuoQD1Ieu9G0YdfhBrHZL8dI7jbDwwOW9znaIDcLOjKICU8ZccOaMXQ3VMOlZIeGBDESheAULylbG1fvAGz0IibEYssBcJVeMHfoK4QQW4IYmgq0s2MlZQdcwQh9bmbd1nJBCzuCrnSYxP+3FGW/3eAtjGHxB+CDMuipcMLALA9MvOoi3MJZE5GyE4Ruks+BVMwlzjRM0uAwhnva8IgxnqlgBlxZRUoInIJQHFnTnVbLHBVmfXjorkRZLZ2FMwI4WbNySdxTCi8zcPossi7sXNo+uao+zDFUIZY/KU7N9spfCoAgRDPJXMCQFMiEUmBtzzvZJMo9sZDRyym2z7yDwo2iTHcleOUgYX4BgNmq3zVFkTcrQwSD0Z8mxZj/XVByVlzQTMG4Is3Bjy1vboEdC0e/QJK69SjTpmBsNIi3ZlBG4QsUbZ0mOx2Ia5PRVIoJ3eZhbWCmfCALqfHWXLNTK0Kztq8O08AJ13GhZixGibEJu0BHti/E1gxgQdMmJh117oIQbBfx+GIRyEbbttctifLsIEP6RlbnBxAhEe98Y4wD+uRjftdxsQxJ8tx7Gj7wiuZw+8QibZCN9vUis6sM2CbHY/Qb0SuemKQ7SqPvRi6+OCBZH+KgxXsvGCHxvvXimcOg/+8mKZg==</ZLocationH>
+            </Grid>
+          </Grid>
+          <MeshObject ptrID="369" subjectID="370">
+            <ModelMeshObject version="1" FieldTypes="Empty_FieldTypes" GridBoundingBoxRequiresUpdate="true" MeshRequiresUpdate="true" AutoUpdatingEnabled="true">
+              <Grid ptrID="371" subjectID="356"/>
+              <MeshParameters ptrID="372" masterID="125" subjectID="126"/>
+              <Part ptrID="373" subjectID="124"/>
+              <Material ptrID="374" masterID="127"/>
+              <MeshData ptrID="375" subjectID="376">
+                <GriddedBitArrayMeshData MinChunkSize="2048" NumAllocatedNodes="0">
+                  <ESizeBox z="0" y="0" x="0"/>
+                  <HSizeBox z="0" y="0" x="0"/>
+                  <EOrigin z="0" y="0" x="0"/>
+                  <HOrigin z="0" y="0" x="0"/>
+                  <EdgesPerNodeElectric z="0" y="0" x="0"/>
+                  <EdgesPerNodeMagnetic z="0" y="0" x="0"/>
+                  <NodeCountsElectric z="0" y="0" x="0"/>
+                  <NodeCountsMagnetic z="0" y="0" x="0"/>
+                  <MinBoundsElectric z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsElectric z="-2147483647" y="-2147483647" x="-2147483647"/>
+                  <MinBoundsMagnetic z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsMagnetic z="-2147483647" y="-2147483647" x="-2147483647"/>
+                </GriddedBitArrayMeshData>
+              </MeshData>
+            </ModelMeshObject>
+          </MeshObject>
+          <MeshObject ptrID="377" subjectID="378">
+            <ModelMeshObject version="1" FieldTypes="Empty_FieldTypes" GridBoundingBoxRequiresUpdate="true" MeshRequiresUpdate="true" AutoUpdatingEnabled="true">
+              <Grid ptrID="379" subjectID="356"/>
+              <MeshParameters ptrID="380" masterID="125" subjectID="126"/>
+              <Part ptrID="381" subjectID="124"/>
+              <Material ptrID="382" masterID="127"/>
+              <MeshData ptrID="383" subjectID="384">
+                <GriddedBitArrayMeshData MinChunkSize="2048" NumAllocatedNodes="0">
+                  <ESizeBox z="0" y="0" x="0"/>
+                  <HSizeBox z="0" y="0" x="0"/>
+                  <EOrigin z="0" y="0" x="0"/>
+                  <HOrigin z="0" y="0" x="0"/>
+                  <EdgesPerNodeElectric z="0" y="0" x="0"/>
+                  <EdgesPerNodeMagnetic z="0" y="0" x="0"/>
+                  <NodeCountsElectric z="0" y="0" x="0"/>
+                  <NodeCountsMagnetic z="0" y="0" x="0"/>
+                  <MinBoundsElectric z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsElectric z="-2147483647" y="-2147483647" x="-2147483647"/>
+                  <MinBoundsMagnetic z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsMagnetic z="-2147483647" y="-2147483647" x="-2147483647"/>
+                </GriddedBitArrayMeshData>
+              </MeshData>
+            </ModelMeshObject>
+          </MeshObject>
+          <MeshObject ptrID="385" subjectID="386">
+            <ModelMeshObject version="1" FieldTypes="Empty_FieldTypes" GridBoundingBoxRequiresUpdate="true" MeshRequiresUpdate="true" AutoUpdatingEnabled="true">
+              <Grid ptrID="387" subjectID="356"/>
+              <MeshParameters ptrID="388" masterID="223" subjectID="224"/>
+              <Part ptrID="389" subjectID="222"/>
+              <Material ptrID="390" masterID="225"/>
+              <MeshData ptrID="391" subjectID="392">
+                <GriddedBitArrayMeshData MinChunkSize="2048" NumAllocatedNodes="0">
+                  <ESizeBox z="0" y="0" x="0"/>
+                  <HSizeBox z="0" y="0" x="0"/>
+                  <EOrigin z="0" y="0" x="0"/>
+                  <HOrigin z="0" y="0" x="0"/>
+                  <EdgesPerNodeElectric z="0" y="0" x="0"/>
+                  <EdgesPerNodeMagnetic z="0" y="0" x="0"/>
+                  <NodeCountsElectric z="0" y="0" x="0"/>
+                  <NodeCountsMagnetic z="0" y="0" x="0"/>
+                  <MinBoundsElectric z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsElectric z="-2147483647" y="-2147483647" x="-2147483647"/>
+                  <MinBoundsMagnetic z="2147483647" y="2147483647" x="2147483647"/>
+                  <MaxBoundsMagnetic z="-2147483647" y="-2147483647" x="-2147483647"/>
+                </GriddedBitArrayMeshData>
+              </MeshData>
+            </ModelMeshObject>
+          </MeshObject>
+          <OperationManager ptrID="393" subjectID="394">
+            <MeshOperationManager/>
+          </OperationManager>
+        </Mesh>
+      </Mesh>
+      <AgEMNewSimulationData>
+        <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+        <SimulatorSetup>
+          <Engine value="1"/>
+          <Name>FDTD</Name>
+          <SortPriority value="0"/>
+          <FemMeshSettings>
+            <DeltaError>
+              <Formula type="Double" typeid="6" value="0.01"/>
+            </DeltaError>
+            <NumberOfConsecutiveIterations value="1"/>
+            <MinimumNumberOfAdaptivePasses value="1"/>
+            <MaximumNumberOfAdaptivePasses value="15"/>
+            <MemoryLimit>
+              <Formula type="String" typeid="10" value="21.4 GB"/>
+            </MemoryLimit>
+            <UseMemoryLimit value="false"/>
+            <MonitorSolveFreqPlan value="false"/>
+            <RefinementStrategyEnum value="0"/>
+            <RefinementFrequencyPlanMgr>
+              <AgEMFrequencyPlans>
+                <AgEMFrequencyPlan>
+                  <Type value="0"/>
+                  <StartFrequency>
+                    <Formula type="String" typeid="10" value="minFreq"/>
+                  </StartFrequency>
+                  <StopFrequency>
+                    <Formula type="String" typeid="10" value="maxFreq"/>
+                  </StopFrequency>
+                  <SamplePointsLimit value="20"/>
+                  <PointsPerDecade value="20"/>
+                  <FrequencyStep>
+                    <Formula type="String" typeid="10" value="0.1%2A(maxFreq-minFreq)"/>
+                  </FrequencyStep>
+                  <NumberOfFrequencyPoints value="10"/>
+                  <SpecifiedNumber value="true"/>
+                  <Enabled value="true"/>
+                  <SwitchingFrequency/>
+                  <RippleFrequency/>
+                  <RiseTime/>
+                  <FallTime/>
+                </AgEMFrequencyPlan>
+              </AgEMFrequencyPlans>
+            </RefinementFrequencyPlanMgr>
+            <OrderOfBasisFunctions value="2"/>
+            <MeshRefinementPercentage value="25"/>
+            <TargetMeshSize>
+              <Formula type="String" typeid="10" value="wavelength(maxFreq)/3.0"/>
+            </TargetMeshSize>
+            <UseTargetMeshSize value="true"/>
+            <AutoTargetMeshSize value="false"/>
+            <Resolution>
+              <Formula type="String" typeid="10" value="1 um"/>
+            </Resolution>
+            <ArcResolution>
+              <Formula type="String" typeid="10" value="60 deg"/>
+            </ArcResolution>
+            <MinMeshSize>
+              <Formula type="Int" typeid="2" value="0"/>
+            </MinMeshSize>
+            <UseMinMeshSize value="false"/>
+            <AutoMinMeshSize value="false"/>
+            <AnisotropicEdgeMesh value="false"/>
+            <AlwaysSolveOnFinestMesh value="false"/>
+            <EdgeMeshFactor>
+              <Formula type="Double" typeid="6" value="0"/>
+            </EdgeMeshFactor>
+            <VertexMeshFactor>
+              <Formula type="Double" typeid="6" value="0"/>
+            </VertexMeshFactor>
+            <EdgeMeshLength>
+              <Formula type="Double" typeid="6" value="0"/>
+            </EdgeMeshLength>
+            <VertexMeshLength>
+              <Formula type="Double" typeid="6" value="0"/>
+            </VertexMeshLength>
+            <MergeObjectsSameMaterial value="true"/>
+            <IdealGround value="false"/>
+            <MeshDomainOptimization value="false"/>
+            <FemDomainSplitting value="0"/>
+            <UseResolution value="true"/>
+            <AutoConductorMeshing value="false"/>
+            <AutoConductorMeshing_Vertices value="true"/>
+            <AutoConductorMeshing_Edges value="true"/>
+            <AutoConductorMeshing_VertexFactor>
+              <Formula type="String" typeid="10" value="0.2%2A0.3"/>
+            </AutoConductorMeshing_VertexFactor>
+            <AutoConductorMeshing_EdgeFactor>
+              <Formula type="String" typeid="10" value="0.2"/>
+            </AutoConductorMeshing_EdgeFactor>
+            <UserDefined value="136968830975"/>
+          </FemMeshSettings>
+          <FemEigenSolverSettings>
+            <LowFreqLimit>
+              <Formula type="Double" typeid="6" value="1000000000"/>
+            </LowFreqLimit>
+            <HighFreqLimit>
+              <Formula type="Double" typeid="6" value="-1"/>
+            </HighFreqLimit>
+            <IterationTolerance>
+              <Formula type="Double" typeid="6" value="1.0000000000000001e-05"/>
+            </IterationTolerance>
+            <NbEigenFreq>
+              <Formula type="Int" typeid="2" value="5"/>
+            </NbEigenFreq>
+            <TargetDeltaFreqRel value="0.01"/>
+            <UserDefined value="31"/>
+          </FemEigenSolverSettings>
+          <FemMatrixSolver>
+            <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+            <SolverType value="2"/>
+            <MaximumNumberOfIterations value="500"/>
+            <Tolerance>
+              <Formula type="Double" typeid="6" value="1.0000000000000001e-05"/>
+            </Tolerance>
+            <OptimizeSolveTowards value="0"/>
+            <UserDefined value="15"/>
+          </FemMatrixSolver>
+          <FemPerLayerOverrides/>
+          <MomPhysModel>
+            <ThickConductorModel value="3"/>
+            <ViaConductorModel value="3"/>
+            <SolveModel value="2"/>
+            <UserDefined value="7"/>
+          </MomPhysModel>
+          <MomMeshSettings version="6">
+            <MeshGranularity>
+              <Formula type="String" typeid="10" value="10 um"/>
+            </MeshGranularity>
+            <EdgeMesh value="0"/>
+            <EdgeMeshCustomWidth>
+              <Formula type="String" typeid="10" value="0"/>
+            </EdgeMeshCustomWidth>
+            <GeometryOverlapExtraction value="0"/>
+            <MeshReduction value="0"/>
+            <UserDefined value="118"/>
+          </MomMeshSettings>
+          <MomMatrixSolver version="3">
+            <MomSolverType value="0"/>
+            <UserDefined value="1"/>
+          </MomMatrixSolver>
+          <MomPerLayerOverrides/>
+          <MomPerNetOverrides/>
+          <MomExpertSettings/>
+          <PreprocessorSettings version="2">
+            <HealingSnap value="1"/>
+            <HealingSnapDistance>
+              <Formula type="String" typeid="10"/>
+            </HealingSnapDistance>
+            <SimplifyLayout value="true"/>
+            <IgnoreConductorShapes value="1"/>
+            <IgnoreConductorShapesSize>
+              <Formula type="String" typeid="10"/>
+            </IgnoreConductorShapesSize>
+            <IgnoreConductorHoles value="1"/>
+            <IgnoreConductorHolesSize>
+              <Formula type="String" typeid="10"/>
+            </IgnoreConductorHolesSize>
+            <UserDefined value="0"/>
+          </PreprocessorSettings>
+          <VemMatrixSolver version="1">
+            <VemSolverType value="0"/>
+            <UserDefined value="0"/>
+          </VemMatrixSolver>
+        </SimulatorSetup>
+        <ResourceSettings NumberOfNodes="1" UseDistributed="false" RunLocal="true" NumberOfParallelFreq="4" NumberOfThreads="0"/>
+        <ViaDesignerSettings>
+          <WrittenWith BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA==" RevisionID="101" Version="EMPro 370.010 (64-bit)"/>
+          <Salt>NONE</Salt>
+          <Hash>NONE</Hash>
+        </ViaDesignerSettings>
+        <FemExpertSettings/>
+        <FemFrequencyPlanManager>
+          <AgEMFrequencyPlans>
+            <AgEMFrequencyPlan>
+              <Type value="3"/>
+              <StartFrequency>
+                <Formula type="String" typeid="10" value="centralFreq"/>
+              </StartFrequency>
+              <StopFrequency>
+                <Formula type="String" typeid="10" value="maxFreq"/>
+              </StopFrequency>
+              <SamplePointsLimit value="20"/>
+              <PointsPerDecade value="20"/>
+              <FrequencyStep>
+                <Formula type="String" typeid="10" value="0.1%2A(maxFreq-minFreq)"/>
+              </FrequencyStep>
+              <NumberOfFrequencyPoints value="10"/>
+              <SpecifiedNumber value="true"/>
+              <Enabled value="true"/>
+              <SwitchingFrequency/>
+              <RippleFrequency/>
+              <RiseTime/>
+              <FallTime/>
+            </AgEMFrequencyPlan>
+          </AgEMFrequencyPlans>
+        </FemFrequencyPlanManager>
+        <FdtdFrequencyPlanManager>
+          <AgEMFrequencyPlans/>
+        </FdtdFrequencyPlanManager>
+        <WaveGuides ptrID="395" subjectID="396">
+          <AgEMWaveGuideList sname="Wave Guides">
+            <AgEMWaveGuide ptrID="397" subjectID="398">
+              <AgEMWaveGuide usePaddingBox="true" sname="WG" Enabled="true" TagVersion="1">
+                <offset ptrID="399" subjectID="400">
+                  <Expression>
+                    <Formula type="Double" typeid="6" value="0"/>
+                  </Expression>
+                </offset>
+                <paddingBox ptrID="401" subjectID="402">
+                  <BoundingBox2DExpression>
+                    <Lower ptrID="403" subjectID="404">
+                      <Cartesian2DExpression>
+                        <x ptrID="405" subjectID="406">
+                          <Expression>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </Expression>
+                        </x>
+                        <y ptrID="407" subjectID="408">
+                          <Expression>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </Expression>
+                        </y>
+                      </Cartesian2DExpression>
+                    </Lower>
+                    <Upper ptrID="409" subjectID="410">
+                      <Cartesian2DExpression>
+                        <x ptrID="411" subjectID="412">
+                          <Expression>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </Expression>
+                        </x>
+                        <y ptrID="413" subjectID="414">
+                          <Expression>
+                            <Formula type="Double" typeid="6" value="0"/>
+                          </Expression>
+                        </y>
+                      </Cartesian2DExpression>
+                    </Upper>
+                  </BoundingBox2DExpression>
+                </paddingBox>
+                <componentDefinition ptrID="415" subjectID="416" masterAddr="1903615993056">
+                  <ModalFeed sname="1 W Modal Power Feed">
+                    <SourcePower ptrID="417" subjectID="418">
+                      <Expression>
+                        <Formula type="String" typeid="10" value="1 W"/>
+                      </Expression>
+                    </SourcePower>
+                    <PhaseShift ptrID="419" subjectID="420">
+                      <Expression>
+                        <Formula type="String" typeid="10" value="0 deg"/>
+                      </Expression>
+                    </PhaseShift>
+                  </ModalFeed>
+                </componentDefinition>
+                <impedanceDefinition value="0"/>
+                <AgEMWaveGuideMode ptrID="421" subjectID="422">
+                  <AgEMWaveGuideMode Id="1" TermType="5">
+                    <Tail ptrID="423" subjectID="424">
+                      <CoordinateSystemPositionExpression>
+                        <Position>
+                          <x ptrID="425" subjectID="426">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="0.000 mm"/>
+                            </Expression>
+                          </x>
+                          <y ptrID="427" subjectID="428">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="-waveguideB / 2"/>
+                            </Expression>
+                          </y>
+                          <z ptrID="429" subjectID="430">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="0.000 mm"/>
+                            </Expression>
+                          </z>
+                        </Position>
+                      </CoordinateSystemPositionExpression>
+                    </Tail>
+                    <Head ptrID="431" subjectID="432">
+                      <CoordinateSystemPositionExpression>
+                        <Position>
+                          <x ptrID="433" subjectID="434">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="0.000 mm"/>
+                            </Expression>
+                          </x>
+                          <y ptrID="435" subjectID="436">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="waveguideB / 2"/>
+                            </Expression>
+                          </y>
+                          <z ptrID="437" subjectID="438">
+                            <Expression>
+                              <Formula type="String" typeid="10" value="0.000 mm"/>
+                            </Expression>
+                          </z>
+                        </Position>
+                      </CoordinateSystemPositionExpression>
+                    </Head>
+                  </AgEMWaveGuideMode>
+                </AgEMWaveGuideMode>
+                <PartFacePair>
+                  <FaceId>face10</FaceId>
+                  <Part ptrID="439" subjectID="18"/>
+                </PartFacePair>
+              </AgEMWaveGuide>
+            </AgEMWaveGuide>
+          </AgEMWaveGuideList>
+        </WaveGuides>
+        <ActiveWaveGuides>
+          <ActiveWaveGuide ptrID="440" subjectID="398" masterAddr="1903404624688"/>
+        </ActiveWaveGuides>
+        <PortOnlyFrequencyPlan>
+          <Type value="2"/>
+          <StartFrequency>
+            <Formula type="String" typeid="10" value="minFreq"/>
+          </StartFrequency>
+          <StopFrequency>
+            <Formula type="String" typeid="10" value="maxFreq"/>
+          </StopFrequency>
+          <SamplePointsLimit value="20"/>
+          <PointsPerDecade value="20"/>
+          <FrequencyStep>
+            <Formula type="Double" typeid="6" value="1000000000"/>
+          </FrequencyStep>
+          <NumberOfFrequencyPoints value="10"/>
+          <SpecifiedNumber value="true"/>
+          <Enabled value="true"/>
+          <SwitchingFrequency/>
+          <RippleFrequency/>
+          <RiseTime/>
+          <FallTime/>
+        </PortOnlyFrequencyPlan>
+        <PortOnlyDeltaError>
+          <Formula type="String" typeid="10" value="0.01"/>
+        </PortOnlyDeltaError>
+        <GoodConductorThreshold>
+          <Formula type="String" typeid="10" value="100000.0"/>
+        </GoodConductorThreshold>
+        <PerfectConductorThreshold>
+          <Formula type="String" typeid="10" value="1000000000.0"/>
+        </PerfectConductorThreshold>
+        <ReuseSimulation value="false"/>
+        <GenerateDataset value="false"/>
+        <GenerateCtiFile value="true"/>
+        <GenerateSioFile value="true"/>
+        <GenerateDatasetADS value="false"/>
+        <GenerateCtiFileADS value="false"/>
+        <GenerateConvergenceDatasetADS value="false"/>
+        <ExcitationRenumberingADS>0</ExcitationRenumberingADS>
+        <SaveFieldsFor value="2"/>
+        <HasTdafsSParameterData value="false"/>
+        <FemEigenMode value="false"/>
+        <PortOnlyMode value="false"/>
+        <ComponentsTreatedAsPorts value="false"/>
+        <CoplanarGroundModel value="0"/>
+        <ViaModel value="1"/>
+        <TransfinitePorts value="false"/>
+      </AgEMNewSimulationData>
+    </NewSimulationData>
+  </SharedObject>
+</NewSimulationData>

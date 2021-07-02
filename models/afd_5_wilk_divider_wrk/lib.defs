@@ -1,0 +1,3 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE afu_5_wilk_divider_lib D:\murenkov\afd_5_wilk_divider_wrk\afu_5_wilk_divider_lib
+ASSIGN afu_5_wilk_divider_lib libMode shared

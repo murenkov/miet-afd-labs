@@ -16,97 +16,97 @@
 
 \subsection{Создание подложки}
 
-В первую очередь зададим параметры подложки. Для этого в главном окне перейдём по пути Options\textrightarrow Technology\textrightarrow Edit Stackup (tech.subst) и выберем пункт Create the master substrate from scratch. В качестве шаблона используем 25milAlumina. Параметры подложки возьмём из технического задания. Результат представлен на рис. \ref{fig:matching_substrate}.
+В первую очередь зададим параметры подложки. Для этого в главном окне перейдём по пути Options \textrightarrow\ Technology \textrightarrow\ Edit Stackup (tech.subst) и выберем пункт Create the master substrate from scratch. В качестве шаблона используем 25milAlumina. Параметры подложки возьмём из технического задания. Результат представлен на рис.~\ref{fig:matching_substrate}.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{matching_substrate.pdf}
-    \caption{Подложка}
+    \caption{Подложка}%
     \label{fig:matching_substrate}
 \end{figure}
 
 \subsection{Модель на идеальных линиях передачи}
 
-Соберём моделируемую схему на идеальных линиях передачи (Рис. \ref{fig:matching_ideal_schematic_1}). Для расчёта электрических длин TLSC и TLIN воспользуемся встроенным инструментом Smith Chart. Зафиксировав значения $Z_S$ и $Z_L$ получим, что искомые электрические длины равны $68.258$ и $125.029$ соответственно.
+Соберём моделируемую схему на идеальных линиях передачи (Рис.~\ref{fig:matching_ideal_schematic_1}). Для расчёта электрических длин TLSC и TLIN воспользуемся встроенным инструментом Smith Chart. Зафиксировав значения $Z_S$ и $Z_L$ получим, что искомые электрические длины равны $68.258$ и $125.029$ соответственно.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{matching_ideal_schematic_1.pdf}
-    \caption{Моделируемая цепь на идеальных линиях передачи}
+    \caption{Моделируемая цепь на идеальных линиях передачи}%
     \label{fig:matching_ideal_schematic_1}
 \end{figure}
 
-Результаты моделирования можно увидеть на рис. \ref{fig:matching_ideal_data_1_freq_response}.
+Результаты моделирования можно увидеть на рис.~\ref{fig:matching_ideal_data_1_freq_response}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{matching_ideal_data_1_freq_response.pdf}
-    \caption{Результаты моделирования цепи на идеальных линиях передачи}
+    \caption{Результаты моделирования цепи на идеальных линиях передачи}%
     \label{fig:matching_ideal_data_1_freq_response}
 \end{figure}
 
-Для наглядного представления о согласовании в заданной полосе частот выведем диаграмму Смита (Рис. \ref{fig:matching_ideal_data_1_smith_chart}) и зависимость КСВН от частоты (Рис. \ref{fig:matching_ideal_data_1_vswr}).
+Для наглядного представления о согласовании в заданной полосе частот выведем диаграмму Смита (Рис.~\ref{fig:matching_ideal_data_1_smith_chart}) и зависимость КСВН от частоты (Рис.~\ref{fig:matching_ideal_data_1_vswr}).
 
 \begin{figure}[!ht]
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_ideal_data_1_smith_chart.pdf}
-        \caption{}
-        \label{fig:matching_ideal_data_1_smith_chart}
+        \caption{}%
+    \label{fig:matching_ideal_data_1_smith_chart}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_ideal_data_1_vswr.pdf}
-        \caption{}
-        \label{fig:matching_ideal_data_1_vswr}
+        \caption{}%
+    \label{fig:matching_ideal_data_1_vswr}
     \end{subfigure}
-    \caption{
-        a) диаграмма Смита;
-        б) зависимость КСВН от частоты
-    }
+    \caption{%
+        (a) диаграмма Смита;
+        (б) зависимость КСВН от частоты
+    }%
     \label{fig:matching_ideal_data_display_1}
 \end{figure}
 
 \subsection{Модель на схемном уровне в микрополосковом исполнении}
 
-Для расчёта геометрических размеров нескольких видов линий передач воспользуемся инструментом LineCalc, которую можно найти по пути Tools\textrightarrow LineCalc\textrightarrow Start LineCalc.
+Для расчёта геометрических размеров нескольких видов линий передач воспользуемся инструментом LineCalc, которую можно найти по пути Tools \textrightarrow\ LineCalc \textrightarrow\ Start LineCalc.
 
-В подокне Substrate Parameters задаём параметры подложки из технического задания, в подокне Component Parameters задаём частоту из технического задания, а в подокне Electrical "--- импеданс и электрическую длину, для которых ведётся расчёт.
+В подокне Substrate Parameters задаём параметры подложки из технического задания, в подокне Component Parameters задаём частоту из технического задания, а в подокне Electrical --- импеданс и электрическую длину, для которых ведётся расчёт.
 После этого, нажав кнопку Synthesize, получим в подокне Physical искомые геометрические размеры.
 
 Расчитаем таким образом размеры короткозамкнутого шлейфа и последовательного участка.
 Получим $W_\text{shunt} = 1.383 \text{~мм}$, $L_\text{shunt} = 5.589 \text{~мм}$ и $W_\text{serial} = 1.383 \text{~мм}$, $L_\text{serial} = 10.238 \text{~мм}$ соответственно.
 
-Построим моделируемую схему в микрополосковом исполнении (Рис. \ref{fig:matching_MLIN_schematic_1}).
+Построим моделируемую схему в микрополосковом исполнении (Рис.~\ref{fig:matching_MLIN_schematic_1}).
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{matching_MLIN_schematic_1.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении}
+    \caption{Моделируемая схема в микрополосковом исполнении}%
     \label{fig:matching_MLIN_schematic_1}
 \end{figure}
 
-Запустим расчёт и построим диаграмму Смита и зависимость КСВН от частоты (Рис. \ref{fig:matching_MLIN_data_display_1}).
+Запустим расчёт и построим диаграмму Смита и зависимость КСВН от частоты (Рис.~\ref{fig:matching_MLIN_data_display_1}).
 
 \begin{figure}[!ht]
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_MLIN_data_1_smith_chart.pdf}
-        \caption{}
-        \label{fig:matching_MLIN_data_1_smith_chart}
+        \caption{}%
+    \label{fig:matching_MLIN_data_1_smith_chart}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_MLIN_data_1_vswr.pdf}
-        \caption{}
-        \label{fig:matching_MLIN_data_1_vswr}
+        \caption{}%
+    \label{fig:matching_MLIN_data_1_vswr}
     \end{subfigure}
-    \caption{
-        a) диаграмма Смита;
-        б) зависимость КСВН от частоты
-    }
+    \caption{%
+        (a) диаграмма Смита;
+        (б) зависимость КСВН от частоты
+    }%
     \label{fig:matching_MLIN_data_display_1}
 \end{figure}
 
@@ -116,115 +116,189 @@
 Подберём оптимальный размер шага, после чего изменяя значения выбранных параметров с помощью слайдера, найдём такие, при которых обеспечивается наилучшее согласование.
 Для переноса этих значений на схему, нажмём кнопку Update Schematic в окне Tune Parameters.
 
-Итоговую схему можем увидеть на рис. \ref{fig:matching_MLIN_schematic_2}.
+Итоговую схему можем увидеть на рис.~\ref{fig:matching_MLIN_schematic_2}.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{matching_MLIN_schematic_2.pdf}
-    \caption{Моделируемая схема в микрополосковом исполнении после применения инструмента Tune}
+    \caption{Моделируемая схема в микрополосковом исполнении после применения инструмента Tune}%
     \label{fig:matching_MLIN_schematic_2}
 \end{figure}
 
 \subsection{Модель на топологическом уровне}
 
-Скопируем схему в микрополосковом исполнении в новую ячейку. Сделаем её двухуровневой, перенеся во внутренний уровень все полосковые устройства. Сделать это можно по команде Edit\textrightarrow Component\textrightarrow Create Hierarchy.
+Скопируем схему в микрополосковом исполнении в новую ячейку. Сделаем её двухуровневой, перенеся во внутренний уровень все полосковые устройства. Сделать это можно по команде Edit \textrightarrow\ Component \textrightarrow\ Create Hierarchy.
 
-В результате получим схему верхнего уровня (Рис. \ref{fig:matching_EM_schematic}) и схему нижнего уровня (Рис. \ref{fig:matching_EM_inner_schematic}).
+В результате получим схему верхнего уровня (Рис.~\ref{fig:matching_EM_schematic}) и схему нижнего уровня (Рис.~\ref{fig:matching_EM_inner_schematic}).
 
 \begin{figure}[!ht]
     \begin{subfigure}[b]{0.6\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_EM_schematic_1.pdf}
-        \caption{}
-        \label{fig:matching_EM_schematic}
+        \caption{}%
+    \label{fig:matching_EM_schematic}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{matching_EM_inner_schematic_1.pdf}
-        \caption{}
-        \label{fig:matching_EM_inner_schematic}
+        \caption{}%
+    \label{fig:matching_EM_inner_schematic}
     \end{subfigure}
-    \caption{
-        a) внешнаяя схема;
-        б) внутренняя схема
-    }
+    \caption{%
+        (a) внешнаяя схема;
+        (б) внутренняя схема
+    }%
     \label{fig:matching_EM_schematics}
 \end{figure}
 
-Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout\textrightarrow Generate/Update Layout.
-Топологическое представление создано верно (Рис. \ref{fig:matching_layout_check}).
+Перейдём в схему нижнего уровня. Для получения топологического представления воспользуемся функцией Layout \textrightarrow\ Generate/Update Layout.
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{matching_layout_check.pdf}
-    \caption{Проверка топологического представления}
-    \label{fig:matching_layout_check}
-\end{wrapfigure}
-
-Перейдём в окно File\textrightarrow Customize Pcell.
-Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
-Также убедимся в том, что выставлены галочки напротив Support non-90 degree rotation и Support unit and database resolution for ADS 2015 and older.
-
-В окне File\textrightarrow Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
-
-Для EM-моделирования создадим сущность emSetup.
-Это можно сделать в окне EM\textrightarrow Simulation Setting.
-Определим параметры в соответствии с требованиями, после чего запусти моделирования S-параметров.
-В итоге топология примет вид как на рис. \ref{fig:matching_layout_sparam}.
-\begin{wrapfigure}{r}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.5\textwidth]{matching_layout_sparam.pdf}
-    \caption{Топологическое представление после моделирования S-параметров}
+    \includegraphics[width=0.4\textwidth]{matching_layout_sparam.pdf}
+    \caption{Топологическое представление после EM-моделирования}%
     \label{fig:matching_layout_sparam}
 \end{wrapfigure}
 
-Не покидая окно emSetup, настроим отображение символа цепи согласования на схеме так, чтоб изображение бралось из топологии (Рис. \ref{fig:matching_symbol}).
+\begin{comment}
+Топологическое представление создано верно (Рис.~\ref{fig:matching_layout_check}).
 
-\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{matching_symbol.pdf}
-    \caption{Обновлённый символ}
+    \includegraphics[width=0.4\textwidth]{matching_layout_check.pdf}
+    \caption{Проверка топологического представления}%
+    \label{fig:matching_layout_check}
+\end{wrapfigure}
+\end{comment}
+
+Перейдём в окно File \textrightarrow\ Customize Pcell.
+Сделаем схему параметризуемой, выбрав в выпадающем списке тип Parameterized sub network Pcell.
+Также убедимся в том, что выставлены галочки напротив Support non-90 degree rotation и Support unit and database resolution for ADS 2015 and older.
+
+В окне File \textrightarrow\ Cell Parameters определим параметры $W_{50}$, $L_\text{feed}$, $L_\text{shunt}$, $L_\text{serial}$.
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{matching_symbol.pdf}
+    \caption{Обновлённый символ}%
     \label{fig:matching_symbol}
 \end{wrapfigure}
 
-Схема приобретёт вид как на рис. \ref{fig:matching_EM_schematic_2}. Результаты моделирования можно увидеть на рис. \ref{fig:matching_EM_data_1}.
+Для EM-моделирования создадим сущность emSetup.
+Это можно сделать в окне EM\textrightarrow\ Simulation Setting.
+Определим параметры в соответствии с требованиями, после чего запусти моделирования S-параметров.
+В итоге топология примет вид как на рис.~\ref{fig:matching_layout_sparam}.
+
+Не покидая окно emSetup, настроим отображение символа цепи согласования на схеме так, чтоб изображение бралось из топологии (Рис.~\ref{fig:matching_symbol}).
+
+Схема приобретёт вид как на рис.~\ref{fig:matching_EM_schematic_2}. Результаты моделирования можно увидеть на рис.~\ref{fig:matching_EM_data_1}.
+
+
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{matching_EM_schematic_2.pdf}
-    \caption{Итоговый вид моделируемой схемы}
-    \label{fig:matching_EM_schematic_2}
-\end{figure}
-\begin{figure}[!ht]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.6\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{matching_EM_data_1_vswr_freq_response.pdf}
-        \caption{}
-        \label{fig:matching_EM_data_1_vswr_freq_response}
+        \includegraphics[width=\textwidth]{matching_EM_schematic_2.pdf}
+        \caption{}%
+        \label{fig:matching_EM_schematic_2}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{matching_EM_data_1_smith_chart.pdf}
-        \caption{Зависимость КСВН от частоты}
-        \label{fig:matching_EM_data_1_smith_chart}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \begin{subfigure}[b]{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{matching_EM_data_1_vswr_freq_response.pdf}
+            \caption{}%
+            \label{fig:matching_EM_data_1_vswr_freq_response}
+        \end{subfigure}
+        \vfill
+        \begin{subfigure}[b]{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{matching_EM_data_1_smith_chart.pdf}
+            \caption{}%
+            \label{fig:matching_EM_data_1_smith_chart}
+        \end{subfigure}
     \end{subfigure}
-    \caption{
+    \caption{%
         Итоги моделирования:
-        a) зависимость КСВН от частоты;
-        б) диаграмма Смита
-    }
+        (а) вид моделируемой схемы;
+        (б) зависимость КСВН от частоты;
+        (в) диаграмма Смита
+    }%
     \label{fig:matching_EM_data_1}
 \end{figure}
 
 \subsection{Оптимизация}
 
-Проведём оптимизацию схемы. Для этого создадим копию схемы в микрополосковом исполнении и немного дополним её (Рис. \ref{fig:matching_MLIN_optim_schematic_1}.
+Проведём оптимизацию схемы.
+Для этого создадим копию схемы в микрополосковом исполнении и немного дополним её (Рис.~\ref{fig:matching_MLIN_optim_schematic_1}).
 
-\begin{figure}
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{matching_MLIN_optim_schematic_1.pdf}
-    \caption{Подготовка схемы к оптимизации}
+    \caption{Подготовка схемы к оптимизации}%
     \label{fig:matching_MLIN_optim_schematic_1}
 \end{figure}
+
+Запустим оптимизацию по команде Simulate \textrightarrow\ Optimize.
+Для переноса результатов оптимизации обратно на схему, нажмём кнопку Update Design.
+В случае моделируемой схемы ничего не изменилось.
+
+\subsection{Статистический анализ выхода годных}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{matching_EM_yield_data_1_stat_table.pdf}
+    \caption{Статистика удачных попыток}%
+    \label{fig:matching_EM_yield_data_1_stat_table}
+\end{wrapfigure}
+
+Проведём статистический анализ выхода годных.
+Это позволит понять, как ведёт себя моделируемая схема при случайном изменении параметров.
+
+Оценим, как будет меняться КСВН и коэффициент передачи согласующей цепи при случайном изменении подобранных ранее длин и ширин линий в пределах $\pm0.05 \text{~мм}$.
+
+Создадим копию схемы в топологическом представлении и дополним её (Рис.~\ref{fig:matching_EM_yield_schematic}).
+Параметры изменения переменных зададим во вкладке Statistics окна Simulation Variables Setup.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{matching_EM_yield_schematic.pdf}
+    \caption{Схема для проведения статистического анализа}%
+    \label{fig:matching_EM_yield_schematic}
+\end{figure}
+
+Запустим расчёт. В окне данных выведем таблицу со статистикой (Рис.~\ref{fig:matching_EM_yield_data_1_stat_table}), а также значения $VSWR_1$, $VSWR_2$ и $S_{21}$ (Рис.~\ref{fig:matching_EM_yield_data_1_stat}).
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{matching_EM_yield_data_1_stat_vswr1.pdf}
+        \caption{}%
+        \label{fig:matching_EM_yield_data_1_stat_vswr1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{matching_EM_yield_data_1_stat_vswr2.pdf}
+        \caption{}%
+        \label{fig:matching_EM_yield_data_1_stat_vswr2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{matching_EM_yield_data_1_stat_s21.pdf}
+        \caption{}%
+        \label{fig:matching_EM_yield_data_1_stat_s21}
+    \end{subfigure}
+    \caption{%
+        Статический анализ выхода годных:
+        (а) КСВН по первому входу;
+        (б) КСВН по второму входу;
+        (в) коэффициент передачи
+    }%
+    \label{fig:matching_EM_yield_data_1_stat}
+\end{figure}
+
+Видим, что при случайном изменении параметров в пределах 5~\% моделируемая цепь сохраняет хорошее согласование.

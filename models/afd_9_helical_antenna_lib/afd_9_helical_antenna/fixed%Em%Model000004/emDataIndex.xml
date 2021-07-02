@@ -1,0 +1,45 @@
+<emDataViewDatabaseIndex>
+  <version minor="1" major="1"/>
+  <emDatabase>
+    <ParameterNames>
+      <parameterName>arc_resolution</parameterName>
+      <parameterName>central_freq</parameterName>
+      <parameterName>feed_conductor_radius</parameterName>
+      <parameterName>feed_gap</parameterName>
+      <parameterName>feed_isolator_radius</parameterName>
+      <parameterName>feed_length</parameterName>
+      <parameterName>feed_outer_radius</parameterName>
+      <parameterName>helix_alpha</parameterName>
+      <parameterName>helix_turns</parameterName>
+      <parameterName>maxFreq</parameterName>
+      <parameterName>minFreq</parameterName>
+      <parameterName>wire_height</parameterName>
+    </ParameterNames>
+    <databaseItems>
+      <databaseItem index="0" name="data.000004">
+        <parameterValues>
+          <value>0.174533</value>
+          <value>2.8e+09</value>
+          <value>0.0007</value>
+          <value>0.0023</value>
+          <value>0.0023</value>
+          <value>0.005</value>
+          <value>0.0024</value>
+          <value>0.244346</value>
+          <value>8</value>
+          <value>3.2e+09</value>
+          <value>2.4e+09</value>
+          <value>0.0006</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.000004.sio</name>
+          <name>data.000004.log</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.log</name>
+        </originalFileNames>
+      </databaseItem>
+    </databaseItems>
+  </emDatabase>
+</emDataViewDatabaseIndex>

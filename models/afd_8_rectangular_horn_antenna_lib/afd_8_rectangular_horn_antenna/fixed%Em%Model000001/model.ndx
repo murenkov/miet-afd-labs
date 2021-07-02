@@ -1,0 +1,16 @@
+COMPONENT: em_data;
+NROFMODELS: 1;
+MODEL: RF, Layout, 0, 10, 20, 45, 0, 1;
+SUBSTRATE: definedInState;
+NROFPARAM: 8;
+PARAM: alphaE, 0.0, 0.0, 0.0, 10, 0.1, None, 7;
+PARAM: alphaH, 0.0, 0.0, 0.0, 10, 0.1, None, 7;
+PARAM: centralFreq, 0.0, 0.0, 0.0, 100, 10, None, 0;
+PARAM: maxFreq, 0.0, 0.0, 0.0, 100, 10, None, 0;
+PARAM: minFreq, 0.0, 0.0, 0.0, 100, 10, None, 0;
+PARAM: thickness, 0.0, 0.0, 0.0, 1e-05, 1e-06, None, 5;
+PARAM: waveguideA, 0.0, 0.0, 0.0, 0.0001, 1e-05, None, 5;
+PARAM: waveguideB, 0.0, 0.0, 0.0, 0.0001, 1e-05, None, 5;
+NROFSAMPLES: 1;
+SAMPLEFILE: data.000001.sio;
+SAMPLE: 0.5235987755982988, 0.5235987755982988, 13000000000, 17000000000, 9000000000, 0.001, 0.017, 0.009000000000000001;

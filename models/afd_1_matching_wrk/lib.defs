@@ -1,3 +1,0 @@
-INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
-DEFINE afd_1_matching_lib afd_1_matching_lib
-ASSIGN afd_1_matching_lib libMode shared

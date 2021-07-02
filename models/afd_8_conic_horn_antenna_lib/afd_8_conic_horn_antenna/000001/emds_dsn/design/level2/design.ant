@@ -1,0 +1,30 @@
+Excitation 1
+Frequency 2.9
+Maximum radiation intensity  1.47947981602
+Angle of U_max  0	0
+E_theta_max  33.3875667459 ; E_phi_max  0.0182390596687
+E_theta_max  -28.8361179913	-16.8287822614
+E_phi_max  -0.0179652720631	-0.00314838010667
+Ex_max  -28.8361179913	-16.8287822614
+Ey_max  -0.0179652720631	-0.00314838010667
+Ez_max  0	0
+Power radiated  1	1.04730404477
+Effective angle  (0.707886673025,0.0172324088462) steradians 40.5589187379 degrees 
+Directivity  12.4924612783 dB
+Gain  12.4924612783 dB 
+
+Excitation 2
+Frequency 2.9
+Maximum radiation intensity  1.48103727155
+Angle of U_max  0	30
+E_theta_max  16.6913686878 ; E_phi_max  28.9361648942
+E_theta_max  -14.4235815812	-8.40012398962
+E_phi_max  -25.0216951041	-14.5332863764
+Ex_max  0.019659489169	-0.00807758174207
+Ey_max  -28.8812143965	-16.7862571973
+Ez_max  0	0
+Power radiated  2	1.04744132388
+Effective angle  (0.707234952154,0.018196815099) steradians 40.5215778826 degrees 
+Directivity  12.4964614828 dB
+Gain  12.4964614828 dB 
+

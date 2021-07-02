@@ -1,0 +1,52 @@
+<!DOCTYPE RunOutput>
+<RunOutput>
+  <OutputObjectMetadata ptrID="0" subjectID="1">
+    <AgEMWaveGuidePortOutputObjectMetadata PortNumber="1" ComponentType="PowerFeed" IsModal="true" SourcePower="1" PhaseShift="0" Resistance="50" ImpedanceDefinitionType="Zpi" IsActive="false" Amplitude="1">
+      <SurfaceSensorOutputObjectMetadata CollectedTypes="SteadyTotalE|SteadyTotalH" LastTimestepIndex="2147483646" FirstTimestepIndex="0" Snapped="false" YMax="0" Name="WG (port 1)" XMin="0" ZMax="0" Unit="mm" ZMin="0" OutputFileName="emds_dsn/design" TopologyFileName="InterpSurfaceGeom_WG__port_1__0_sab" Mode="1" XMax="0" WaveGuide="0" DeltaTimestepIndex="1" YMin="0">
+        <OutputObjectMetadata ResultDrivers="femresultsprocess"/>
+      </SurfaceSensorOutputObjectMetadata>
+    </AgEMWaveGuidePortOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata ptrID="2" subjectID="3">
+    <AgEMWaveGuidePortOutputObjectMetadata PortNumber="2" ComponentType="PowerFeed" IsModal="true" SourcePower="1" PhaseShift="0" Resistance="50" ImpedanceDefinitionType="Zpi" IsActive="true" Amplitude="1">
+      <SurfaceSensorOutputObjectMetadata CollectedTypes="SteadyTotalE|SteadyTotalH" LastTimestepIndex="2147483646" FirstTimestepIndex="0" Snapped="false" YMax="0" Name="WG (port 2)" XMin="0" ZMax="0" Unit="mm" ZMin="0" OutputFileName="emds_dsn/design" TopologyFileName="InterpSurfaceGeom_WG__port_2__0_sab" Mode="2" XMax="0" WaveGuide="0" DeltaTimestepIndex="1" YMin="0">
+        <OutputObjectMetadata ResultDrivers="femresultsprocess"/>
+      </SurfaceSensorOutputObjectMetadata>
+    </AgEMWaveGuidePortOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata ptrID="4" subjectID="5">
+    <NearFieldPostProcessorOutputObjectMetadata Name="Raw Steady-State Near Field Data">
+      <OutputObjectMetadata/>
+    </NearFieldPostProcessorOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata ptrID="6" subjectID="7">
+    <FarZoneSensorOutputObjectMetadata CoordinateSystemType="ThetaPhi" SteadyStateFileNameBase="FarZone_steady_Far_Zone_Sensor_3D_0_fz" Name="Far Zone Sensor 3D" Angle1StartRadians="-3.1415926535897931" Angle2StartRadians="0" IsFemResult="false" Angle2Count="181" Angle1Count="361" Angle1DeltaRadians="0.017453292519943295" Angle2DeltaRadians="0.017453292519943295">
+      <OutputObjectMetadata/>
+    </FarZoneSensorOutputObjectMetadata>
+  </OutputObjectMetadata>
+  <OutputObjectMetadata ptrID="8" subjectID="9">
+    <SystemOutputObjectMetadata Name="System">
+      <OutputObjectMetadata ResultDrivers="femresultsprocess"/>
+      <MaterialList>
+        <Item>Freespace</Item>
+        <Item>PEC</Item>
+        <Item>Averaged Materials</Item>
+      </MaterialList>
+      <ElectricAssociations>
+        <Association Key="2">
+          <Indices Compressed="false" DataFormat="ASCII" Count="3">2 2 2</Indices>
+        </Association>
+        <Association Key="1">
+          <Indices Compressed="false" DataFormat="ASCII" Count="3">1 1 1</Indices>
+        </Association>
+        <Association Key="0"/>
+      </ElectricAssociations>
+      <MagneticAssociations>
+        <Association Key="1">
+          <Indices Compressed="false" DataFormat="ASCII" Count="3">0 0 0</Indices>
+        </Association>
+        <Association Key="0"/>
+      </MagneticAssociations>
+    </SystemOutputObjectMetadata>
+  </OutputObjectMetadata>
+</RunOutput>

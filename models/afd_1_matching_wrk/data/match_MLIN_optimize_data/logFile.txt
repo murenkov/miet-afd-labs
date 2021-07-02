@@ -1,0 +1,25 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+
+OPTIM Optim1[1] <afd_1_matching_lib:match_MLIN_optimize:schematic>  optIter=(0->25)
+
+SP Optim1[1].SP1[0] <afd_1_matching_lib:match_MLIN_optimize:schematic>  optIter=0  freq=(4 GHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(1.574803) < MinRecommendValue(0.200000) OR UserValue > MaxRecommendValue(1.500000) for 'D/H' in `V1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(2.720472) < MinRecommendValue(1.000000) OR UserValue > MaxRecommendValue(2.200000) for 'W/H' in `V1'
+
+
+Iteration/Trial #0:
+  CurrentEF: 0
+  Optimization variables:
+    L_serial = 9.734999999999999e-03
+    L_shunt = 5.558e-03
+Optim1[1] reached the goals. 
+
+Resource usage:
+  Total stopwatch time     =   730.92 seconds.
+

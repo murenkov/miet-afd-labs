@@ -1,0 +1,62 @@
+<!DOCTYPE SimulationData>
+<SimulationData>
+  <SimulationData UseTotalScatteredFieldFormulation="false" sname="FEM, From 2.4 GHz to 3.2 GHz (Adaptive), Iterative Solver, User Specified Field Data" ExcitationType="DiscreteSources" TotalScatteredFieldInterfaces="NoInterfaces" ComputeDissipatedPower="false">
+    <BoundaryConditions subjectID="1" ptrID="0">
+      <BoundaryConditions XUpperBoundaryType="Absorbing" XLowerBoundaryType="Absorbing" AbsorptionType="PML" YLowerBoundaryType="Absorbing" ZUpperBoundaryType="Absorbing" YUpperBoundaryType="Absorbing" ZLowerBoundaryType="Absorbing">
+        <NumPMLLayers subjectID="3" ptrID="2">
+          <Expression>
+            <Formula type="Int" value="7" typeid="2"/>
+          </Expression>
+        </NumPMLLayers>
+        <UseHybridFemMom value="false"/>
+        <HybridFemMomType>Volakis_Symm</HybridFemMomType>
+        <WrittenWith RevisionID="101" Version="EMPro 370.010 (64-bit)" BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA=="/>
+        <SelectedType value="0"/>
+      </BoundaryConditions>
+    </BoundaryConditions>
+    <ParameterValues>
+      <ParameterList/>
+    </ParameterValues>
+    <ActivePorts>
+      <PortList>
+        <Port Name="Coaxial source 1" Number="1"/>
+      </PortList>
+    </ActivePorts>
+    <SteadyStateFrequencySets/>
+    <FieldStorageFrequencySets/>
+    <Sinusoidal Count="1" Compressed="false" DataFormat="ASCII">0</Sinusoidal>
+    <StaticVoltagePointSets>
+      <StaticVoltagePointSet/>
+    </StaticVoltagePointSets>
+    <FrequencyRangesOfInterest>
+      <FrequencyRange Max="-1" Min="-1"/>
+    </FrequencyRangesOfInterest>
+    <RunDirectories>
+      <Item>Run0001</Item>
+    </RunDirectories>
+    <Timesteps Count="1" Compressed="false" DataFormat="ASCII">-1</Timesteps>
+    <MaximumFrequencies Count="1" Compressed="false" DataFormat="ASCII">3200000000</MaximumFrequencies>
+    <Details>Simulation Summary%0A======================================================%0AEM engine:                 FEM%0AS-Parameters:              On%0A%0AParameter sweep: No%0A%0ABoundary conditions:%0A    Lower/Upper X:        Absorbing / Absorbing%0A    Lower/Upper Y:        Absorbing / Absorbing%0A    Lower/Upper Z:        Absorbing / Absorbing%0A%0AFrequency Plans:%0A    Adaptive sweep from 2.4 GHz to 3.2 GHz with maximal 20 points%0A    Single frequency point at 2.8 GHz%0A%0AMesh/Discretisation:%0A    Delta error: 0.01%0A    Minimum number of adaptive passes: 1%0A    Maximum number of adaptive passes: 15%0A    Refining at highest frequency of interest%0A    Consecutive passes of delta error required: 1%0A    Mesh refinement percentage: 25%0A    Target Mesh Size: 31.2284 mm%0A    Order of basis functions: 2%0A    [Advanced] Merging objects of same material%0A%0AMulti-threaded iterative matrix solver selected%0A    tolerance       : 1e-05%0A    max %23iterations : 500%0A%0AFields are saved for: user defined frequencies. %0A%0A%0AList of parameters and their values:%0A    Name                     Formula                                      Value    %0A    ------------------------------------------------------------------------------------%0A    helix_height             helix_turns %2A helix_pitch                    0.214137 %0A    helix_radius             helix_pitch / (2 %2A PI %2A tan(helix_alpha))    0.0170864%0A    helix_turns              8                                            8        %0A    helix_pitch              lambda / 4                                   0.0267672%0A    arc_resolution           10 deg                                       0.174533 %0A    feed_outer_radius        2.4 mm                                       0.0024   %0A    wire_height              0.6 mm                                       0.0006   %0A    plate_radius             0.75 %2A lambda                                0.0803016%0A    feed_length              5 mm                                         0.005    %0A    central_freq             2.8 GHz                                      2.8e+09  %0A    feed_conductor_radius    0.7 mm                                       0.0007   %0A    minFreq                  2.4 GHz                                      2.4e+09  %0A    maxFreq                  3.2 GHz                                      3.2e+09  %0A    feed_gap                 2.3 mm                                       0.0023   %0A    lambda                   wavelength_0(central_freq)                   0.107069 %0A    helix_alpha              14 deg                                       0.244346 %0A    feed_isolator_radius     2.3 mm                                       0.0023   %0A%0A</Details>
+    <BoundingBox>
+      <Upper y="0.12670422251266253" x="0.12714412281249998" z="0.26158004156249987"/>
+      <Lower y="-0.12670422251266253" x="-0.12714412281249998" z="-0.051842571562499995"/>
+    </BoundingBox>
+    <FemSaveFieldsFor value="2"/>
+    <CreationDateTime value="1624881673"/>
+    <SimulationGroup>000004</SimulationGroup>
+    <AgNewSimulationData>
+      <WrittenWith RevisionID="101" Version="EMPro 370.010 (64-bit)" BuildString="AAAAiXicJco9C8IwFIXhvb/igIuCN9zb2o90LDgKDoJzQlqM2EbSOPjvjQpneOE8l5tfkXc8nWNA1bJiYWybA1mfdqoohpd/JEwxzNBV1zru9NggTBjnZwxk8+2oZNHENZWaXDTJLx5hgbF3ugrsGz8Fk/CHX5uzr6Vn2WMjLOoDk1sluA=="/>
+      <Engine value="1"/>
+      <HasAdaptiveFrequencyPlans value="true"/>
+      <FemEigenMode value="false"/>
+      <PortOnlyMode value="false"/>
+      <Reuse value="false"/>
+      <UseDistributed value="false"/>
+      <RunLocal value="true"/>
+      <NumberOfThreads value="0"/>
+      <NumberOfParallelFreq value="4"/>
+      <NumberOfNodes value="1"/>
+      <HasTdafsSParameterData value="false"/>
+    </AgNewSimulationData>
+  </SimulationData>
+</SimulationData>

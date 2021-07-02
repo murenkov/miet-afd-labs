@@ -1,0 +1,37 @@
+<emDataViewDatabaseIndex>
+  <version major="1" minor="1"/>
+  <emDatabase>
+    <ParameterNames>
+      <parameterName>arc_resolution</parameterName>
+      <parameterName>central_freq</parameterName>
+      <parameterName>feed_gap</parameterName>
+      <parameterName>helix_alpha</parameterName>
+      <parameterName>helix_turns</parameterName>
+      <parameterName>maxFreq</parameterName>
+      <parameterName>minFreq</parameterName>
+      <parameterName>wire_height</parameterName>
+    </ParameterNames>
+    <databaseItems>
+      <databaseItem index="0" name="data.000001">
+        <parameterValues>
+          <value>0.174533</value>
+          <value>2.8e+09</value>
+          <value>0.0023</value>
+          <value>0.244346</value>
+          <value>8</value>
+          <value>3.2e+09</value>
+          <value>2.4e+09</value>
+          <value>0.0006</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.000001.sio</name>
+          <name>data.000001.log</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.log</name>
+        </originalFileNames>
+      </databaseItem>
+    </databaseItems>
+  </emDatabase>
+</emDataViewDatabaseIndex>
