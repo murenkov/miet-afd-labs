@@ -1,6 +1,6 @@
 
-hpeesofsim (*) 511.update1.0 Nov 21 2019, MINT version 5
-    (64-bit windows built: Fri Nov 22, 2019 03:45:24 +0000)
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
 
 
 YIELD Yield1[1] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=(0->100)
@@ -41,7 +41,7 @@ SP Yield1[1].SP1[9] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=9 
 SP Yield1[1].SP1[10] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=10  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 10    of 100  
 
 SP Yield1[1].SP1[11] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=11  freq=(4 GHz->10 GHz)
@@ -74,7 +74,7 @@ SP Yield1[1].SP1[19] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=1
 SP Yield1[1].SP1[20] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=20  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 20    of 100  
 
 SP Yield1[1].SP1[21] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=21  freq=(4 GHz->10 GHz)
@@ -107,7 +107,7 @@ SP Yield1[1].SP1[29] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=2
 SP Yield1[1].SP1[30] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=30  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 30    of 100  
 
 SP Yield1[1].SP1[31] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=31  freq=(4 GHz->10 GHz)
@@ -140,7 +140,7 @@ SP Yield1[1].SP1[39] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=3
 SP Yield1[1].SP1[40] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=40  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 40    of 100  
 
 SP Yield1[1].SP1[41] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=41  freq=(4 GHz->10 GHz)
@@ -173,7 +173,7 @@ SP Yield1[1].SP1[49] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=4
 SP Yield1[1].SP1[50] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=50  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 50    of 100  
 
 SP Yield1[1].SP1[51] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=51  freq=(4 GHz->10 GHz)
@@ -206,7 +206,7 @@ SP Yield1[1].SP1[59] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=5
 SP Yield1[1].SP1[60] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=60  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 60    of 100  
 
 SP Yield1[1].SP1[61] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=61  freq=(4 GHz->10 GHz)
@@ -239,7 +239,7 @@ SP Yield1[1].SP1[69] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=6
 SP Yield1[1].SP1[70] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=70  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 70    of 100  
 
 SP Yield1[1].SP1[71] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=71  freq=(4 GHz->10 GHz)
@@ -272,7 +272,7 @@ SP Yield1[1].SP1[79] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=7
 SP Yield1[1].SP1[80] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=80  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 80    of 100  
 
 SP Yield1[1].SP1[81] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=81  freq=(4 GHz->10 GHz)
@@ -305,7 +305,7 @@ SP Yield1[1].SP1[89] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=8
 SP Yield1[1].SP1[90] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=90  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 90    of 100  
 
 SP Yield1[1].SP1[91] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=91  freq=(4 GHz->10 GHz)
@@ -338,9 +338,9 @@ SP Yield1[1].SP1[99] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=9
 SP Yield1[1].SP1[100] <afd_1_matching_lib:matching_EM_yield:schematic>  mcTrial=100  freq=(4 GHz->10 GHz)
 
 *******************
-  Current Yield(%): 100.00%
+  Current Yield(%):   0.00%
   Trial# 100   of 100  
 
 Resource usage:
-  Total stopwatch time     =  1370.03 seconds.
+  Total stopwatch time     =   971.10 seconds.
 
